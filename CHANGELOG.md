@@ -190,7 +190,11 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="v1.48.1"></a>
 ## v1.48.1 - 2022-11-10
 
-[Unreleased]: https://github.com/SAP/ui5-manifest/compare/v1.80.0...HEAD
+[Unreleased]: https://github.com/SAP/ui5-manifest/compare/v1.81.0...HEAD
+[v1.81.0]
+
+<a name="v1.81.0"></a>
+## [v1.81.0] - 2025-11-18  (UI5 1.143): https://github.com/SAP/ui5-manifest/compare/v1.80.0...v1.81.0
 [v1.80.0]: https://github.com/SAP/ui5-manifest/compare/v1.79.0...v1.80.0
 [v1.79.0]: https://github.com/SAP/ui5-manifest/compare/v1.78.0...v1.79.0
 [v1.78.0]: https://github.com/SAP/ui5-manifest/compare/v1.77.0...v1.78.0
