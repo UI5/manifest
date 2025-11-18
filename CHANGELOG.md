@@ -3,7 +3,9 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <a name="Unreleased"></a>
-## [Unreleased]
+
+### Changed
+- sap.ovp: Deprecated property card/settings/showTimeAxis.
 
 <a name="v1.80.0"></a>
 ## [v1.80.0] - 2025-10-28  (UI5 1.142)
