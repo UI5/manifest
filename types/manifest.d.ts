@@ -2841,9 +2841,9 @@ export interface CardSetting {
    */
   subTitle?: string;
   /**
-   * Represents the flag to enable/disable time axis for analytical timeseries cards
+   * [Deprecated] Represents the flag to enable/disable time axis for analytical timeseries cards
    */
-  showTimeAxis?: boolean;
+  showTimeAxis?: (true | false) & boolean;
   /**
    * Represents things like people, number of items
    */

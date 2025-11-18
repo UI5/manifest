@@ -7425,9 +7425,18 @@
           }
         },
         "showTimeAxis": {
-          "description": "Represents the flag to enable/disable time axis for analytical timeseries cards",
+          "description": "[Deprecated] Represents the flag to enable/disable time axis for analytical timeseries cards",
           "type": "boolean",
-          "default": false
+          "default": true,
+          "anyOf": [
+            {
+              "const": true
+            },
+            {
+              "const": false,
+              "deprecated": true
+            }
+          ]
         },
         "valueSelectionInfo": {
           "description": "Represents things like people, number of items",
