@@ -5,6 +5,9 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="Unreleased"></a>
 ## [Unreleased]
 
+<a name="v2.2.0"></a>
+## [v2.2.0] - 2025-12-08  (UI5 1.141)
+
 ### Added
 - sap.card: New property "configuration/childCards" which holds a list of Configuration.ChildCard which represents a child card that can be opened from the main card
 - sap.card: New property "showCardActionParameters/childCardKey" to refer to a child card which to be shown
@@ -186,7 +189,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="v1.48.1"></a>
 ## v1.48.1 - 2022-11-10
 
-[Unreleased]: https://github.com/SAP/ui5-manifest/compare/v2.1.1...HEAD
+[Unreleased]: https://github.com/SAP/ui5-manifest/compare/v2.2.0...HEAD
+[v2.2.0]: https://github.com/SAP/ui5-manifest/compare/v2.1.1...v2.2.0
 [v2.1.1]: https://github.com/SAP/ui5-manifest/compare/v2.1.0...v2.1.1
 [v2.1.0]: https://github.com/SAP/ui5-manifest/compare/v2.0.0...v2.1.0
 [v2.0.0]: https://github.com/SAP/ui5-manifest/compare/v1.72.0...v2.0.0
