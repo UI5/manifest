@@ -5,6 +5,12 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="Unreleased"></a>
 ## [Unreleased]
 
+<a name="v2.1.1"></a>
+## [v2.1.1] - 2025-12-08  (UI5 1.140)
+
+### Added
+- sap.card: Added new property "useMainDestinations"
+
 <a name="v2.1.0"></a>
 ## [v2.1.0] - 2025-09-12  (UI5 1.139)
 
@@ -16,9 +22,6 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 ### Changed
 - sap.card: Deprecated property "header/subTitle" (with capital T)
 - sap.card: Deprecated property "overflow/subTitle" (with capital T) in an object content item of type "Image"
-
-### Added
-- sap.card: Added new property "useMainDestinations"
 
 <a name="v1.77.0"></a>
 ## [v1.77.0] - 2025-08-04  (UI5 1.139)
@@ -173,7 +176,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="v1.48.1"></a>
 ## v1.48.1 - 2022-11-10
 
-[Unreleased]: https://github.com/SAP/ui5-manifest/compare/v2.1.0...HEAD
+[Unreleased]: https://github.com/SAP/ui5-manifest/compare/v2.1.1...HEAD
+[v2.1.1]: https://github.com/SAP/ui5-manifest/compare/v2.1.0...v2.1.1
 [v2.1.0]: https://github.com/SAP/ui5-manifest/compare/v2.0.0...v2.1.0
 [v2.0.0]: https://github.com/SAP/ui5-manifest/compare/v1.72.0...v2.0.0
 [v1.72.3]: https://github.com/SAP/ui5-manifest/compare/v1.71.0...v1.72.0
