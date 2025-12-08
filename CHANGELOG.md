@@ -28,6 +28,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Added
 - sap.flp: new property "vizOptions" has been added to provide more options for tile sizes. Only needed for declaration of custom Fiori launchpad tiles.
+- sap.ui5/flexBundle: new property explicitly flagging if a flexibility-bundle.json is part of the built application.
 
 ### Removed
 - sap.ui5/resource:

@@ -817,6 +817,10 @@
                 }
               }
             },
+            "flexBundle": {
+              "description": "Represents an indicator whether a flexibility bundle was created and is within the application sources. This property is set by the building tool.",
+              "type": "boolean"
+            },
             "flexExtensionPointEnabled": {
               "description": "Represents an indicator whether app variant is flex extension point enabled",
               "type": "boolean",

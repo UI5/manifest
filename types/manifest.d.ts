@@ -348,6 +348,10 @@ export type JSONSchemaForSAPUI5Namespace = {
     [k: string]: Command;
   };
   /**
+   * Represents an indicator whether a flexibility bundle was created and is within the application sources. This property is set by the building tool.
+   */
+  flexBundle?: boolean;
+  /**
    * Represents an indicator whether app variant is flex extension point enabled
    */
   flexExtensionPointEnabled?: boolean;
