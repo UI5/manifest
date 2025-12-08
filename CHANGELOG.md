@@ -5,6 +5,15 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="Unreleased"></a>
 ## [Unreleased]
 
+### Added
+- sap.card: New property "configuration/childCards" which holds a list of Configuration.ChildCard which represents a child card that can be opened from the main card
+- sap.card: New property "showCardActionParameters/childCardKey" to refer to a child card which to be shown
+- sap.card: New property "header/icon/state" which can be used to apply semantic state to the icon in the header
+
+### Changed
+- sap.card: Added valiadtion for allowed combinations of "header/icon" properties
+- sap.card: Deprecated property "showCardActionParameters/manifest". Use "showCardActionParameters/childCardKey" instead.
+
 <a name="v2.1.1"></a>
 ## [v2.1.1] - 2025-12-08  (UI5 1.140)
 
