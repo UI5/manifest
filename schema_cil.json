@@ -848,10 +848,16 @@
         "containerLayout": {
           "description": "Represents the layout of the card container",
           "type": "string",
-          "default": "fixed",
-          "enum": [
-            "fixed",
-            "resizable"
+          "default": "resizable",
+          "oneOf": [
+            {
+              "const": "resizable"
+            },
+            {
+              "const": "fixed",
+              "deprecated": true,
+              "description": "[Deprecated] Value fixed is deprecated"
+            }
           ]
         },
         "showDateInRelativeFormat": {

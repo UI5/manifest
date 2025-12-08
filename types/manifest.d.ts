@@ -2452,7 +2452,7 @@ export interface JSONSchemaForSAPOVPNamespace {
   /**
    * Represents the layout of the card container
    */
-  containerLayout?: "fixed" | "resizable";
+  containerLayout?: ("resizable" | "fixed") & string;
   /**
    * Represents a switch to Enable or disable Relative or Normal date formating in ovp application
    */
