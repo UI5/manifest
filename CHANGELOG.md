@@ -18,6 +18,12 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 - sap.card: Deprecated property "overflow/subTitle" (with capital T) in an object content item of type "Image"
 
 ### Added
+- sap.card: Added new property "useMainDestinations"
+
+<a name="v1.77.0"></a>
+## [v1.77.0] - 2025-08-04  (UI5 1.139)
+
+### Added
 - sap.flp: new property "vizOptions" has been added to provide more options for tile sizes. Only needed for declaration of custom Fiori launchpad tiles.
 
 ### Removed
