@@ -755,7 +755,9 @@ export interface SAPJSONSchemaForWebApplicationManifestFile {
     | "1.78.0"
     | "1.79.0"
     | "1.80.0"
-    | "1.81.0";
+    | "1.80.1"
+    | "1.81.0"
+    | "1.81.1";
   /**
    * Represents the URL that the developer would prefer the user agent load when the user launches the web application
    */
@@ -820,7 +822,8 @@ export interface JSONSchemaForSAPAPPNamespace {
     | "1.18.0"
     | "1.19.0"
     | "1.20.0"
-    | "1.21.0";
+    | "1.21.0"
+    | "1.21.1";
   /**
    * Represents the template from which the app was generated
    */
@@ -1029,7 +1032,7 @@ export interface Setting {
   /**
    * Represents version of OData: 2.0 is default
    */
-  odataVersion?: "2.0" | "4.0";
+  odataVersion?: "2.0" | "4.0" | "4.01";
   /**
    * Represents path to local meta data document or annotation uri
    */
@@ -1084,7 +1087,7 @@ export interface Setting1 {
   /**
    * Represents version of OData: 2.0 is default
    */
-  odataVersion?: "2.0" | "4.0";
+  odataVersion?: "2.0" | "4.0" | "4.01";
   /**
    * Represents path to local meta data document or annotation uri
    */

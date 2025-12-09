@@ -4,6 +4,15 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 <a name="Unreleased"></a>
 
+<a name="v1.81.1"></a>
+## [v1.81.1] - 2025-12-09  (UI5 1.143)
+
+### Added
+- sap.app: new value "4.01" for setting/odataVersion added
+
+<a name="v1.81.0"></a>
+## [v1.81.0] - 2025-11-18  (UI5 1.143)
+
 ### Changed
 - sap.ovp: Deprecated property card/settings/showTimeAxis.
 
@@ -190,11 +199,10 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="v1.48.1"></a>
 ## v1.48.1 - 2022-11-10
 
-[Unreleased]: https://github.com/UI5/manifest/compare/v1.81.0...HEAD
-[v1.81.0]
-
-<a name="v1.81.0"></a>
-## [v1.81.0] - 2025-11-18  (UI5 1.143): https://github.com/UI5/manifest/compare/v1.80.0...v1.81.0
+[Unreleased]: https://github.com/UI5/manifest/compare/v1.81.1...HEAD
+[v1.81.1]: https://github.com/UI5/manifest/compare/v1.81.0...v1.81.1
+[v1.81.0]: https://github.com/UI5/manifest/compare/v1.80.1...v1.81.0
+[v1.80.1]: https://github.com/UI5/manifest/compare/v1.80.0...v1.80.1
 [v1.80.0]: https://github.com/UI5/manifest/compare/v1.79.0...v1.80.0
 [v1.79.0]: https://github.com/UI5/manifest/compare/v1.78.0...v1.79.0
 [v1.78.0]: https://github.com/UI5/manifest/compare/v1.77.0...v1.78.0
