@@ -5,6 +5,12 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="Unreleased"></a>
 ## [Unreleased]
 
+<a name="v2.3.1"></a>
+## [v2.3.1] - 2025-12-09  (UI5 1.142)
+
+### Added
+- sap.app: new value "4.01" for setting/odataVersion added
+
 <a name="v2.3.0"></a>
 ## [v2.3.0] - 2025-12-08  (UI5 1.142)
 
@@ -195,7 +201,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="v1.48.1"></a>
 ## v1.48.1 - 2022-11-10
 
-[Unreleased]: https://github.com/SAP/ui5-manifest/compare/v2.3.0...HEAD
+[Unreleased]: https://github.com/SAP/ui5-manifest/compare/v2.3.1...HEAD
+[v2.3.1]: https://github.com/SAP/ui5-manifest/compare/v2.3.0...v2.3.1
 [v2.3.0]: https://github.com/SAP/ui5-manifest/compare/v2.2.0...v2.3.0
 [v2.2.0]: https://github.com/SAP/ui5-manifest/compare/v2.1.1...v2.2.0
 [v2.1.1]: https://github.com/SAP/ui5-manifest/compare/v2.1.0...v2.1.1

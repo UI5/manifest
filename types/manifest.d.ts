@@ -967,7 +967,7 @@ export interface Setting {
   /**
    * Represents version of OData: 2.0 is default
    */
-  odataVersion?: "2.0" | "4.0";
+  odataVersion?: "2.0" | "4.0" | "4.01";
   /**
    * Represents path to local meta data document or annotation uri
    */
@@ -1022,7 +1022,7 @@ export interface Setting1 {
   /**
    * Represents version of OData: 2.0 is default
    */
-  odataVersion?: "2.0" | "4.0";
+  odataVersion?: "2.0" | "4.0" | "4.01";
   /**
    * Represents path to local meta data document or annotation uri
    */
