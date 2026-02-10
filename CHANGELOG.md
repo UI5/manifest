@@ -4,6 +4,13 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 <a name="Unreleased"></a>
 
+### Added
+- sap.card: new property "inverted" in ContentType.Table.Column which shows an inverted object status
+- sap.card: new property "preferIcon" for "actionsStripItem" which is used to determine if icon only button is shown when not in overflow
+
+### Changed
+- sap.card: fix type of "filters" properties inside "configuration"
+
 <a name="v1.82.0"></a>
 ## [v1.82.0] - 2026-01-12  (UI5 1.144)
 

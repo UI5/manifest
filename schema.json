@@ -2067,7 +2067,8 @@
             "1.56.0",
             "1.57.0",
             "1.58.0",
-            "1.59.0"
+            "1.59.0",
+            "1.60.0"
           ]
         },
         "designtime": {
@@ -2113,6 +2114,7 @@
             },
             "filters": {
               "description": "Map of filters",
+              "type": "object",
               "additionalProperties": {
                 "oneOf": [
                   {
@@ -4000,6 +4002,17 @@
           "oneOf": [
             {
               "$ref": "#/$defs/state"
+            },
+            {
+              "$ref": "#/$defs/simpleBinding"
+            }
+          ]
+        },
+        "inverted": {
+          "description": "Specifies whether the background color reflects the set \"state\" instead of the control's text",
+          "oneOf": [
+            {
+              "type": "boolean"
             },
             {
               "$ref": "#/$defs/simpleBinding"
@@ -6697,6 +6710,17 @@
         "visible": {
           "description": "Determines whether the item is visible",
           "$ref": "#/$defs/visibility"
+        },
+        "preferIcon": {
+          "description": "Defines whether the button will shown icon only when placed in the visible area. This will save space in the actions strip. When in the overflow area, it will always show both icon and text",
+          "oneOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "$ref": "#/$defs/simpleBinding"
+            }
+          ]
         }
       }
     },
