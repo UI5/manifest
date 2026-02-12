@@ -5,6 +5,9 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="Unreleased"></a>
 ## [Unreleased]
 
+<a name="v2.5.0"></a>
+## [v2.5.0] - 2026-02-12  (UI5 1.145)
+
 ### Added
 - sap.card: new property "inverted" in ContentType.Table.Column which shows an inverted object status
 - sap.card: new property "preferIcon" for "actionsStripItem" which is used to determine if icon only button is shown when not in overflow
@@ -214,7 +217,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="v1.48.1"></a>
 ## v1.48.1 - 2022-11-10
 
-[Unreleased]: https://github.com/SAP/ui5-manifest/compare/v2.4.0...HEAD
+[Unreleased]: https://github.com/SAP/ui5-manifest/compare/v2.5.0...HEAD
+[v2.5.0]: https://github.com/SAP/ui5-manifest/compare/v2.4.0...v2.5.0
 [v2.4.0]: https://github.com/SAP/ui5-manifest/compare/v2.3.1...v2.4.0
 [v2.3.1]: https://github.com/SAP/ui5-manifest/compare/v2.3.0...v2.3.1
 [v2.3.0]: https://github.com/SAP/ui5-manifest/compare/v2.2.0...v2.3.0
