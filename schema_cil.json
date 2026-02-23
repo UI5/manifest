@@ -44,9 +44,7 @@
         "1.24.0",
         "1.25.0",
         "1.26.0",
-        "1.27.0",
-        "1.28.0",
-        "1.28.1"
+        "1.27.0"
       ]
     },
     "start_url": {
@@ -80,8 +78,7 @@
             "1.9.0",
             "1.10.0",
             "1.11.0",
-            "1.12.0",
-            "1.12.1"
+            "1.12.0"
           ]
         },
         "sourceTemplate": {
@@ -385,9 +382,7 @@
                 "1.10.0",
                 "1.11.0",
                 "1.12.0",
-                "1.13.0",
-                "1.14.0",
-                "1.15.0"
+                "1.13.0"
               ]
             },
             "resources": {
@@ -837,6 +832,9 @@
       "title": "JSON schema for SAP.FLP Namespace",
       "description": "Represents FLP specific attributes",
       "type": "object",
+      "required": [
+        "type"
+      ],
       "additionalProperties": false,
       "properties": {
         "_version": {
@@ -845,43 +843,16 @@
           "enum": [
             "1.1.0",
             "1.2.0",
-            "1.3.0",
-            "1.4.0"
+            "1.3.0"
           ]
         },
         "tileSize": {
-          "description": "Represents size of the tile. Deprecated, use 'vizOptions' instead.",
+          "description": "Represents size of the tile",
           "type": "string",
           "enum": [
             "1x1",
             "1x2"
-          ],
-          "deprecated": true
-        },
-        "vizOptions": {
-          "description": "Options a visualization (launchpad tile) is offering with regards to rendering, for example",
-          "type": "object",
-          "properties": {
-            "displayFormats": {
-              "description": "Defines what display formats a visualization type can render itself in. The value 'default' is deprecated - please use 'standard' instead!",
-              "type": "object",
-              "properties": {
-                "supported": {
-                  "description": "Lists all display formats the visualization type is capable of rendering itself in. The order of items may be used as preference definition (most important first). The value 'default' is deprecated - please use 'standard' instead!",
-                  "type": "array",
-                  "default": [
-                    "standard"
-                  ],
-                  "items": {
-                    "$ref": "#/$defs/displayFormatEnum"
-                  }
-                },
-                "default": {
-                  "$ref": "#/$defs/displayFormatEnum"
-                }
-              }
-            }
-          }
+          ]
         },
         "type": {
           "description": "Represents the type of FLP entry. It must be 'application' or 'tile' or 'plugin'",
@@ -890,8 +861,7 @@
             "application",
             "tile",
             "plugin"
-          ],
-          "default": "application"
+          ]
         },
         "config": {
           "description": "Represents configuration parameters of the FLP entry",
@@ -905,7 +875,7 @@
           }
         },
         "origin": {
-          "description": "Represents the original tile and target mapping which resulted in this app. Deprecated.",
+          "description": "Represents the original tile and target mapping which resulted in this app",
           "type": "object",
           "additionalProperties": false,
           "properties": {
@@ -917,8 +887,7 @@
               "description": "Represents the original target mapping which resulted in this app",
               "type": "string"
             }
-          },
-          "deprecated": true
+          }
         }
       }
     },
@@ -950,9 +919,7 @@
             "1.8.0",
             "1.9.0",
             "1.10.0",
-            "1.11.0",
-            "1.12.0",
-            "1.13.0"
+            "1.11.0"
           ]
         },
         "globalFilterModel": {
@@ -1002,16 +969,10 @@
         "containerLayout": {
           "description": "Represents the layout of the card container",
           "type": "string",
-          "default": "resizable",
-          "oneOf": [
-            {
-              "const": "resizable"
-            },
-            {
-              "const": "fixed",
-              "deprecated": true,
-              "description": "[Deprecated] Value fixed is deprecated"
-            }
+          "default": "fixed",
+          "enum": [
+            "fixed",
+            "resizable"
           ]
         },
         "showDateInRelativeFormat": {
@@ -1808,20 +1769,6 @@
             "comment": "Card subtitle which is displayed in the card header"
           }
         },
-        "showTimeAxis": {
-          "description": "[Deprecated] Represents the flag to enable/disable time axis for analytical timeseries cards",
-          "type": "boolean",
-          "default": true,
-          "anyOf": [
-            {
-              "const": true
-            },
-            {
-              "const": false,
-              "deprecated": true
-            }
-          ]
-        },
         "valueSelectionInfo": {
           "description": "Represents things like people, number of items",
           "type": "string",
@@ -2099,16 +2046,6 @@
           "type": "object"
         }
       }
-    },
-    "displayFormatEnum": {
-      "type": "string",
-      "enum": [
-        "standard",
-        "standardWide",
-        "flat",
-        "flatWide",
-        "compact"
-      ]
     },
     "defaultLayoutType_def": {
       "type": "string"
@@ -2501,7 +2438,6 @@
       }
     },
     "actualTargetAdditionComponentUsage": {
-      "description": "Represents target configuration properties for component usage routing scenarios where targets reference reusable components",
       "type": "object",
       "required": [
         "usage",
@@ -2531,7 +2467,6 @@
       }
     },
     "actualTargetAdditionStandard": {
-      "description": "Represents the target configuration properties for modern routing implementations with view or component targets",
       "type": "object",
       "required": [
         "name"
@@ -2550,7 +2485,7 @@
           "type": "string"
         },
         "type": {
-          "description": "Represents the type of the target: View or Component",
+          "description": "Represents the type of the type View or Component",
           "type": "string",
           "enum": [
             "View",
@@ -2565,30 +2500,25 @@
       }
     },
     "legacyTargetAddition": {
-      "description": "Represents legacy target configuration properties for backward compatibility with older routing implementations",
       "type": "object",
       "required": [
         "viewName"
       ],
       "properties": {
         "viewName": {
-          "deprecated": true,
-          "description": "[Deprecated] Represents the name of a view that will be created. Please use 'name' property instead together with the 'type' property set to 'View'. The same applies to 'viewId', 'viewPath', 'viewLevel' as well.",
+          "description": "Represents the name of a view that will be created",
           "type": "string"
         },
         "viewId": {
-          "deprecated": true,
-          "description": "[Deprecated] Represents the id of the created view. Please use 'id' property instead together with the 'type' property set to 'View'. The same applies to 'viewName', 'viewPath', 'viewLevel' as well.",
+          "description": "Represents the id of the created view",
           "type": "string"
         },
         "viewPath": {
-          "deprecated": true,
-          "description": "[Deprecated] Represents a prefix that is prepended in front of the viewName. Please use 'path' property instead together with the 'type' property set to 'View'. The same applies to 'viewId', 'viewName', 'viewLevel' as well.",
+          "description": "Represents a prefix that is prepended in front of the viewName",
           "type": "string"
         },
         "viewLevel": {
-          "deprecated": true,
-          "description": "[Deprecated] Represents the level of the current view which is used to define the transition direction when navigate to this view. Please use 'level' property instead together with the 'type' property set to 'View'. The same applies to 'viewId', 'viewName', 'viewPath' as well.",
+          "description": "Represents the level of the current view which is used to define the transition direction when navigate to this view",
           "type": "number",
           "multipleOf": 1
         }
@@ -2667,27 +2597,22 @@
       }
     },
     "legacyTargetAdditionWithoutRequiredProp": {
-      "description": "Represents legacy target configuration properties without required properties for more flexible backward compatibility scenarios",
       "type": "object",
       "properties": {
         "viewName": {
-          "deprecated": true,
-          "description": "[Deprecated] Represents the name of a view that will be created. Please use 'name' property instead together with the 'type' property set to 'View'. The same applies to 'viewId', 'viewPath', 'viewLevel' as well.",
+          "description": "Represents the name of a view that will be created",
           "type": "string"
         },
         "viewId": {
-          "deprecated": true,
-          "description": "[Deprecated] Represents the id of the created view. Please use 'id' property instead together with the 'type' property set to 'View'. The same applies to 'viewName', 'viewPath', 'viewLevel' as well.",
+          "description": "Represents the id of the created view",
           "type": "string"
         },
         "viewPath": {
-          "deprecated": true,
-          "description": "[Deprecated] Represents a prefix that is prepended in front of the viewName. Please use 'path' property instead together with the 'type' property set to 'View'. The same applies to 'viewId', 'viewName', 'viewLevel' as well.",
+          "description": "Represents a prefix that is prepended in front of the viewName",
           "type": "string"
         },
         "viewLevel": {
-          "deprecated": true,
-          "description": "[Deprecated] Represents the level of the current view which is used to define the transition direction when navigate to this view. Please use 'level' property instead together with the 'type' property set to 'View'. The same applies to 'viewId', 'viewName', 'viewPath' as well.",
+          "description": "Represents the level of the current view which is used to define the transition direction when navigate to this view",
           "type": "number",
           "multipleOf": 1
         }
@@ -2702,7 +2627,15 @@
           "type": "string"
         },
         "viewType": {
-          "$ref": "#/$defs/viewTypeDefinition"
+          "description": "Represents the type of view that is going to be created",
+          "type": "string",
+          "enum": [
+            "XML",
+            "JSON",
+            "JS",
+            "HTML",
+            "Template"
+          ]
         },
         "targetParent": {
           "description": "Represents the id of the view that contains the control specified by the 'controlId'",
@@ -2774,36 +2707,6 @@
         },
         {
           "$ref": "#/$defs/routeTargetObject"
-        }
-      ]
-    },
-    "viewTypeDefinition": {
-      "description": "Represents the type of view that is going to be created",
-      "type": "string",
-      "oneOf": [
-        {
-          "const": "XML",
-          "description": "Value `XML` is used to create an XML view. This is the recommended view type to use. Other view types are deprecated and will be removed in future UI5 versions."
-        },
-        {
-          "const": "JSON",
-          "deprecated": true,
-          "description": "[Deprecated] Value `JSON` is deprecated and will be removed in UI5 version 2. Consider using `viewType: XML` or `typed views` instead."
-        },
-        {
-          "const": "JS",
-          "deprecated": true,
-          "description": "[Deprecated] Value `JS` is deprecated and will be removed in UI5 version 2. Consider using `viewType: XML` or `typed views` instead."
-        },
-        {
-          "const": "HTML",
-          "deprecated": true,
-          "description": "[Deprecated] Value `HTML` is deprecated and will be removed in UI5 version 2. Consider using `viewType: XML` or `typed views` instead."
-        },
-        {
-          "const": "Template",
-          "deprecated": true,
-          "description": "[Deprecated] Value `Template` is deprecated and will be removed in UI5 version 2. Consider using `viewType: XML` or `typed views` instead."
         }
       ]
     },
@@ -2924,7 +2827,6 @@
       ]
     },
     "ui5setting": {
-      "description": "Represents UI5-specific settings and configuration options that can be applied to models.",
       "type": "object",
       "additionalProperties": true,
       "properties": {
@@ -2998,7 +2900,15 @@
           "type": "string"
         },
         "type": {
-          "$ref": "#/$defs/viewTypeDefinition"
+          "description": "Represents the type of the view. Possible Values: XML, JSON, JS, HTML, Template",
+          "type": "string",
+          "enum": [
+            "XML",
+            "JSON",
+            "JS",
+            "HTML",
+            "Template"
+          ]
         },
         "id": {
           "description": "Represents the id of the view",
@@ -3007,17 +2917,7 @@
         "async": {
           "description": "Configure the targets for asynchronous loading",
           "type": "boolean",
-          "default": false,
-          "oneOf": [
-            {
-              "const": true
-            },
-            {
-              "const": false,
-              "deprecated": true,
-              "description": "[Deprecated] Value false is deprecated. Use async: true instead."
-            }
-          ]
+          "default": false
         }
       }
     },
@@ -3038,17 +2938,7 @@
                 "async": {
                   "description": "Indicates whether the Views in routing are loaded asyncly",
                   "type": "boolean",
-                  "default": false,
-                  "oneOf": [
-                    {
-                      "const": true
-                    },
-                    {
-                      "const": false,
-                      "deprecated": true,
-                      "description": "[Deprecated] Value false is deprecated. Use async: true instead."
-                    }
-                  ]
+                  "default": false
                 },
                 "bypassed": {
                   "description": "Represents information about targets to display when no route is matched",
@@ -3072,12 +2962,6 @@
             },
             {
               "$ref": "#/$defs/target"
-            },
-            {
-              "$ref": "#/$defs/legacyTargetAdditionWithoutRequiredProp"
-            },
-            {
-              "$ref": "#/$defs/actualTargetAdditionStandardWithoutRequiredProp"
             }
           ]
         },
@@ -3224,7 +3108,15 @@
               "type": "string"
             },
             "type": {
-              "$ref": "#/$defs/viewTypeDefinition"
+              "description": "Represents the type of the view. Possible Values: XML, JSON, JS, HTML, Template",
+              "type": "string",
+              "enum": [
+                "XML",
+                "JSON",
+                "JS",
+                "HTML",
+                "Template"
+              ]
             },
             "id": {
               "description": "Represents the id of the view",
@@ -3251,17 +3143,7 @@
                 "async": {
                   "description": "Indicates whether the Views in routing are loaded asyncly",
                   "type": "boolean",
-                  "default": false,
-                  "oneOf": [
-                    {
-                      "const": true
-                    },
-                    {
-                      "const": false,
-                      "deprecated": true,
-                      "description": "[Deprecated] Value false is deprecated. Use async: true instead."
-                    }
-                  ]
+                  "default": false
                 },
                 "propagateTitle": {
                   "description": "Indicates whether the targets which have type 'Component' should propagate their title to this component or not",
@@ -3365,40 +3247,8 @@
           "patternTransformCode": "''.split('').map(function(char) { console.log(char);  if (/[a-z]/i.test(char)) { return `[${char.toUpperCase()}${char.toLowerCase()}]`; } else { return char; } } ).join('')",
           "patternFromRuntime": "^((Ctrl|Shift|Alt)(\\+)?){0,3}([A-Za-z0-9\\.,\\-\\*\\/=]|Plus|Tab|Space|Enter|Backspace|Home|Delete|End|Pageup|Pagedown|Escape|ArrowUp|ArrowDown|ArrowLeft|ArrowRight|F[1-9]|F1[0-2])$",
           "pattern": "^(([Cc][Tt][Rr][Ll]|[Ss][Hh][Ii][Ff][Tt]|[Aa][Ll][Tt])(\\+)?){0,3}([A-Za-z0-9\\.,\\-\\*\\/=]|[Pp][Ll][Uu][Ss]|[Tt][Aa][Bb]|[Ss][Pp][Aa][Cc][Ee]|[Ee][Nn][Tt][Ee][Rr]|[Bb][Aa][Cc][Kk][Ss][Pp][Aa][Cc][Ee]|[Hh][Oo][Mm][Ee]|[Dd][Ee][Ll][Ee][Tt][Ee]|[Ee][Nn][Dd]|[Pp][Aa][Gg][Ee][Uu][Pp]|[Pp][Aa][Gg][Ee][Dd][Oo][Ww][Nn]|[Ee][Ss][Cc][Aa][Pp][Ee]|[Aa][Rr][Rr][Oo][Ww][Uu][Pp]|[Aa][Rr][Rr][Oo][Ww][Dd][Oo][Ww][Nn]|[Aa][Rr][Rr][Oo][Ww][Ll][Ee][Ff][Tt]|[Aa][Rr][Rr][Oo][Ww][Rr][Ii][Gg][Hh][Tt]|F[1-9]|F1[0-2])$"
-        },
-        "ref": {
-          "description": "A string referencing a predefined shortcut command. Must start with 'sap:'.",
-          "type": "string",
-          "pattern": "^sap:[a-zA-Z0-9_-]+$"
-        },
-        "description": {
-          "description": "A string containing a placeholder that follows the format {{key}} to provide a translatable text for describing the command.",
-          "type": "string",
-          "pattern": "^\\{\\{[a-zA-Z0-9_]+\\}\\}$"
         }
-      },
-      "oneOf": [
-        {
-          "required": [
-            "shortcut"
-          ],
-          "not": {
-            "required": [
-              "ref"
-            ]
-          }
-        },
-        {
-          "required": [
-            "ref"
-          ],
-          "not": {
-            "required": [
-              "shortcut"
-            ]
-          }
-        }
-      ]
+      }
     },
     "service": {
       "description": "Represents the definition of each service",
@@ -3449,7 +3299,6 @@
       ]
     },
     "resourceRoot": {
-      "description": "Represents the resource root path relative to the application root. Used to define custom resource paths for loading modules and resources",
       "type": "string",
       "pattern": "^((\\.(?!\\.)\\/)?\\w+\\/?)+$"
     },
@@ -3539,12 +3388,9 @@
       }
     },
     "resource": {
-      "description": "Represents additional resources that need to be loaded for the component",
       "type": "object",
       "properties": {
         "js": {
-          "description": "[Deprecated] Specifies additional JavaScript resources of the Component. Since 1.94, the usage of JavaScript resources is deprecated. Please use regular dependencies via 'sap.ui.define()' or 'sap.ui.require()' instead.",
-          "deprecated": true,
           "type": "array",
           "items": {
             "type": "object",
@@ -3559,7 +3405,6 @@
           }
         },
         "css": {
-          "description": "Specifies additional CSS resources of the Component.",
           "type": "array",
           "items": {
             "type": "object",
@@ -3621,8 +3466,7 @@
           "type": "string",
           "enum": [
             "2.0",
-            "4.0",
-            "4.01"
+            "4.0"
           ]
         },
         "localUri": {
