@@ -1,7 +1,7 @@
 version = 1
 SPDX-PackageName = "ui5-manifest"
 SPDX-PackageSupplier = "Aleksandr Suvorov <aleksandr.suvorov@sap.com>"
-SPDX-PackageDownloadLocation = "https://github.com/SAP/ui5-manifest"
+SPDX-PackageDownloadLocation = "https://github.com/UI5/manifest"
 
 [[annotations]]
 path = "**.**"
