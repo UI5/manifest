@@ -1,6 +1,6 @@
 {
   "title": "SAP JSON schema for Web Application Manifest File (CIL)",
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "required": [
     "_version",
@@ -43,10 +43,7 @@
         "1.23.0",
         "1.24.0",
         "1.25.0",
-        "1.26.0",
-        "1.27.0",
-        "1.28.0",
-        "1.28.1"
+        "1.26.0"
       ]
     },
     "start_url": {
@@ -80,8 +77,7 @@
             "1.9.0",
             "1.10.0",
             "1.11.0",
-            "1.12.0",
-            "1.12.1"
+            "1.12.0"
           ]
         },
         "sourceTemplate": {
@@ -108,7 +104,7 @@
         },
         "id": {
           "description": "Represents mandatory unique app identifier which must correspond to component 'id/namespace'",
-          "$ref": "#/$defs/id_def"
+          "$ref": "#/definitions/id_def"
         },
         "type": {
           "description": "Represents type of an application and can be application or component or library",
@@ -152,7 +148,7 @@
                   "additionalProperties": false,
                   "patternProperties": {
                     "^[a-zA-Z0-9_\\-]*$": {
-                      "$ref": "#/$defs/terminologySetting"
+                      "$ref": "#/definitions/terminologySetting"
                     }
                   }
                 },
@@ -161,7 +157,7 @@
                   "type": "array",
                   "items": {
                     "type": "object",
-                    "$ref": "#/$defs/enhanceWithSetting"
+                    "$ref": "#/definitions/enhanceWithSetting"
                   }
                 }
               }
@@ -200,7 +196,7 @@
                   "additionalProperties": false,
                   "patternProperties": {
                     "^[a-zA-Z0-9_\\-]*$": {
-                      "$ref": "#/$defs/terminologySetting"
+                      "$ref": "#/definitions/terminologySetting"
                     }
                   }
                 },
@@ -209,7 +205,7 @@
                   "type": "array",
                   "items": {
                     "type": "object",
-                    "$ref": "#/$defs/enhanceWithSetting"
+                    "$ref": "#/definitions/enhanceWithSetting"
                   }
                 }
               }
@@ -222,7 +218,7 @@
         },
         "title": {
           "description": "Represents a title (mandatory); to make this property language dependent (recommended), use a key in double curly brackets '{{key}}'",
-          "$ref": "#/$defs/i18n_key_string",
+          "$ref": "#/definitions/i18n_key_string",
           "i18n": {
             "type": "XTIT",
             "comment": "Application title"
@@ -230,7 +226,7 @@
         },
         "subTitle": {
           "description": "Represents a subtitle to the title; to make this property language dependent (recommended), use a key in double curly brackets '{{key}}'",
-          "$ref": "#/$defs/i18n_key_string",
+          "$ref": "#/definitions/i18n_key_string",
           "i18n": {
             "type": "XTIT",
             "comment": "Application subtitle"
@@ -238,7 +234,7 @@
         },
         "shortTitle": {
           "description": "Represents a shorter version of the title; to make this property language dependent (recommended), use a key in double curly brackets '{{key}}'",
-          "$ref": "#/$defs/i18n_key_string",
+          "$ref": "#/definitions/i18n_key_string",
           "i18n": {
             "type": "XTIT",
             "comment": "Shorter version of the application title"
@@ -246,7 +242,7 @@
         },
         "description": {
           "description": "Represents a description; to make this property language dependent (recommended), use a key in double curly brackets '{{key}}'",
-          "$ref": "#/$defs/i18n_key_string",
+          "$ref": "#/definitions/i18n_key_string",
           "i18n": {
             "type": "YDES",
             "comment": "Application description"
@@ -263,7 +259,7 @@
           "additionalProperties": false,
           "patternProperties": {
             "^[a-zA-Z0-9_\\.\\-]*$": {
-              "$ref": "#/$defs/dataSource"
+              "$ref": "#/definitions/dataSource"
             }
           }
         },
@@ -285,7 +281,7 @@
           "description": "Represents a collection of directly used open source libs (not when used via UI5 capsulation)",
           "type": "array",
           "items": {
-            "$ref": "#/$defs/openSource"
+            "$ref": "#/definitions/openSource"
           }
         },
         "offline": {
@@ -294,7 +290,7 @@
           "default": false
         }
       },
-      "$defs": {
+      "definitions": {
         "version": {
           "type": "string"
         }
@@ -337,7 +333,7 @@
           "description": "Represents device types on which application is running. Supported device types are desktop, tablet and phone",
           "allOf": [
             {
-              "$ref": "#/$defs/deviceType"
+              "$ref": "#/definitions/deviceType"
             },
             {
               "required": [
@@ -349,8 +345,7 @@
           ]
         },
         "supportedThemes": {
-          "description": "[Deprecated] Represents array of supported SAP themes such as sap_hcb, sap_bluecrystal",
-          "deprecated": true,
+          "description": "The property is Deprecated. Represents array of supported SAP themes such as sap_hcb, sap_bluecrystal",
           "type": "array",
           "items": {
             "type": "string"
@@ -384,15 +379,12 @@
                 "1.9.0",
                 "1.10.0",
                 "1.11.0",
-                "1.12.0",
-                "1.13.0",
-                "1.14.0",
-                "1.15.0"
+                "1.12.0"
               ]
             },
             "resources": {
               "description": "Represents paths to JavaScript/CSS resources that your app needs (app internal), formerly called '.includes'",
-              "$ref": "#/$defs/resource"
+              "$ref": "#/definitions/resource"
             },
             "componentUsages": {
               "description": "Represents the explicit usage declaration for UI5 reuse components",
@@ -400,7 +392,7 @@
               "additionalProperties": false,
               "patternProperties": {
                 "^[a-zA-Z0-9_\\.]*$": {
-                  "$ref": "#/$defs/componentUsages"
+                  "$ref": "#/definitions/componentUsages"
                 }
               }
             },
@@ -415,7 +407,7 @@
                   "additionalProperties": false,
                   "patternProperties": {
                     "^([a-z][a-z0-9]{0,39})(\\.[a-z][a-z0-9]{0,39})*$": {
-                      "$ref": "#/$defs/lib"
+                      "$ref": "#/definitions/lib"
                     }
                   }
                 },
@@ -425,7 +417,7 @@
                   "additionalProperties": false,
                   "patternProperties": {
                     "^([a-zA-Z_$][a-zA-Z0-9_$]{0,39}\\.)*([a-zA-Z_$][a-zA-Z0-9_$]{0,39})$": {
-                      "$ref": "#/$defs/component"
+                      "$ref": "#/definitions/component"
                     }
                   }
                 }
@@ -437,7 +429,7 @@
               "additionalProperties": false,
               "patternProperties": {
                 "^[a-zA-Z0-9_\\.\\-\\|@]*$": {
-                  "$ref": "#/$defs/model"
+                  "$ref": "#/definitions/model"
                 }
               }
             },
@@ -447,7 +439,7 @@
               "additionalProperties": false,
               "patternProperties": {
                 "^[a-zA-Z0-9_\\.\\-]*$": {
-                  "$ref": "#/$defs/resourceRoot"
+                  "$ref": "#/definitions/resourceRoot"
                 }
               }
             },
@@ -462,7 +454,7 @@
               "additionalProperties": false,
               "patternProperties": {
                 "[\\s\\S]*": {
-                  "$ref": "#/$defs/config"
+                  "$ref": "#/definitions/config"
                 }
               }
             },
@@ -473,11 +465,11 @@
               "properties": {
                 "component": {
                   "description": "Represents the component name",
-                  "$ref": "#/$defs/id_def"
+                  "$ref": "#/definitions/id_def"
                 },
                 "minVersion": {
                   "description": "Represents minimal version of the component",
-                  "$ref": "#/$defs/version"
+                  "$ref": "#/definitions/version"
                 },
                 "extensions": {
                   "description": "Represents extensions of the component",
@@ -519,7 +511,7 @@
               "additionalProperties": false,
               "patternProperties": {
                 "[\\s\\S]*": {
-                  "$ref": "#/$defs/service"
+                  "$ref": "#/definitions/service"
                 }
               }
             },
@@ -529,7 +521,7 @@
               "additionalProperties": false,
               "patternProperties": {
                 "^[A-Za-z_][A-Za-z0-9_\\-\\|@]+$": {
-                  "$ref": "#/$defs/command"
+                  "$ref": "#/definitions/command"
                 }
               }
             }
@@ -539,10 +531,10 @@
           "type": "object",
           "properties": {
             "routing": {
-              "$ref": "#/$defs/routing"
+              "$ref": "#/definitions/routing"
             },
             "rootView": {
-              "$ref": "#/$defs/rootView_def"
+              "$ref": "#/definitions/rootView_def"
             }
           }
         },
@@ -562,10 +554,10 @@
                   ]
                 },
                 "routing": {
-                  "$ref": "#/$defs/routing_flexEnabled"
+                  "$ref": "#/definitions/routing_flexEnabled"
                 },
                 "rootView": {
-                  "$ref": "#/$defs/rootView_def_flexEnabled"
+                  "$ref": "#/definitions/rootView_def_flexEnabled"
                 }
               }
             },
@@ -580,17 +572,17 @@
                   ]
                 },
                 "routing": {
-                  "$ref": "#/$defs/routing"
+                  "$ref": "#/definitions/routing"
                 },
                 "rootView": {
-                  "$ref": "#/$defs/rootView_def"
+                  "$ref": "#/definitions/rootView_def"
                 }
               }
             }
           ]
         }
       ],
-      "$defs": {
+      "definitions": {
         "deviceType": {
           "type": "object",
           "description": "Represents device types on which the app is running",
@@ -804,7 +796,7 @@
         },
         "settings": {
           "description": "Represents global settings for the application controller",
-          "$ref": "#/$defs/setting_def"
+          "$ref": "#/definitions/setting_def"
         },
         "pages": {
           "description": "Represents one ore more pages of an application. UI5 routing is created from the definitions in this section",
@@ -812,7 +804,7 @@
             {
               "type": "array",
               "items": {
-                "$ref": "#/$defs/pages_array"
+                "$ref": "#/definitions/pages_array"
               }
             },
             {
@@ -820,7 +812,7 @@
               "additionalProperties": false,
               "patternProperties": {
                 "^[a-zA-Z0-9_\\.\\-]+[\\|]?[a-zA-Z0-9_\\.\\-]+$": {
-                  "$ref": "#/$defs/pages_map"
+                  "$ref": "#/definitions/pages_map"
                 }
               }
             }
@@ -837,6 +829,9 @@
       "title": "JSON schema for SAP.FLP Namespace",
       "description": "Represents FLP specific attributes",
       "type": "object",
+      "required": [
+        "type"
+      ],
       "additionalProperties": false,
       "properties": {
         "_version": {
@@ -845,43 +840,16 @@
           "enum": [
             "1.1.0",
             "1.2.0",
-            "1.3.0",
-            "1.4.0"
+            "1.3.0"
           ]
         },
         "tileSize": {
-          "description": "Represents size of the tile. Deprecated, use 'vizOptions' instead.",
+          "description": "Represents size of the tile",
           "type": "string",
           "enum": [
             "1x1",
             "1x2"
-          ],
-          "deprecated": true
-        },
-        "vizOptions": {
-          "description": "Options a visualization (launchpad tile) is offering with regards to rendering, for example",
-          "type": "object",
-          "properties": {
-            "displayFormats": {
-              "description": "Defines what display formats a visualization type can render itself in. The value 'default' is deprecated - please use 'standard' instead!",
-              "type": "object",
-              "properties": {
-                "supported": {
-                  "description": "Lists all display formats the visualization type is capable of rendering itself in. The order of items may be used as preference definition (most important first). The value 'default' is deprecated - please use 'standard' instead!",
-                  "type": "array",
-                  "default": [
-                    "standard"
-                  ],
-                  "items": {
-                    "$ref": "#/$defs/displayFormatEnum"
-                  }
-                },
-                "default": {
-                  "$ref": "#/$defs/displayFormatEnum"
-                }
-              }
-            }
-          }
+          ]
         },
         "type": {
           "description": "Represents the type of FLP entry. It must be 'application' or 'tile' or 'plugin'",
@@ -890,8 +858,7 @@
             "application",
             "tile",
             "plugin"
-          ],
-          "default": "application"
+          ]
         },
         "config": {
           "description": "Represents configuration parameters of the FLP entry",
@@ -905,7 +872,7 @@
           }
         },
         "origin": {
-          "description": "Represents the original tile and target mapping which resulted in this app. Deprecated.",
+          "description": "Represents the original tile and target mapping which resulted in this app",
           "type": "object",
           "additionalProperties": false,
           "properties": {
@@ -917,8 +884,7 @@
               "description": "Represents the original target mapping which resulted in this app",
               "type": "string"
             }
-          },
-          "deprecated": true
+          }
         }
       }
     },
@@ -929,7 +895,7 @@
       "required": [
         "cards"
       ],
-      "dependentRequired": {
+      "dependencies": {
         "globalFilterEntityType": [
           "globalFilterModel"
         ]
@@ -950,9 +916,7 @@
             "1.8.0",
             "1.9.0",
             "1.10.0",
-            "1.11.0",
-            "1.12.0",
-            "1.13.0"
+            "1.11.0"
           ]
         },
         "globalFilterModel": {
@@ -1002,16 +966,10 @@
         "containerLayout": {
           "description": "Represents the layout of the card container",
           "type": "string",
-          "default": "resizable",
-          "oneOf": [
-            {
-              "const": "resizable"
-            },
-            {
-              "const": "fixed",
-              "deprecated": true,
-              "description": "[Deprecated] Value fixed is deprecated"
-            }
+          "default": "fixed",
+          "enum": [
+            "fixed",
+            "resizable"
           ]
         },
         "showDateInRelativeFormat": {
@@ -1036,7 +994,7 @@
         },
         "refreshStrategyOnAppRestore": {
           "description": "Represents the refresh strategies configured for OVP while coming back to the source app",
-          "$ref": "#/$defs/refreshStrategies_prop_def"
+          "$ref": "#/definitions/refreshStrategies_prop_def"
         },
         "considerAnalyticalParameters": {
           "description": "Flag to enable/disable analytical parameter support for Smart filter bar",
@@ -1091,7 +1049,7 @@
                   "type": "object",
                   "patternProperties": {
                     "^[a-zA-Z0-9_\\.\\-]*$": {
-                      "$ref": "#/$defs/filterFieldName"
+                      "$ref": "#/definitions/filterFieldName"
                     }
                   }
                 }
@@ -1120,7 +1078,7 @@
           "additionalProperties": false,
           "patternProperties": {
             "^[a-zA-Z0-9_\\.\\-]+$": {
-              "$ref": "#/$defs/card"
+              "$ref": "#/definitions/card"
             }
           }
         },
@@ -1129,7 +1087,7 @@
           "additionalProperties": false,
           "patternProperties": {
             "^cols_[0-9]+$": {
-              "$ref": "#/$defs/resizableLayoutVariant"
+              "$ref": "#/definitions/resizableLayoutVariant"
             }
           }
         }
@@ -1336,7 +1294,7 @@
           "additionalProperties": false,
           "patternProperties": {
             "^[a-zA-Z0-9_\\.\\-]*": {
-              "$ref": "#/$defs/definingRequest"
+              "$ref": "#/definitions/definingRequest"
             }
           }
         }
@@ -1497,7 +1455,7 @@
       }
     }
   },
-  "$defs": {
+  "definitions": {
     "definingRequest": {
       "type": "object",
       "additionalProperties": false,
@@ -1589,7 +1547,7 @@
       "type": "object",
       "properties": {
         "levels": {
-          "$ref": "#/$defs/levelsDef"
+          "$ref": "#/definitions/levelsDef"
         }
       }
     },
@@ -1640,7 +1598,7 @@
           "type": "array",
           "minItems": 1,
           "items": {
-            "$ref": "#/$defs/customActionsSetting"
+            "$ref": "#/definitions/customActionsSetting"
           }
         }
       }
@@ -1741,10 +1699,10 @@
           "additionalProperties": false,
           "properties": {
             "plotArea": {
-              "$ref": "#/$defs/plotAreaDef"
+              "$ref": "#/definitions/plotAreaDef"
             },
             "timeAxis": {
-              "$ref": "#/$defs/timeAxisDef"
+              "$ref": "#/definitions/timeAxisDef"
             }
           }
         },
@@ -1807,20 +1765,6 @@
             "type": "XTIT",
             "comment": "Card subtitle which is displayed in the card header"
           }
-        },
-        "showTimeAxis": {
-          "description": "[Deprecated] Represents the flag to enable/disable time axis for analytical timeseries cards",
-          "type": "boolean",
-          "default": true,
-          "anyOf": [
-            {
-              "const": true
-            },
-            {
-              "const": false,
-              "deprecated": true
-            }
-          ]
         },
         "valueSelectionInfo": {
           "description": "Represents things like people, number of items",
@@ -1933,14 +1877,14 @@
           "default": true
         },
         "defaultSpan": {
-          "$ref": "#/$defs/defaultSpanDef"
+          "$ref": "#/definitions/defaultSpanDef"
         },
         "requireAppAuthorization": {
           "description": "Represents the cards for which authorization is required",
           "type": "string"
         },
         "objectStreamCardsSettings": {
-          "$ref": "#/$defs/objectStreamCardsSettingsDef"
+          "$ref": "#/definitions/objectStreamCardsSettingsDef"
         },
         "enableLocaleCurrencyFormatting": {
           "description": "Represents the flag to indicate the use of object number/smart field",
@@ -1993,10 +1937,10 @@
           "additionalProperties": false,
           "properties": {
             "plotArea": {
-              "$ref": "#/$defs/plotAreaDef"
+              "$ref": "#/definitions/plotAreaDef"
             },
             "timeAxis": {
-              "$ref": "#/$defs/timeAxisDef"
+              "$ref": "#/definitions/timeAxisDef"
             }
           }
         },
@@ -2022,7 +1966,7 @@
       "additionalProperties": false,
       "patternProperties": {
         "^[a-zA-Z0-9_\\.\\-]+$": {
-          "$ref": "#/$defs/resizableLayoutVariantCardProperties"
+          "$ref": "#/definitions/resizableLayoutVariantCardProperties"
         }
       }
     },
@@ -2049,14 +1993,14 @@
           "pattern": "^[a-zA-Z0-9\\.]+$"
         },
         "settings": {
-          "$ref": "#/$defs/card_setting"
+          "$ref": "#/definitions/card_setting"
         },
         "tabs": {
           "description": "Represents the card with view switch control",
           "type": "array",
           "minItems": 1,
           "items": {
-            "$ref": "#/$defs/tab_setting"
+            "$ref": "#/definitions/tab_setting"
           }
         }
       }
@@ -2100,16 +2044,6 @@
         }
       }
     },
-    "displayFormatEnum": {
-      "type": "string",
-      "enum": [
-        "standard",
-        "standardWide",
-        "flat",
-        "flatWide",
-        "compact"
-      ]
-    },
     "defaultLayoutType_def": {
       "type": "string"
     },
@@ -2128,13 +2062,13 @@
               "pattern": "^([a-zA-Z][a-zA-Z0-9_]{0,39})(\\.[a-zA-Z][a-zA-Z0-9_]{0,39})*$"
             },
             "binding": {
-              "$ref": "#/$defs/component_binding_def"
+              "$ref": "#/definitions/component_binding_def"
             },
             "settings": {
-              "$ref": "#/$defs/component_setting_def"
+              "$ref": "#/definitions/component_setting_def"
             },
             "pages": {
-              "$ref": "#/$defs/component_pages_def"
+              "$ref": "#/definitions/component_pages_def"
             }
           }
         },
@@ -2150,13 +2084,13 @@
               "type": "string"
             },
             "binding": {
-              "$ref": "#/$defs/component_binding_def"
+              "$ref": "#/definitions/component_binding_def"
             },
             "settings": {
-              "$ref": "#/$defs/component_setting_def"
+              "$ref": "#/definitions/component_setting_def"
             },
             "pages": {
-              "$ref": "#/$defs/component_pages_def"
+              "$ref": "#/definitions/component_pages_def"
             }
           }
         }
@@ -2207,15 +2141,15 @@
       "properties": {
         "display": {
           "description": "Represents an action triggered by the user on UI: the navigation to display an object",
-          "$ref": "#/$defs/action_prop_def"
+          "$ref": "#/definitions/action_prop_def"
         },
         "create": {
           "description": "Represents an action triggered by the user on UI: the navigation to create an object",
-          "$ref": "#/$defs/action_prop_def"
+          "$ref": "#/definitions/action_prop_def"
         },
         "edit": {
           "description": "Represents an action triggered by the user on UI: the navigation to edit an object",
-          "$ref": "#/$defs/action_prop_def"
+          "$ref": "#/definitions/action_prop_def"
         }
       }
     },
@@ -2236,7 +2170,7 @@
           "type": "boolean"
         },
         "settings": {
-          "$ref": "#/$defs/component_setting_def"
+          "$ref": "#/definitions/component_setting_def"
         }
       }
     },
@@ -2245,7 +2179,7 @@
       "additionalProperties": false,
       "patternProperties": {
         "^[a-zA-Z0-9_\\.\\-]+[\\|]?[a-zA-Z0-9_\\.\\-]+$": {
-          "$ref": "#/$defs/pages_map"
+          "$ref": "#/definitions/pages_map"
         }
       }
     },
@@ -2340,7 +2274,7 @@
                   ],
                   "properties": {
                     "embeddedComponents": {
-                      "$ref": "#/$defs/embeddedComponent"
+                      "$ref": "#/definitions/embeddedComponent"
                     }
                   }
                 }
@@ -2368,7 +2302,7 @@
         },
         "refreshStrategyOnAppRestore": {
           "description": "Represents the refresh strategies configured for external display navigation while coming back to the source app",
-          "$ref": "#/$defs/refreshStrategies_prop_def"
+          "$ref": "#/definitions/refreshStrategies_prop_def"
         }
       }
     },
@@ -2389,38 +2323,38 @@
         },
         "component": {
           "description": "Represents the component and its settings that makes the page",
-          "$ref": "#/$defs/component_def"
+          "$ref": "#/definitions/component_def"
         },
         "navigation": {
           "description": "Represents the different navigation targets",
-          "$ref": "#/$defs/navigation_def"
+          "$ref": "#/definitions/navigation_def"
         },
         "embeddedComponents": {
           "description": "Represent reuse components that should be appended at the end of the template component",
-          "$ref": "#/$defs/embeddedComponent"
+          "$ref": "#/definitions/embeddedComponent"
         },
         "routingSpec": {
           "description": "Represents the routing specification",
-          "$ref": "#/$defs/routingSpec_def"
+          "$ref": "#/definitions/routingSpec_def"
         },
         "implementingComponent": {
           "description": "Represents the component to be loaded inside the canvas if sap.suite.ui.generic.template.Canvas is used as component name, and its settings",
-          "$ref": "#/$defs/implementingComponent_def"
+          "$ref": "#/definitions/implementingComponent_def"
         },
         "defaultLayoutType": {
           "description": "Default layout used to open the corresponding page in FlexibleColumnLayout",
-          "$ref": "#/$defs/defaultLayoutType_def"
+          "$ref": "#/definitions/defaultLayoutType_def"
         },
         "defaultLayoutTypeIfExternalNavigation": {
           "description": "Default layout used to open the corresponding page in FlexibleColumnLayout when reached via external navigation",
-          "$ref": "#/$defs/defaultLayoutType_def"
+          "$ref": "#/definitions/defaultLayoutType_def"
         },
         "pages": {
           "type": "object",
           "additionalProperties": false,
           "patternProperties": {
             "^[a-zA-Z0-9_\\.\\-]+[\\|]?[a-zA-Z0-9_\\.\\-]+$": {
-              "$ref": "#/$defs/pages_map"
+              "$ref": "#/definitions/pages_map"
             }
           }
         }
@@ -2443,36 +2377,36 @@
         },
         "component": {
           "description": "Represents the component and its settings that makes the page",
-          "$ref": "#/$defs/component_def"
+          "$ref": "#/definitions/component_def"
         },
         "navigation": {
           "description": "Represents the different navigation targets",
-          "$ref": "#/$defs/navigation_def"
+          "$ref": "#/definitions/navigation_def"
         },
         "embeddedComponents": {
           "description": "Represent reuse components that should be appended at the end of the template component",
-          "$ref": "#/$defs/embeddedComponent"
+          "$ref": "#/definitions/embeddedComponent"
         },
         "routingSpec": {
           "description": "Represents the routing specification",
-          "$ref": "#/$defs/routingSpec_def"
+          "$ref": "#/definitions/routingSpec_def"
         },
         "implementingComponent": {
           "description": "Represents the component to be loaded inside the canvas if sap.suite.ui.generic.template.Canvas is used as component name, and its settings",
-          "$ref": "#/$defs/implementingComponent_def"
+          "$ref": "#/definitions/implementingComponent_def"
         },
         "defaultLayoutType": {
           "description": "Default layout used to open the corresponding page in FlexibleColumnLayout",
-          "$ref": "#/$defs/defaultLayoutType_def"
+          "$ref": "#/definitions/defaultLayoutType_def"
         },
         "defaultLayoutTypeIfExternalNavigation": {
           "description": "Default layout used to open the corresponding page in FlexibleColumnLayout when reached via external navigation",
-          "$ref": "#/$defs/defaultLayoutType_def"
+          "$ref": "#/definitions/defaultLayoutType_def"
         },
         "pages": {
           "type": "array",
           "items": {
-            "$ref": "#/$defs/pages_array"
+            "$ref": "#/definitions/pages_array"
           }
         }
       }
@@ -2496,101 +2430,7 @@
         "propagateTitle": {
           "description": "Indicates whether this 'Component' target should propagate it's title to this component or not",
           "type": "boolean",
-          "default": "#/$defs/routing/config/propagateTitle"
-        }
-      }
-    },
-    "actualTargetAdditionComponentUsage": {
-      "description": "Represents target configuration properties for component usage routing scenarios where targets reference reusable components",
-      "type": "object",
-      "required": [
-        "usage",
-        "type"
-      ],
-      "properties": {
-        "usage": {
-          "description": "Represents the componentUsage of the component that will be created",
-          "type": "string"
-        },
-        "id": {
-          "description": "Represents the id of the created view or component",
-          "type": "string"
-        },
-        "type": {
-          "description": "Represents the type of the type Component",
-          "type": "string",
-          "enum": [
-            "Component"
-          ]
-        },
-        "level": {
-          "description": "Represents the level of the current component which is used to define the transition direction when navigate to this component",
-          "type": "number",
-          "multipleOf": 1
-        }
-      }
-    },
-    "actualTargetAdditionStandard": {
-      "description": "Represents the target configuration properties for modern routing implementations with view or component targets",
-      "type": "object",
-      "required": [
-        "name"
-      ],
-      "properties": {
-        "name": {
-          "description": "Represents the name of a view or component that will be created",
-          "type": "string"
-        },
-        "id": {
-          "description": "Represents the id of the created view or component",
-          "type": "string"
-        },
-        "path": {
-          "description": "Represents a prefix that is prepended in front of the view or component name",
-          "type": "string"
-        },
-        "type": {
-          "description": "Represents the type of the target: View or Component",
-          "type": "string",
-          "enum": [
-            "View",
-            "Component"
-          ]
-        },
-        "level": {
-          "description": "Represents the level of the current view/component which is used to define the transition direction when navigate to this view/component",
-          "type": "number",
-          "multipleOf": 1
-        }
-      }
-    },
-    "legacyTargetAddition": {
-      "description": "Represents legacy target configuration properties for backward compatibility with older routing implementations",
-      "type": "object",
-      "required": [
-        "viewName"
-      ],
-      "properties": {
-        "viewName": {
-          "deprecated": true,
-          "description": "[Deprecated] Represents the name of a view that will be created. Please use 'name' property instead together with the 'type' property set to 'View'. The same applies to 'viewId', 'viewPath', 'viewLevel' as well.",
-          "type": "string"
-        },
-        "viewId": {
-          "deprecated": true,
-          "description": "[Deprecated] Represents the id of the created view. Please use 'id' property instead together with the 'type' property set to 'View'. The same applies to 'viewName', 'viewPath', 'viewLevel' as well.",
-          "type": "string"
-        },
-        "viewPath": {
-          "deprecated": true,
-          "description": "[Deprecated] Represents a prefix that is prepended in front of the viewName. Please use 'path' property instead together with the 'type' property set to 'View'. The same applies to 'viewId', 'viewName', 'viewLevel' as well.",
-          "type": "string"
-        },
-        "viewLevel": {
-          "deprecated": true,
-          "description": "[Deprecated] Represents the level of the current view which is used to define the transition direction when navigate to this view. Please use 'level' property instead together with the 'type' property set to 'View'. The same applies to 'viewId', 'viewName', 'viewPath' as well.",
-          "type": "number",
-          "multipleOf": 1
+          "default": "#/definitions/routing/config/propagateTitle"
         }
       }
     },
@@ -2608,7 +2448,7 @@
         },
         "target": {
           "description": "Represents one or multiple names of targets which are displayed when the route is matched",
-          "$ref": "#/$defs/routeTarget"
+          "$ref": "#/definitions/routeTarget"
         },
         "titleTarget": {
           "description": "Represents the name of the target where the 'title' information should be taken",
@@ -2620,7 +2460,7 @@
       "description": "Represents the definition of each route",
       "allOf": [
         {
-          "$ref": "#/$defs/routeWithoutName"
+          "$ref": "#/definitions/routeWithoutName"
         },
         {
           "type": "object",
@@ -2636,63 +2476,6 @@
         }
       ]
     },
-    "actualTargetAdditionStandardWithoutRequiredProp": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "Represents the name of a view or component that will be created",
-          "type": "string"
-        },
-        "id": {
-          "description": "Represents the id of the created view or component",
-          "type": "string"
-        },
-        "path": {
-          "description": "Represents a prefix that is prepended in front of the view or component name",
-          "type": "string"
-        },
-        "type": {
-          "description": "Represents the type of the type View or Component",
-          "type": "string",
-          "enum": [
-            "View",
-            "Component"
-          ]
-        },
-        "level": {
-          "description": "Represents the level of the current view/component which is used to define the transition direction when navigate to this view/component",
-          "type": "number",
-          "multipleOf": 1
-        }
-      }
-    },
-    "legacyTargetAdditionWithoutRequiredProp": {
-      "description": "Represents legacy target configuration properties without required properties for more flexible backward compatibility scenarios",
-      "type": "object",
-      "properties": {
-        "viewName": {
-          "deprecated": true,
-          "description": "[Deprecated] Represents the name of a view that will be created. Please use 'name' property instead together with the 'type' property set to 'View'. The same applies to 'viewId', 'viewPath', 'viewLevel' as well.",
-          "type": "string"
-        },
-        "viewId": {
-          "deprecated": true,
-          "description": "[Deprecated] Represents the id of the created view. Please use 'id' property instead together with the 'type' property set to 'View'. The same applies to 'viewName', 'viewPath', 'viewLevel' as well.",
-          "type": "string"
-        },
-        "viewPath": {
-          "deprecated": true,
-          "description": "[Deprecated] Represents a prefix that is prepended in front of the viewName. Please use 'path' property instead together with the 'type' property set to 'View'. The same applies to 'viewId', 'viewName', 'viewLevel' as well.",
-          "type": "string"
-        },
-        "viewLevel": {
-          "deprecated": true,
-          "description": "[Deprecated] Represents the level of the current view which is used to define the transition direction when navigate to this view. Please use 'level' property instead together with the 'type' property set to 'View'. The same applies to 'viewId', 'viewName', 'viewPath' as well.",
-          "type": "number",
-          "multipleOf": 1
-        }
-      }
-    },
     "target": {
       "description": "Represents the definition of each target",
       "type": "object",
@@ -2702,7 +2485,15 @@
           "type": "string"
         },
         "viewType": {
-          "$ref": "#/$defs/viewTypeDefinition"
+          "description": "Represents the type of view that is going to be created",
+          "type": "string",
+          "enum": [
+            "XML",
+            "JSON",
+            "JS",
+            "HTML",
+            "Template"
+          ]
         },
         "targetParent": {
           "description": "Represents the id of the view that contains the control specified by the 'controlId'",
@@ -2758,52 +2549,24 @@
       "oneOf": [
         {
           "type": "array",
-          "items": {
-            "oneOf": [
-              {
-                "type": "string"
-              },
-              {
-                "$ref": "#/$defs/routeTargetObject"
-              }
-            ]
-          }
+          "items": [
+            {
+              "oneOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "$ref": "#/definitions/routeTargetObject"
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "string"
         },
         {
-          "$ref": "#/$defs/routeTargetObject"
-        }
-      ]
-    },
-    "viewTypeDefinition": {
-      "description": "Represents the type of view that is going to be created",
-      "type": "string",
-      "oneOf": [
-        {
-          "const": "XML",
-          "description": "Value `XML` is used to create an XML view. This is the recommended view type to use. Other view types are deprecated and will be removed in future UI5 versions."
-        },
-        {
-          "const": "JSON",
-          "deprecated": true,
-          "description": "[Deprecated] Value `JSON` is deprecated and will be removed in UI5 version 2. Consider using `viewType: XML` or `typed views` instead."
-        },
-        {
-          "const": "JS",
-          "deprecated": true,
-          "description": "[Deprecated] Value `JS` is deprecated and will be removed in UI5 version 2. Consider using `viewType: XML` or `typed views` instead."
-        },
-        {
-          "const": "HTML",
-          "deprecated": true,
-          "description": "[Deprecated] Value `HTML` is deprecated and will be removed in UI5 version 2. Consider using `viewType: XML` or `typed views` instead."
-        },
-        {
-          "const": "Template",
-          "deprecated": true,
-          "description": "[Deprecated] Value `Template` is deprecated and will be removed in UI5 version 2. Consider using `viewType: XML` or `typed views` instead."
+          "$ref": "#/definitions/routeTargetObject"
         }
       ]
     },
@@ -2841,7 +2604,7 @@
               "type": "object",
               "patternProperties": {
                 "^[a-zA-Z0-9_\\-]*$": {
-                  "$ref": "#/$defs/terminologySetting"
+                  "$ref": "#/definitions/terminologySetting"
                 }
               }
             }
@@ -2870,7 +2633,7 @@
               "type": "object",
               "patternProperties": {
                 "^[a-zA-Z0-9_\\-]*$": {
-                  "$ref": "#/$defs/terminologySetting"
+                  "$ref": "#/definitions/terminologySetting"
                 }
               }
             }
@@ -2924,7 +2687,6 @@
       ]
     },
     "ui5setting": {
-      "description": "Represents UI5-specific settings and configuration options that can be applied to models.",
       "type": "object",
       "additionalProperties": true,
       "properties": {
@@ -2970,7 +2732,7 @@
           "additionalProperties": true,
           "patternProperties": {
             "^[a-zA-Z0-9_\\-]*$": {
-              "$ref": "#/$defs/terminologySetting"
+              "$ref": "#/definitions/terminologySetting"
             }
           }
         },
@@ -2979,7 +2741,7 @@
           "type": "array",
           "items": {
             "type": "object",
-            "$ref": "#/$defs/enhanceWithSetting"
+            "$ref": "#/definitions/enhanceWithSetting"
           }
         }
       }
@@ -2998,7 +2760,15 @@
           "type": "string"
         },
         "type": {
-          "$ref": "#/$defs/viewTypeDefinition"
+          "description": "Represents the type of the view. Possible Values: XML, JSON, JS, HTML, Template",
+          "type": "string",
+          "enum": [
+            "XML",
+            "JSON",
+            "JS",
+            "HTML",
+            "Template"
+          ]
         },
         "id": {
           "description": "Represents the id of the view",
@@ -3007,17 +2777,7 @@
         "async": {
           "description": "Configure the targets for asynchronous loading",
           "type": "boolean",
-          "default": false,
-          "oneOf": [
-            {
-              "const": true
-            },
-            {
-              "const": false,
-              "deprecated": true,
-              "description": "[Deprecated] Value false is deprecated. Use async: true instead."
-            }
-          ]
+          "default": false
         }
       }
     },
@@ -3038,17 +2798,7 @@
                 "async": {
                   "description": "Indicates whether the Views in routing are loaded asyncly",
                   "type": "boolean",
-                  "default": false,
-                  "oneOf": [
-                    {
-                      "const": true
-                    },
-                    {
-                      "const": false,
-                      "deprecated": true,
-                      "description": "[Deprecated] Value false is deprecated. Use async: true instead."
-                    }
-                  ]
+                  "default": false
                 },
                 "bypassed": {
                   "description": "Represents information about targets to display when no route is matched",
@@ -3060,7 +2810,7 @@
                   "properties": {
                     "target": {
                       "description": "Represents one or multiple names of targets that are displayed when no route is matched",
-                      "$ref": "#/$defs/routeTarget"
+                      "$ref": "#/definitions/routeTarget"
                     }
                   }
                 },
@@ -3071,13 +2821,7 @@
               }
             },
             {
-              "$ref": "#/$defs/target"
-            },
-            {
-              "$ref": "#/$defs/legacyTargetAdditionWithoutRequiredProp"
-            },
-            {
-              "$ref": "#/$defs/actualTargetAdditionStandardWithoutRequiredProp"
+              "$ref": "#/definitions/target"
             }
           ]
         },
@@ -3087,7 +2831,7 @@
               "description": "Represents the definition of routes by providing an array with elements which contain the configuration for each route",
               "type": "array",
               "items": {
-                "$ref": "#/$defs/route"
+                "$ref": "#/definitions/route"
               }
             },
             {
@@ -3095,7 +2839,7 @@
               "type": "object",
               "patternProperties": {
                 "[\\s\\S]*": {
-                  "$ref": "#/$defs/routeWithoutName"
+                  "$ref": "#/definitions/routeWithoutName"
                 }
               }
             }
@@ -3110,7 +2854,7 @@
                 {
                   "allOf": [
                     {
-                      "$ref": "#/$defs/target"
+                      "$ref": "#/definitions/target"
                     },
                     {
                       "type": "object",
@@ -3138,7 +2882,7 @@
                 {
                   "allOf": [
                     {
-                      "$ref": "#/$defs/target"
+                      "$ref": "#/definitions/target"
                     },
                     {
                       "oneOf": [
@@ -3224,7 +2968,15 @@
               "type": "string"
             },
             "type": {
-              "$ref": "#/$defs/viewTypeDefinition"
+              "description": "Represents the type of the view. Possible Values: XML, JSON, JS, HTML, Template",
+              "type": "string",
+              "enum": [
+                "XML",
+                "JSON",
+                "JS",
+                "HTML",
+                "Template"
+              ]
             },
             "id": {
               "description": "Represents the id of the view",
@@ -3251,17 +3003,7 @@
                 "async": {
                   "description": "Indicates whether the Views in routing are loaded asyncly",
                   "type": "boolean",
-                  "default": false,
-                  "oneOf": [
-                    {
-                      "const": true
-                    },
-                    {
-                      "const": false,
-                      "deprecated": true,
-                      "description": "[Deprecated] Value false is deprecated. Use async: true instead."
-                    }
-                  ]
+                  "default": false
                 },
                 "propagateTitle": {
                   "description": "Indicates whether the targets which have type 'Component' should propagate their title to this component or not",
@@ -3278,20 +3020,18 @@
                   "properties": {
                     "target": {
                       "description": "Represents one or multiple names of targets that are displayed when no route is matched",
-                      "$ref": "#/$defs/routeTarget"
+                      "$ref": "#/definitions/routeTarget"
                     }
                   }
+                },
+                "viewPath": {
+                  "description": "Represents a prefix that is prepended in front of the viewName",
+                  "type": "string"
                 }
               }
             },
             {
-              "$ref": "#/$defs/target"
-            },
-            {
-              "$ref": "#/$defs/legacyTargetAdditionWithoutRequiredProp"
-            },
-            {
-              "$ref": "#/$defs/actualTargetAdditionStandardWithoutRequiredProp"
+              "$ref": "#/definitions/target"
             }
           ]
         },
@@ -3301,7 +3041,7 @@
               "description": "Represents the definition of routes by providing an array with elements which contain the configuration for each route",
               "type": "array",
               "items": {
-                "$ref": "#/$defs/route"
+                "$ref": "#/definitions/route"
               }
             },
             {
@@ -3309,7 +3049,7 @@
               "type": "object",
               "patternProperties": {
                 "[\\s\\S]*": {
-                  "$ref": "#/$defs/routeWithoutName"
+                  "$ref": "#/definitions/routeWithoutName"
                 }
               }
             }
@@ -3324,25 +3064,88 @@
                 {
                   "allOf": [
                     {
-                      "$ref": "#/$defs/target"
+                      "$ref": "#/definitions/target"
                     },
                     {
-                      "$ref": "#/$defs/legacyTargetAddition"
+                      "type": "object",
+                      "required": [
+                        "viewName"
+                      ],
+                      "properties": {
+                        "viewName": {
+                          "description": "Represents the name of a view that will be created",
+                          "type": "string"
+                        },
+                        "viewId": {
+                          "description": "Represents the id of the created view",
+                          "type": "string"
+                        },
+                        "viewPath": {
+                          "description": "Represents a prefix that is prepended in front of the viewName",
+                          "type": "string"
+                        }
+                      }
                     }
                   ]
                 },
                 {
                   "allOf": [
                     {
-                      "$ref": "#/$defs/target"
+                      "$ref": "#/definitions/target"
                     },
                     {
                       "oneOf": [
                         {
-                          "$ref": "#/$defs/actualTargetAdditionStandard"
+                          "type": "object",
+                          "required": [
+                            "name"
+                          ],
+                          "properties": {
+                            "name": {
+                              "description": "Represents the name of a view or component that will be created",
+                              "type": "string"
+                            },
+                            "id": {
+                              "description": "Represents the id of the created view or component",
+                              "type": "string"
+                            },
+                            "path": {
+                              "description": "Represents a prefix that is prepended in front of the view or component name",
+                              "type": "string"
+                            },
+                            "type": {
+                              "description": "Represents the type of the type View or Component",
+                              "type": "string",
+                              "enum": [
+                                "View",
+                                "Component"
+                              ]
+                            }
+                          }
                         },
                         {
-                          "$ref": "#/$defs/actualTargetAdditionComponentUsage"
+                          "type": "object",
+                          "required": [
+                            "usage",
+                            "type"
+                          ],
+                          "properties": {
+                            "usage": {
+                              "description": "Represents the componentUsage of the component that will be created",
+                              "type": "string"
+                            },
+                            "id": {
+                              "description": "Represents the id of the created view or component",
+                              "type": "string"
+                            },
+                            "type": {
+                              "description": "Represents the type of the type Component",
+                              "type": "string",
+                              "enum": [
+                                "Component"
+                              ]
+                            }
+                          }
                         }
                       ]
                     }
@@ -3365,40 +3168,8 @@
           "patternTransformCode": "''.split('').map(function(char) { console.log(char);  if (/[a-z]/i.test(char)) { return `[${char.toUpperCase()}${char.toLowerCase()}]`; } else { return char; } } ).join('')",
           "patternFromRuntime": "^((Ctrl|Shift|Alt)(\\+)?){0,3}([A-Za-z0-9\\.,\\-\\*\\/=]|Plus|Tab|Space|Enter|Backspace|Home|Delete|End|Pageup|Pagedown|Escape|ArrowUp|ArrowDown|ArrowLeft|ArrowRight|F[1-9]|F1[0-2])$",
           "pattern": "^(([Cc][Tt][Rr][Ll]|[Ss][Hh][Ii][Ff][Tt]|[Aa][Ll][Tt])(\\+)?){0,3}([A-Za-z0-9\\.,\\-\\*\\/=]|[Pp][Ll][Uu][Ss]|[Tt][Aa][Bb]|[Ss][Pp][Aa][Cc][Ee]|[Ee][Nn][Tt][Ee][Rr]|[Bb][Aa][Cc][Kk][Ss][Pp][Aa][Cc][Ee]|[Hh][Oo][Mm][Ee]|[Dd][Ee][Ll][Ee][Tt][Ee]|[Ee][Nn][Dd]|[Pp][Aa][Gg][Ee][Uu][Pp]|[Pp][Aa][Gg][Ee][Dd][Oo][Ww][Nn]|[Ee][Ss][Cc][Aa][Pp][Ee]|[Aa][Rr][Rr][Oo][Ww][Uu][Pp]|[Aa][Rr][Rr][Oo][Ww][Dd][Oo][Ww][Nn]|[Aa][Rr][Rr][Oo][Ww][Ll][Ee][Ff][Tt]|[Aa][Rr][Rr][Oo][Ww][Rr][Ii][Gg][Hh][Tt]|F[1-9]|F1[0-2])$"
-        },
-        "ref": {
-          "description": "A string referencing a predefined shortcut command. Must start with 'sap:'.",
-          "type": "string",
-          "pattern": "^sap:[a-zA-Z0-9_-]+$"
-        },
-        "description": {
-          "description": "A string containing a placeholder that follows the format {{key}} to provide a translatable text for describing the command.",
-          "type": "string",
-          "pattern": "^\\{\\{[a-zA-Z0-9_]+\\}\\}$"
         }
-      },
-      "oneOf": [
-        {
-          "required": [
-            "shortcut"
-          ],
-          "not": {
-            "required": [
-              "ref"
-            ]
-          }
-        },
-        {
-          "required": [
-            "ref"
-          ],
-          "not": {
-            "required": [
-              "shortcut"
-            ]
-          }
-        }
-      ]
+      }
     },
     "service": {
       "description": "Represents the definition of each service",
@@ -3431,7 +3202,7 @@
         {
           "type": "array",
           "items": {
-            "$ref": "#/$defs/config"
+            "$ref": "#/definitions/config"
           }
         },
         {
@@ -3449,7 +3220,6 @@
       ]
     },
     "resourceRoot": {
-      "description": "Represents the resource root path relative to the application root. Used to define custom resource paths for loading modules and resources",
       "type": "string",
       "pattern": "^((\\.(?!\\.)\\/)?\\w+\\/?)+$"
     },
@@ -3476,7 +3246,7 @@
           "default": false
         },
         "settings": {
-          "$ref": "#/$defs/ui5setting"
+          "$ref": "#/definitions/ui5setting"
         }
       }
     },
@@ -3486,7 +3256,7 @@
       "properties": {
         "minVersion": {
           "description": "Represents minimal version of ui5 component",
-          "$ref": "#/$defs/version"
+          "$ref": "#/definitions/version"
         },
         "lazy": {
           "description": "Represents Indicator to lazy loading component",
@@ -3501,7 +3271,7 @@
       "properties": {
         "minVersion": {
           "description": "Represents minimal version of ui5 library",
-          "$ref": "#/$defs/version"
+          "$ref": "#/definitions/version"
         },
         "lazy": {
           "description": "Represents Indicator to lazy loading lib",
@@ -3525,11 +3295,11 @@
         },
         "componentData": {
           "description": "Represents component data for the Component",
-          "$ref": "#/$defs/config"
+          "$ref": "#/definitions/config"
         },
         "settings": {
           "description": "Represents settings for the Component",
-          "$ref": "#/$defs/config"
+          "$ref": "#/definitions/config"
         },
         "lazy": {
           "description": "Represents Indicator to lazy loading component usage, default true",
@@ -3539,12 +3309,9 @@
       }
     },
     "resource": {
-      "description": "Represents additional resources that need to be loaded for the component",
       "type": "object",
       "properties": {
         "js": {
-          "description": "[Deprecated] Specifies additional JavaScript resources of the Component. Since 1.94, the usage of JavaScript resources is deprecated. Please use regular dependencies via 'sap.ui.define()' or 'sap.ui.require()' instead.",
-          "deprecated": true,
           "type": "array",
           "items": {
             "type": "object",
@@ -3559,7 +3326,6 @@
           }
         },
         "css": {
-          "description": "Specifies additional CSS resources of the Component.",
           "type": "array",
           "items": {
             "type": "object",
@@ -3621,8 +3387,7 @@
           "type": "string",
           "enum": [
             "2.0",
-            "4.0",
-            "4.01"
+            "4.0"
           ]
         },
         "localUri": {
@@ -3645,10 +3410,10 @@
           "description": "A (catalog) object of an InA DataSource",
           "properties": {
             "objectName": {
-              "$ref": "#/$defs/objectName"
+              "$ref": "#/definitions/objectName"
             },
             "objectType": {
-              "$ref": "#/$defs/objectType"
+              "$ref": "#/definitions/objectType"
             },
             "packageName": {
               "type": "string"
@@ -3718,7 +3483,7 @@
         },
         "settings": {
           "description": "Represents data source type specific attributes (key, value pairs)",
-          "$ref": "#/$defs/setting"
+          "$ref": "#/definitions/setting"
         }
       }
     },
@@ -3768,7 +3533,7 @@
               "additionalProperties": false,
               "patternProperties": {
                 "^[a-zA-Z0-9_\\-]*$": {
-                  "$ref": "#/$defs/terminologySetting"
+                  "$ref": "#/definitions/terminologySetting"
                 }
               }
             }
@@ -3798,7 +3563,7 @@
               "additionalProperties": false,
               "patternProperties": {
                 "^[a-zA-Z0-9_\\-]*$": {
-                  "$ref": "#/$defs/terminologySetting"
+                  "$ref": "#/definitions/terminologySetting"
                 }
               }
             }
