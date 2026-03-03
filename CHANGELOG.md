@@ -4,6 +4,12 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 <a name="Unreleased"></a>
 
+<a name="v1.83.1"></a>
+## [v1.83.1] - 2026-03-03  (UI5 1.145)
+
+### Changed
+- updated mapping.json
+
 <a name="v1.83.0"></a>
 ## [v1.83.0] - 2026-02-10  (UI5 1.145)
 
