@@ -2,122 +2,200 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-<a name="v1.50.0-1"></a>
-## [v1.50.0-1] - 2023-01-12
-### Flattened schema version 51 (1.50.0, rel-1.50); UI5 version >= 1.110
+A list of unreleased changes can be found [here](https://github.com/SAP/ui5-manifest/compare/v1.50.1...HEAD).
 
-<a name="v1.49.0-2"></a>
-## [v1.49.0-2] - 2022-11-18
-### Flattened schema version 50 (1.49.0, rel-1.49); UI5 version >= 1.109
+<a name="v1.50.1"></a>
+## [v1.50.1] - 2026-03-03
 
-<a name="v1.49.0-1"></a>
-## [v1.49.0-1] - 2022-11-17
-### Flattened schema version 50 (1.49.0, rel-1.49); UI5 version >= 1.109
+<a name="v1.83.0"></a>
+## [v1.83.0] - 2026-02-10
 
-<a name="v1.48.0-1"></a>
-## [v1.48.0-1] - 2022-10-20
-### Flattened schema version 49 (1.48.0, rel-1.48); UI5 version >= 1.108
+<a name="v1.82.0"></a>
+## [v1.82.0] - 2026-01-12
 
-<a name="v1.47.0-1"></a>
-## [v1.47.0-1] - 2022-09-22
-### Flattened schema version 48 (1.47.0, rel-1.47); UI5 version >= 1.107
+<a name="v1.81.1"></a>
+## [v1.81.1] - 2025-12-09
 
-<a name="v1.46.0-1"></a>
-## [v1.46.0-1] - 2022-08-24
-### Flattened schema version 47 (1.46.0, rel-1.46); UI5 version >= 1.106
+<a name="v1.81.0"></a>
+## [v1.81.0] - 2025-11-18
 
-<a name="v1.45.0-1"></a>
-## [v1.45.0-1] - 2022-07-28
-### Flattened schema version 46 (1.45.0, rel-1.45); UI5 version >= 1.105
+<a name="v1.80.0"></a>
+## [v1.80.0] - 2025-10-28
 
-<a name="v1.44.0-1"></a>
-## [v1.44.0-1] - 2022-06-30
-### Flattened schema version 45 (1.44.0, rel-1.44); UI5 version >= 1.104
+<a name="v1.79.0"></a>
+## [v1.79.0] - 2025-09-24
 
-<a name="v1.43.0-1"></a>
-## [v1.43.0-1] - 2022-06-03
-### Flattened schema version 44 (1.43.0, rel-1.43); UI5 version >= 1.103
+<a name="v1.78.0"></a>
+## [v1.78.0] - 2025-08-22
 
-<a name="v1.42.0-1"></a>
-## [v1.42.0-1] - 2022-05-05
-### Flattened schema version 43 (1.42.0, rel-1.42); UI5 version >= 1.102
+<a name="v1.77.0"></a>
+## [v1.77.0] - 2025-08-05
 
-<a name="v1.41.0-1"></a>
-## [v1.41.0-1] - 2022-04-07
-### Flattened schema version 42 (1.41.0, rel-1.41); UI5 version >= 1.101
+<a name="v1.76.0"></a>
+## [v1.76.0] - 2025-07-02
 
-<a name="v1.40.0-1"></a>
-## [v1.40.0-1] - 2022-03-10
-### Flattened schema version 41 (1.40.0, rel-1.40); UI5 version >= 1.100
+<a name="v1.75.1"></a>
+## [v1.75.1] - 2025-06-04
 
-<a name="v1.39.0-1"></a>
-## [v1.39.0-1] - 2022-02-10
-### Flattened schema version 40 (1.39.0, rel-1.39); UI5 version >= 1.99
+<a name="v1.75.0"></a>
+## [v1.75.0] - 2025-06-04
 
-<a name="v1.38.0-2"></a>
-## [v1.38.0-2] - 2022-01-13
-### Flattened schema version 39 (1.38.0, rel-1.38); UI5 version >= 1.98
+<a name="v1.73.1"></a>
+## [v1.73.1] - 2025-04-30
 
-<a name="v1.38.0-1"></a>
-## [v1.38.0-1] - 2022-01-13
-### Flattened schema version 39 (1.38.0, rel-1.38); UI5 version >= 1.98
+<a name="v1.73.0"></a>
+## [v1.73.0] - 2025-04-30
 
-<a name="v1.37.0-1"></a>
-## [v1.37.0-1] - 2021-10-22
-### Flattened schema version 38 (1.37.0, rel-1.37); UI5 version >= 1.96
+<a name="v1.72.3"></a>
+## [v1.72.3] - 2025-04-02
 
-<a name="v1.36.0-1"></a>
-## [v1.36.0-1] - 2021-09-27
-### Flattened schema version 37 (1.36.0, rel-1.36); UI5 version >= 1.95
+<a name="v1.72.2"></a>
+## [v1.72.2] - 2025-03-21
 
-<a name="v1.35.0-1"></a>
-## [v1.35.0-1] - 2021-07-30
-### Flattened schema version 36 (1.35.0, rel-1.35); UI5 version >= 1.93
+<a name="v1.72.1"></a>
+## [v1.72.1] - 2025-03-21
 
-<a name="v1.34.0-1"></a>
-## [v1.34.0-1] - 2021-07-01
-### Flattened schema version 35 (1.34.0, rel-1.34); UI5 version >= 1.92
+<a name="v1.72.0"></a>
+## [v1.72.0] - 2025-03-10
 
-<a name="v1.33.0-1"></a>
-## [v1.33.0-1] - 2021-05-06
-### Flattened schema version 34 (1.33.0, rel-1.33); UI5 version >= 1.90
+<a name="v1.71.0"></a>
+## [v1.71.0] - 2025-03-06
 
-<a name="v1.32.0-2"></a>
-## [v1.32.0-2] - 2021-03-12
-### Flattened schema version 33 (1.32.0, rel-1.32); UI5 version >= 1.88
+<a name="v1.70.1"></a>
+## [v1.70.1] - 2025-02-12
 
-<a name="v1.31.0-1"></a>
-## [v1.31.0-1] - 2021-02-15
-### Flattened schema version 32 (1.31.0, rel-1.31); UI5 version >= 1.87
+<a name="v1.70.0"></a>
+## [v1.70.0] - 2025-02-10
 
-<a name="v1.30.0-2"></a>
-## [v1.30.0-2] - 2021-01-15
-### Flattened schema version 31 (1.30.0, rel-1.30); UI5 version >= 1.86
+<a name="v1.69.0"></a>
+## [v1.69.0] - 2025-01-10
 
-<a name="v1.29.0-1"></a>
-## [v1.29.0-1] - 2020-11-23
-### Flattened schema version 30 (1.29.0, rel-1.29); UI5 version >= 1.85
+<a name="v1.67.2"></a>
+## [v1.67.2] - 2024-11-04
 
-<a name="v1.28.0-3"></a>
-## [v1.28.0-3] - 2020-10-29
-### Flattened schema version 29 (1.28.0, rel-1.28); UI5 version >= 1.84
+<a name="v1.67.1"></a>
+## [v1.67.1] - 2024-10-18
 
-<a name="v1.28.0-2"></a>
-## [v1.28.0-2] - 2020-10-23
-### Flattened schema version 29 (1.28.0, rel-1.28); UI5 version >= 1.84
+<a name="v1.67.0"></a>
+## [v1.67.0] - 2024-09-19
 
-<a name="v1.27.0-1"></a>
-## [v1.27.0-1] - 2020-09-25
-### Flattened schema version 28 (1.27.0, rel-1.27); UI5 version >= 1.83
+<a name="v1.66.0"></a>
+## [v1.66.0] - 2024-06-27
 
-<a name="v1.26.0-2"></a>
-## [v1.26.0-2] - 2020-08-28
-### Flattened schema version 27 (1.26.0, rel-1.26); UI5 version >= 1.82
+<a name="v1.65.1"></a>
+## [v1.65.1] - 2024-05-06
 
-<a name="v1.25.0-1"></a>
-## [v1.25.0-1] - 2020-07-31
-### Flattened schema version 26 (1.25.0, rel-1.25); UI5 version >= 1.81
+<a name="v1.64.1"></a>
+## [v1.64.1] - 2024-05-06
 
-<a name="v1.23.0-1"></a>
-## [v1.23.0-1] - 2020-06-29
-### Flattened schema version 24 (1.23.0, rel-1.23); UI5 version >= 1.79
+<a name="v1.65.0"></a>
+## [v1.65.0] - 2024-05-02
+
+<a name="v1.64.0"></a>
+## [v1.64.0] - 2024-04-08
+
+<a name="v1.63.0"></a>
+## [v1.63.0] - 2024-03-07
+
+<a name="v1.62.1"></a>
+## [v1.62.1] - 2024-02-12
+
+<a name="v1.62.0"></a>
+## [v1.62.0] - 2024-02-12
+
+<a name="v1.61.1"></a>
+## [v1.61.1] - 2024-02-09
+
+<a name="v1.60.0"></a>
+## [v1.60.0] - 2023-09-22
+
+<a name="v1.59.0"></a>
+## [v1.59.0] - 2023-08-28
+
+<a name="v1.57.0"></a>
+## [v1.57.0] - 2023-07-27
+
+<a name="v1.56.0"></a>
+## [v1.56.0] - 2023-06-29
+
+<a name="v1.55.0"></a>
+## [v1.55.0] - 2023-06-01
+
+<a name="v1.54.0"></a>
+## [v1.54.0] - 2023-05-05
+
+<a name="v1.53.1"></a>
+## [v1.53.1] - 2023-04-05
+
+<a name="v1.53.0"></a>
+## [v1.53.0] - 2023-04-05
+
+<a name="v1.52.1"></a>
+## [v1.52.1] - 2023-03-08
+
+<a name="v1.52.0"></a>
+## [v1.52.0] - 2023-02-09
+
+<a name="v1.51.0"></a>
+## [v1.51.0] - 2023-01-12
+
+<a name="v1.49.2"></a>
+## [v1.49.2] - 2022-11-29
+
+<a name="v1.49.1"></a>
+## [v1.49.1] - 2022-11-21
+
+<a name="v1.49.0"></a>
+## [v1.49.0] - 2022-11-18
+
+<a name="v1.48.1"></a>
+## v1.48.1 - 2022-11-10
+
+[v1.50.1]: https://github.com/SAP/ui5-manifest/compare/v1.83.0...v1.50.1
+[v1.83.0]: https://github.com/SAP/ui5-manifest/compare/v1.82.0...v1.83.0
+[v1.82.0]: https://github.com/SAP/ui5-manifest/compare/v1.81.1...v1.82.0
+[v1.81.1]: https://github.com/SAP/ui5-manifest/compare/v1.81.0...v1.81.1
+[v1.81.0]: https://github.com/SAP/ui5-manifest/compare/v1.80.0...v1.81.0
+[v1.80.0]: https://github.com/SAP/ui5-manifest/compare/v1.79.0...v1.80.0
+[v1.79.0]: https://github.com/SAP/ui5-manifest/compare/v1.78.0...v1.79.0
+[v1.78.0]: https://github.com/SAP/ui5-manifest/compare/v1.77.0...v1.78.0
+[v1.77.0]: https://github.com/SAP/ui5-manifest/compare/v1.76.0...v1.77.0
+[v1.76.0]: https://github.com/SAP/ui5-manifest/compare/v1.75.1...v1.76.0
+[v1.75.1]: https://github.com/SAP/ui5-manifest/compare/v1.75.0...v1.75.1
+[v1.75.0]: https://github.com/SAP/ui5-manifest/compare/v1.73.1...v1.75.0
+[v1.73.1]: https://github.com/SAP/ui5-manifest/compare/v1.73.0...v1.73.1
+[v1.73.0]: https://github.com/SAP/ui5-manifest/compare/v1.72.3...v1.73.0
+[v1.72.3]: https://github.com/SAP/ui5-manifest/compare/v1.72.2...v1.72.3
+[v1.72.2]: https://github.com/SAP/ui5-manifest/compare/v1.72.1...v1.72.2
+[v1.72.1]: https://github.com/SAP/ui5-manifest/compare/v1.72.0...v1.72.1
+[v1.72.0]: https://github.com/SAP/ui5-manifest/compare/v1.71.0...v1.72.0
+[v1.71.0]: https://github.com/SAP/ui5-manifest/compare/v1.70.1...v1.71.0
+[v1.70.1]: https://github.com/SAP/ui5-manifest/compare/v1.70.0...v1.70.1
+[v1.70.0]: https://github.com/SAP/ui5-manifest/compare/v1.69.0...v1.70.0
+[v1.69.0]: https://github.com/SAP/ui5-manifest/compare/v1.67.2...v1.69.0
+[v1.67.2]: https://github.com/SAP/ui5-manifest/compare/v1.67.1...v1.67.2
+[v1.67.1]: https://github.com/SAP/ui5-manifest/compare/v1.67.0...v1.67.1
+[v1.67.0]: https://github.com/SAP/ui5-manifest/compare/v1.66.0...v1.67.0
+[v1.66.0]: https://github.com/SAP/ui5-manifest/compare/v1.65.1...v1.66.0
+[v1.65.1]: https://github.com/SAP/ui5-manifest/compare/v1.64.1...v1.65.1
+[v1.64.1]: https://github.com/SAP/ui5-manifest/compare/v1.65.0...v1.64.1
+[v1.65.0]: https://github.com/SAP/ui5-manifest/compare/v1.64.0...v1.65.0
+[v1.64.0]: https://github.com/SAP/ui5-manifest/compare/v1.63.0...v1.64.0
+[v1.63.0]: https://github.com/SAP/ui5-manifest/compare/v1.62.1...v1.63.0
+[v1.62.1]: https://github.com/SAP/ui5-manifest/compare/v1.62.0...v1.62.1
+[v1.62.0]: https://github.com/SAP/ui5-manifest/compare/v1.61.1...v1.62.0
+[v1.61.1]: https://github.com/SAP/ui5-manifest/compare/v1.60.0...v1.61.1
+[v1.60.0]: https://github.com/SAP/ui5-manifest/compare/v1.59.0...v1.60.0
+[v1.59.0]: https://github.com/SAP/ui5-manifest/compare/v1.57.0...v1.59.0
+[v1.57.0]: https://github.com/SAP/ui5-manifest/compare/v1.56.0...v1.57.0
+[v1.56.0]: https://github.com/SAP/ui5-manifest/compare/v1.55.0...v1.56.0
+[v1.55.0]: https://github.com/SAP/ui5-manifest/compare/v1.54.0...v1.55.0
+[v1.54.0]: https://github.com/SAP/ui5-manifest/compare/v1.53.1...v1.54.0
+[v1.53.1]: https://github.com/SAP/ui5-manifest/compare/v1.53.0...v1.53.1
+[v1.53.0]: https://github.com/SAP/ui5-manifest/compare/v1.52.1...v1.53.0
+[v1.52.1]: https://github.com/SAP/ui5-manifest/compare/v1.52.0...v1.52.1
+[v1.52.0]: https://github.com/SAP/ui5-manifest/compare/v1.51.0...v1.52.0
+[v1.51.0]: https://github.com/SAP/ui5-manifest/compare/v1.49.2...v1.51.0
+[v1.49.2]: https://github.com/SAP/ui5-manifest/compare/v1.49.1...v1.49.2
+[v1.49.1]: https://github.com/SAP/ui5-manifest/compare/v1.49.0...v1.49.1
+[v1.49.0]: https://github.com/SAP/ui5-manifest/compare/v1.48.1...v1.49.0
