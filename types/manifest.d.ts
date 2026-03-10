@@ -143,7 +143,7 @@ export type EnhanceWithSetting1 =
       };
     };
 export type Version = string;
-export type Tag = (string | string)[];
+export type Tag = string[];
 /**
  * This interface was referenced by `undefined`'s JSON-Schema definition
  * via the `patternProperty` "^[a-zA-Z0-9_\.\-]*$".
@@ -174,11 +174,7 @@ export type JSONSchemaForSAPUI5Namespace = {
     | "1.13.0"
     | "1.14.0"
     | "1.15.0"
-    | "1.16.0"
-    | "1.17.0"
-    | "1.18.0"
-    | "1.19.0"
-    | "1.20.0";
+    | "1.16.0";
   resources?: Resource;
   /**
    * Represents the explicit usage declaration for UI5 reuse components
@@ -191,9 +187,9 @@ export type JSONSchemaForSAPUI5Namespace = {
    */
   dependencies: {
     /**
-     * Represents the minimum version of SAPUI5 that your component requires. It is either a specific version or an array of versions where each major version can only be included once. If array contains more than one version and if version 1 is included it must be at least 1.120.x.
+     * Represents the minimum version of SAP UI5 that your component requires
      */
-    minUI5Version: string | string[];
+    minUI5Version: string;
     /**
      * Represents the id (namespace) of the libraries that should be loaded by UI5 Core to be used in your component
      */
@@ -372,17 +368,9 @@ export type JSONSchemaForSAPUI5Namespace = {
     [k: string]: Command;
   };
   /**
-   * Represents an indicator whether a flexibility bundle was created and is within the application sources. This property is set by the building tool.
-   */
-  flexBundle?: boolean;
-  /**
    * Represents an indicator whether app variant is flex extension point enabled
    */
   flexExtensionPointEnabled?: boolean;
-  /**
-   * Represents an indicator whether app is a cloud developer adaptation, filled automatically during build.
-   */
-  isCloudDevAdaptation?: boolean;
   [k: string]: unknown;
 } & (
   | {
@@ -462,8 +450,6 @@ export type EnhanceWithSetting2 =
       };
     };
 /**
- * Represents the resource root path relative to the application root. Used to define custom resource paths for loading modules and resources
- *
  * This interface was referenced by `undefined`'s JSON-Schema definition
  * via the `patternProperty` "^[a-zA-Z0-9_\.\-]*$".
  */
@@ -559,31 +545,6 @@ export type EnhanceWithSetting4 =
       };
     };
 /**
- * Represents a UI5 shortcut command.
- *
- * This interface was referenced by `undefined`'s JSON-Schema definition
- * via the `patternProperty` "^[A-Za-z_][A-Za-z0-9_\-\|@]+$".
- */
-export type Command = {
-  /**
-   * A string describing a shortcut key combination that, when used by the user, will trigger the command.
-   */
-  shortcut?: string;
-  /**
-   * A string referencing a predefined shortcut command. Must start with 'sap:'.
-   */
-  ref?: string;
-  /**
-   * A string containing a placeholder that follows the format {{someKey}}.
-   */
-  description?: string;
-} & Command1;
-export type Command1 = {
-  [k: string]: unknown;
-};
-export type ViewTypeDefinition = "XML" | "JSON" | "JS" | "HTML" | "Template";
-export type ViewTypeDefinition1 = string;
-/**
  * Represents the definition of each route
  */
 export type Route = RouteWithoutName & {
@@ -603,7 +564,10 @@ export type RootViewDef =
        * Represents the name of the view
        */
       viewName: string;
-      type?: ViewTypeDefinition & ViewTypeDefinition1;
+      /**
+       * Represents the type of the view. Possible Values: XML, JSON, JS, HTML, Template
+       */
+      type?: "XML" | "JSON" | "JS" | "HTML" | "Template";
       /**
        * Represents the id of the view
        */
@@ -611,14 +575,13 @@ export type RootViewDef =
       /**
        * Configure the targets for asynchronous loading
        */
-      async?: boolean & (true | false);
+      async?: boolean;
       [k: string]: unknown;
     };
 /**
  *  Represents a binding string to indicate, how the reuse component should be bound relative to the containing page or absolute
  */
 export type ComponentBindingDef = string;
-export type DisplayFormatEnum = "standard" | "standardWide" | "flat" | "flatWide" | "compact";
 /**
  * Represents the card default grid size in columns and rows
  */
@@ -660,18 +623,8 @@ export type JSONSchemaForSAPCARDNamespace = {
  * The version number of the schema in major.minor.patch format.
  */
 export type Semanticversion = string;
-/**
- * Represents SBPA Custom Task UI Attributes
- */
-export type JSONSchemaForSapBpaTaskNamespace = {
-  [k: string]: unknown;
-};
 
 export interface SAPJSONSchemaForWebApplicationManifestFile {
-  /**
-   * The resource identifier for the JSON schema to be used. The value of this keyword MUST be a URI [RFC3986] (containing a scheme) and this URI MUST be normalized. The current schema MUST be valid against the meta-schema identified by this URI. If this URI identifies a retrievable resource, that resource SHOULD be of media type "application/schema+json".
-   */
-  $schema?: string;
   /**
    * Represents Application Descriptor format version. It is managed by schema owner
    */
@@ -723,44 +676,7 @@ export interface SAPJSONSchemaForWebApplicationManifestFile {
     | "1.45.0"
     | "1.46.0"
     | "1.47.0"
-    | "1.48.0"
-    | "1.49.0"
-    | "1.50.0"
-    | "1.51.0"
-    | "1.52.0"
-    | "1.53.0"
-    | "1.54.0"
-    | "1.55.0"
-    | "1.56.0"
-    | "1.57.0"
-    | "1.58.0"
-    | "1.59.0"
-    | "1.60.0"
-    | "1.61.0"
-    | "1.62.0"
-    | "1.63.0"
-    | "1.64.0"
-    | "1.65.0"
-    | "1.66.0"
-    | "1.67.2"
-    | "1.68.0"
-    | "1.69.0"
-    | "1.70.1"
-    | "1.71.0"
-    | "1.72.0"
-    | "1.73.1"
-    | "1.75.1"
-    | "1.76.0"
-    | "1.77.0"
-    | "1.78.0"
-    | "1.79.0"
-    | "1.80.0"
-    | "1.80.1"
-    | "1.81.0"
-    | "1.81.1"
-    | "1.82.0"
-    | "1.83.0"
-    | "1.83.1";
+    | "1.48.0";
   /**
    * Represents the URL that the developer would prefer the user agent load when the user launches the web application
    */
@@ -794,8 +710,6 @@ export interface SAPJSONSchemaForWebApplicationManifestFile {
   "sap.card"?: JSONSchemaForSAPCARDNamespace;
   "sap.package"?: JSONSchemaForSAPPACKAGENamespace;
   "sap.artifact"?: JSONSchemaForSAPARTIFACTNamespace;
-  "sap.bpa.task"?: JSONSchemaForSapBpaTaskNamespace;
-  "sap.cards.ap"?: JSONSchemaForSapCardsApNamespace;
 }
 /**
  * Represents general application attributes
@@ -822,11 +736,7 @@ export interface JSONSchemaForSAPAPPNamespace {
     | "1.15.0"
     | "1.16.0"
     | "1.17.0"
-    | "1.18.0"
-    | "1.19.0"
-    | "1.20.0"
-    | "1.21.0"
-    | "1.21.1";
+    | "1.18.0";
   /**
    * Represents the template from which the app was generated
    */
@@ -850,7 +760,7 @@ export interface JSONSchemaForSAPAPPNamespace {
    */
   id: string;
   /**
-   * Represents type of an application and can be application or component or library or card
+   * Represents type of an application and can be application or component or library
    */
   type: "application" | "component" | "library" | "card";
   /**
@@ -1035,7 +945,7 @@ export interface Setting {
   /**
    * Represents version of OData: 2.0 is default
    */
-  odataVersion?: "2.0" | "4.0" | "4.01";
+  odataVersion?: "2.0" | "4.0";
   /**
    * Represents path to local meta data document or annotation uri
    */
@@ -1062,10 +972,6 @@ export interface Setting {
       schemaName?: string;
     };
   };
-  /**
-   * Indicates whether annotations from metadata should be ignored
-   */
-  ignoreAnnotationsFromMetadata?: boolean;
   [k: string]: unknown;
 }
 export interface DataSourceCustom {
@@ -1090,7 +996,7 @@ export interface Setting1 {
   /**
    * Represents version of OData: 2.0 is default
    */
-  odataVersion?: "2.0" | "4.0" | "4.01";
+  odataVersion?: "2.0" | "4.0";
   /**
    * Represents path to local meta data document or annotation uri
    */
@@ -1117,10 +1023,6 @@ export interface Setting1 {
       schemaName?: string;
     };
   };
-  /**
-   * Indicates whether annotations from metadata should be ignored
-   */
-  ignoreAnnotationsFromMetadata?: boolean;
   [k: string]: unknown;
 }
 export interface OpenSource {
@@ -1203,15 +1105,15 @@ export interface Inbound {
  */
 export interface DeviceType {
   /**
-   * Represents indicator whether desktop device is supported
+   * Represents indicator whether desktop device is supported, default true
    */
   desktop?: boolean;
   /**
-   * Represents indicator whether tablet device is supported
+   * Represents indicator whether tablet device is supported, default true
    */
   tablet?: boolean;
   /**
-   * Represents indicator whether phone device is supported
+   * Represents indicator whether phone device is supported, default true
    */
   phone?: boolean;
 }
@@ -1267,7 +1169,7 @@ export interface SignatureDef {
          */
         format?: "plain" | "array";
         /**
-         * [Deprecated] Indicates the administrator should be prompted to supply a value when creating a tile
+         * DEPRECATED - Indicates the administrator should be prompted to supply a value when creating a tile
          */
         prompt?: boolean;
       };
@@ -1379,7 +1281,7 @@ export interface JSONSchemaForSAPUINamespace {
     [k: string]: unknown;
   };
   /**
-   * [Deprecated] Represents array of supported SAP themes such as sap_hcb, sap_bluecrystal
+   * The property is Deprecated. Represents array of supported SAP themes such as sap_hcb, sap_bluecrystal
    */
   supportedThemes?: string[];
   /**
@@ -1393,15 +1295,15 @@ export interface JSONSchemaForSAPUINamespace {
  */
 export interface DeviceType1 {
   /**
-   * Represents indicator whether desktop device is supported
+   * Represents indicator whether desktop device is supported, default true
    */
   desktop?: boolean;
   /**
-   * Represents indicator whether tablet device is supported
+   * Represents indicator whether tablet device is supported, default true
    */
   tablet?: boolean;
   /**
-   * Represents indicator whether phone device is supported
+   * Represents indicator whether phone device is supported, default true
    */
   phone?: boolean;
 }
@@ -1409,16 +1311,10 @@ export interface DeviceType1 {
  * Represents paths to JavaScript/CSS resources that your app needs (app internal), formerly called '.includes'
  */
 export interface Resource {
-  /**
-   * [Deprecated] Specifies additional JavaScript resources of the Component. Since 1.94, the usage of JavaScript resources is deprecated. Please use regular dependencies via 'sap.ui.define()' or 'sap.ui.require()' instead.
-   */
   js?: {
     uri: string;
     [k: string]: unknown;
   }[];
-  /**
-   * Specifies additional CSS resources of the Component.
-   */
   css?: {
     uri: string;
     id?: string;
@@ -1523,9 +1419,6 @@ export interface Model {
   preload?: boolean;
   settings?: Ui5Setting;
 }
-/**
- * Represents UI5-specific settings and configuration options that can be applied to models.
- */
 export interface Ui5Setting {
   /**
    * Represents default binding mode and must be a string value from sap.ui.model.BindingMode. Possible values: Default, OneTime, OneWay, TwoWay
@@ -1581,6 +1474,18 @@ export interface Service {
   [k: string]: unknown;
 }
 /**
+ * Represents a UI5 shortcut command.
+ *
+ * This interface was referenced by `undefined`'s JSON-Schema definition
+ * via the `patternProperty` "^[A-Za-z_][A-Za-z0-9_\-\|@]+$".
+ */
+export interface Command {
+  /**
+   * A string describing a shortcut key combination that, when used by the user, will trigger the command.
+   */
+  shortcut?: string;
+}
+/**
  * Represents the configuration of routing
  */
 export interface RoutingFlexEnabled {
@@ -1595,7 +1500,7 @@ export interface RoutingFlexEnabled {
     /**
      * Indicates whether the Views in routing are loaded asyncly
      */
-    async?: boolean & (true | false);
+    async?: boolean;
     /**
      * Represents information about targets to display when no route is matched
      */
@@ -1603,16 +1508,14 @@ export interface RoutingFlexEnabled {
       /**
        * Represents one or multiple names of targets that are displayed when no route is matched
        */
-      target: (string | RouteTargetObject)[] | string | RouteTargetObject;
+      target: [] | [string | RouteTargetObject] | string | RouteTargetObject;
     };
     /**
      * Represents a prefix that is prepended in front of the viewName
      */
     viewPath?: string;
     [k: string]: unknown;
-  } & Target &
-    LegacyTargetAdditionWithoutRequiredProp &
-    ActualTargetAdditionStandardWithoutRequiredProp;
+  } & Target;
   routes?:
     | Route[]
     | {
@@ -1711,7 +1614,7 @@ export interface Target {
   /**
    * Represents the type of view that is going to be created
    */
-  viewType?: ViewTypeDefinition & ViewTypeDefinition1;
+  viewType?: "XML" | "JSON" | "JS" | "HTML" | "Template";
   /**
    * Represents the id of the view that contains the control specified by the 'controlId'
    */
@@ -1733,6 +1636,10 @@ export interface Target {
    */
   parent?: string;
   /**
+   * Represents the level of the current view which is used to define the transition direction when navigate to this view
+   */
+  viewLevel?: number;
+  /**
    * Represents the type of transition when navigating from previous view to this view
    */
   transition?: string | ("slide" | "flip" | "fade" | "show");
@@ -1742,51 +1649,6 @@ export interface Target {
   transitionParameters?: {
     [k: string]: unknown;
   };
-  [k: string]: unknown;
-}
-/**
- * Represents legacy target configuration properties without required properties for more flexible backward compatibility scenarios
- */
-export interface LegacyTargetAdditionWithoutRequiredProp {
-  /**
-   * [Deprecated] Represents the name of a view that will be created. Please use 'name' property instead together with the 'type' property set to 'View'. The same applies to 'viewId', 'viewPath', 'viewLevel' as well.
-   */
-  viewName?: string;
-  /**
-   * [Deprecated] Represents the id of the created view. Please use 'id' property instead together with the 'type' property set to 'View'. The same applies to 'viewName', 'viewPath', 'viewLevel' as well.
-   */
-  viewId?: string;
-  /**
-   * [Deprecated] Represents a prefix that is prepended in front of the viewName. Please use 'path' property instead together with the 'type' property set to 'View'. The same applies to 'viewId', 'viewName', 'viewLevel' as well.
-   */
-  viewPath?: string;
-  /**
-   * [Deprecated] Represents the level of the current view which is used to define the transition direction when navigate to this view. Please use 'level' property instead together with the 'type' property set to 'View'. The same applies to 'viewId', 'viewName', 'viewPath' as well.
-   */
-  viewLevel?: number;
-  [k: string]: unknown;
-}
-export interface ActualTargetAdditionStandardWithoutRequiredProp {
-  /**
-   * Represents the name of a view or component that will be created
-   */
-  name?: string;
-  /**
-   * Represents the id of the created view or component
-   */
-  id?: string;
-  /**
-   * Represents a prefix that is prepended in front of the view or component name
-   */
-  path?: string;
-  /**
-   * Represents the type of the type View or Component
-   */
-  type?: "View" | "Component";
-  /**
-   * Represents the level of the current view/component which is used to define the transition direction when navigate to this view/component
-   */
-  level?: number;
   [k: string]: unknown;
 }
 /**
@@ -1810,7 +1672,7 @@ export interface RouteWithoutName {
   /**
    * Represents one or multiple names of targets which are displayed when the route is matched
    */
-  target?: (string | RouteTargetObject)[] | string | RouteTargetObject;
+  target?: [] | [string | RouteTargetObject] | string | RouteTargetObject;
   /**
    * Represents the name of the target where the 'title' information should be taken
    */
@@ -1825,7 +1687,10 @@ export interface RootViewDefFlexEnabled {
    * Represents the name of the view
    */
   viewName: string;
-  type?: ViewTypeDefinition & ViewTypeDefinition1;
+  /**
+   * Represents the type of the view. Possible Values: XML, JSON, JS, HTML, Template
+   */
+  type?: "XML" | "JSON" | "JS" | "HTML" | "Template";
   /**
    * Represents the id of the view
    */
@@ -1833,7 +1698,7 @@ export interface RootViewDefFlexEnabled {
   /**
    * Configure the targets for asynchronous loading
    */
-  async?: boolean & (true | false);
+  async?: boolean;
   [k: string]: unknown;
 }
 /**
@@ -1851,7 +1716,7 @@ export interface Routing {
     /**
      * Indicates whether the Views in routing are loaded asyncly
      */
-    async?: boolean & (true | false);
+    async?: boolean;
     /**
      * Indicates whether the targets which have type 'Component' should propagate their title to this component or not
      */
@@ -1863,12 +1728,14 @@ export interface Routing {
       /**
        * Represents one or multiple names of targets that are displayed when no route is matched
        */
-      target: (string | RouteTargetObject)[] | string | RouteTargetObject;
+      target: [] | [string | RouteTargetObject] | string | RouteTargetObject;
     };
+    /**
+     * Represents a prefix that is prepended in front of the viewName
+     */
+    viewPath?: string;
     [k: string]: unknown;
-  } & Target &
-    LegacyTargetAdditionWithoutRequiredProp &
-    ActualTargetAdditionStandardWithoutRequiredProp;
+  } & Target;
   routes?:
     | Route[]
     | {
@@ -1883,79 +1750,59 @@ export interface Routing {
      * via the `patternProperty` "[\s\S]*".
      */
     [k: string]:
-      | (Target & LegacyTargetAddition)
-      | (Target & (ActualTargetAdditionStandard | ActualTargetAdditionComponentUsage));
+      | (Target & {
+          /**
+           * Represents the name of a view that will be created
+           */
+          viewName: string;
+          /**
+           * Represents the id of the created view
+           */
+          viewId?: string;
+          /**
+           * Represents a prefix that is prepended in front of the viewName
+           */
+          viewPath?: string;
+          [k: string]: unknown;
+        })
+      | (Target &
+          (
+            | {
+                /**
+                 * Represents the name of a view or component that will be created
+                 */
+                name: string;
+                /**
+                 * Represents the id of the created view or component
+                 */
+                id?: string;
+                /**
+                 * Represents a prefix that is prepended in front of the view or component name
+                 */
+                path?: string;
+                /**
+                 * Represents the type of the type View or Component
+                 */
+                type?: "View" | "Component";
+                [k: string]: unknown;
+              }
+            | {
+                /**
+                 * Represents the componentUsage of the component that will be created
+                 */
+                usage: string;
+                /**
+                 * Represents the id of the created view or component
+                 */
+                id?: string;
+                /**
+                 * Represents the type of the type Component
+                 */
+                type: "Component";
+                [k: string]: unknown;
+              }
+          ));
   };
-  [k: string]: unknown;
-}
-/**
- * Represents legacy target configuration properties for backward compatibility with older routing implementations
- */
-export interface LegacyTargetAddition {
-  /**
-   * [Deprecated] Represents the name of a view that will be created. Please use 'name' property instead together with the 'type' property set to 'View'. The same applies to 'viewId', 'viewPath', 'viewLevel' as well.
-   */
-  viewName: string;
-  /**
-   * [Deprecated] Represents the id of the created view. Please use 'id' property instead together with the 'type' property set to 'View'. The same applies to 'viewName', 'viewPath', 'viewLevel' as well.
-   */
-  viewId?: string;
-  /**
-   * [Deprecated] Represents a prefix that is prepended in front of the viewName. Please use 'path' property instead together with the 'type' property set to 'View'. The same applies to 'viewId', 'viewName', 'viewLevel' as well.
-   */
-  viewPath?: string;
-  /**
-   * [Deprecated] Represents the level of the current view which is used to define the transition direction when navigate to this view. Please use 'level' property instead together with the 'type' property set to 'View'. The same applies to 'viewId', 'viewName', 'viewPath' as well.
-   */
-  viewLevel?: number;
-  [k: string]: unknown;
-}
-/**
- * Represents the target configuration properties for modern routing implementations with view or component targets
- */
-export interface ActualTargetAdditionStandard {
-  /**
-   * Represents the name of a view or component that will be created
-   */
-  name: string;
-  /**
-   * Represents the id of the created view or component
-   */
-  id?: string;
-  /**
-   * Represents a prefix that is prepended in front of the view or component name
-   */
-  path?: string;
-  /**
-   * Represents the type of the target: View or Component
-   */
-  type?: "View" | "Component";
-  /**
-   * Represents the level of the current view/component which is used to define the transition direction when navigate to this view/component
-   */
-  level?: number;
-  [k: string]: unknown;
-}
-/**
- * Represents target configuration properties for component usage routing scenarios where targets reference reusable components
- */
-export interface ActualTargetAdditionComponentUsage {
-  /**
-   * Represents the componentUsage of the component that will be created
-   */
-  usage: string;
-  /**
-   * Represents the id of the created view or component
-   */
-  id?: string;
-  /**
-   * Represents the type of the type Component
-   */
-  type: "Component";
-  /**
-   * Represents the level of the current component which is used to define the transition direction when navigate to this component
-   */
-  level?: number;
   [k: string]: unknown;
 }
 /**
@@ -2043,7 +1890,7 @@ export interface JSONSchemaForSAPFIORINamespace {
   /**
    * Represents attributes format version. It is managed by namespace owner
    */
-  _version?: "1.1.0" | "1.2.0" | "1.3.0";
+  _version?: "1.1.0" | "1.2.0";
   /**
    * Represents array of registration ids, i.e. for Fiori apps fiori id(s)
    */
@@ -2056,10 +1903,6 @@ export interface JSONSchemaForSAPFIORINamespace {
    * Indicator that app is an abstract (generic) app which may not be used directly, but needs to be specialized in the SAP Fiori launchpad content
    */
   abstract?: boolean;
-  /**
-   * Represents the release status for the developer adaptation in the cloud (relevant for SAP internal only). The supported types are released, deprecated, obsolete, no value means not released
-   */
-  cloudDevAdaptationStatus?: "released" | "deprecated" | "obsolete";
 }
 /**
  * Represents GENERIC APP specific attributes
@@ -2561,32 +2404,15 @@ export interface JSONSchemaForSAPFLPNamespace {
   /**
    * Represents attributes format version. It is managed by namespace owner
    */
-  _version?: "1.1.0" | "1.2.0" | "1.3.0" | "1.4.0";
+  _version?: "1.1.0" | "1.2.0" | "1.3.0";
   /**
-   * Represents size of the tile. Deprecated, use 'vizOptions' instead.
+   * Represents size of the tile
    */
   tileSize?: "1x1" | "1x2";
   /**
-   * Options a visualization (launchpad tile) is offering with regards to rendering, for example
-   */
-  vizOptions?: {
-    /**
-     * Defines what display formats a visualization type can render itself in. The value 'default' is deprecated - please use 'standard' instead!
-     */
-    displayFormats?: {
-      /**
-       * Lists all display formats the visualization type is capable of rendering itself in. The order of items may be used as preference definition (most important first). The value 'default' is deprecated - please use 'standard' instead!
-       */
-      supported?: DisplayFormatEnum[];
-      default?: DisplayFormatEnum;
-      [k: string]: unknown;
-    };
-    [k: string]: unknown;
-  };
-  /**
    * Represents the type of FLP entry. It must be 'application' or 'tile' or 'plugin'
    */
-  type?: "application" | "tile" | "plugin";
+  type: "application" | "tile" | "plugin";
   /**
    * Represents configuration parameters of the FLP entry
    */
@@ -2602,7 +2428,7 @@ export interface JSONSchemaForSAPFLPNamespace {
     };
   };
   /**
-   * Represents the original tile and target mapping which resulted in this app. Deprecated.
+   * Represents the original tile and target mapping which resulted in this app
    */
   origin?: {
     /**
@@ -2622,20 +2448,7 @@ export interface JSONSchemaForSAPOVPNamespace {
   /**
    * Represents attributes format version. It is managed by namespace owner
    */
-  _version?:
-    | "1.1.0"
-    | "1.2.0"
-    | "1.3.0"
-    | "1.4.0"
-    | "1.5.0"
-    | "1.6.0"
-    | "1.7.0"
-    | "1.8.0"
-    | "1.9.0"
-    | "1.10.0"
-    | "1.11.0"
-    | "1.12.0"
-    | "1.13.0";
+  _version?: "1.1.0" | "1.2.0" | "1.3.0" | "1.4.0" | "1.5.0" | "1.6.0" | "1.7.0";
   /**
    * Represents the name of global filter OData model, which  contains entities definition that are relevant for global filters
    */
@@ -2644,10 +2457,6 @@ export interface JSONSchemaForSAPOVPNamespace {
    * Represents the entity to use as global filter in the smart filter bar control
    */
   globalFilterEntityType?: string;
-  /**
-   * Represents the control to be used for the filter bar
-   */
-  globalFilterControlType?: "MacroFilterBar" | "SmartFilterBar";
   /**
    * Represents the entity set to use as global filter in the smart filter bar control
    */
@@ -2671,7 +2480,7 @@ export interface JSONSchemaForSAPOVPNamespace {
   /**
    * Represents the layout of the card container
    */
-  containerLayout?: ("resizable" | "fixed") & string;
+  containerLayout?: "fixed" | "resizable";
   /**
    * Represents a switch to Enable or disable Relative or Normal date formating in ovp application
    */
@@ -2684,10 +2493,6 @@ export interface JSONSchemaForSAPOVPNamespace {
    * Represents the switch to activate live update in the global filters, else manual update will be required
    */
   enableLiveFilter?: boolean;
-  /**
-   * Enable loading of cards when they enter viewport
-   */
-  enableLazyRendering?: boolean;
   refreshStrategyOnAppRestore?: RefreshStrategiesPropDef1;
   /**
    * Flag to enable/disable analytical parameter support for Smart filter bar
@@ -2848,10 +2653,6 @@ export interface CardSetting {
    */
   subTitle?: string;
   /**
-   * [Deprecated] Represents the flag to enable/disable time axis for analytical timeseries cards
-   */
-  showTimeAxis?: (true | false) & boolean;
-  /**
    * Represents things like people, number of items
    */
   valueSelectionInfo?: string;
@@ -2921,14 +2722,6 @@ export interface CardSetting {
    * Represents the flag to indicate priority of number formatting over sap text
    */
   ignoreSapText?: boolean;
-  /**
-   * Represents the flag to enable/disable individual card's functionality to add them to insight
-   */
-  enableAddToInsights?: boolean;
-  /**
-   * Represents the flag to show/hide individual card's functionality to refresh the card
-   */
-  showRefresh?: boolean;
   defaultSpan?: DefaultSpanDef;
   /**
    * Represents the cards for which authorization is required
@@ -3145,7 +2938,7 @@ export interface ResizableLayoutVariantCardProperties {
  * Represents Insights attributes
  */
 export interface JSONSchemaForSAPInsightsNamespace {
-  _version?: "1.0.0" | "1.1.0" | "1.2.0" | "1.3.0" | "1.4.0" | "1.5.0";
+  _version?: "1.0.0" | "1.1.0" | "1.2.0" | "1.3.0" | "1.4.0";
   /**
    * Represents mandatory unique app identifier of the app containing self manifest.
    */
@@ -3175,7 +2968,7 @@ export interface JSONSchemaForSAPInsightsNamespace {
    */
   visible?: boolean;
   /**
-   * [Deprecated] Represents the display order of Insights card
+   * Represents the display order of Insights card
    */
   rank?: number;
   /**
@@ -3192,54 +2985,6 @@ export interface JSONSchemaForSAPInsightsNamespace {
     dtMiddleware?: string;
     [k: string]: unknown;
   };
-  /**
-   * New property representing the display order of Insights card
-   */
-  ranking?: string;
-  /**
-   * Array of all supported chart type allowed for transformation.
-   */
-  allowedChartTypes?: (
-    | "bar"
-    | "column"
-    | "line"
-    | "bullet"
-    | "vertical_bullet"
-    | "100_stacked_bar"
-    | "100_stacked_column"
-    | "waterfall"
-    | "horizontal_waterfall"
-    | "area"
-    | "radar"
-    | "combination"
-    | "stacked_bar"
-    | "stacked_column"
-    | "stacked_combination"
-    | "horizontal_stacked_combination"
-    | "pie"
-    | "donut"
-    | "dual_bar"
-    | "dual_column"
-    | "dual_line"
-    | "dual_stacked_bar"
-    | "dual_stacked_column"
-    | "dual_combination"
-    | "dual_horizontal_combination"
-    | "dual_stacked_combination"
-    | "dual_horizontal_stacked_combination"
-    | "100_dual_stacked_bar"
-    | "100_dual_stacked_column"
-    | "scatter"
-    | "heatmap"
-    | "timeseries_column"
-    | "timeseries_line"
-    | "timeseries_scatter"
-    | "timeseries_stacked_column"
-    | "timeseries_100_stacked_column"
-    | "timeseries_bullet"
-    | "timeseries_waterfall"
-    | "timeseries_stacked_combination"
-  )[];
 }
 /**
  * Represents WDA specific attributes
@@ -3509,7 +3254,7 @@ export interface JSONSchemaForSAPPACKAGENamespace {
   /**
    * Represents SAP.PACKAGE attributes format version. It is managed by namespace owner
    */
-  _version?: "1.0.0" | "1.1.0" | "1.2.0";
+  _version?: "1.0.0" | "1.1.0";
   /**
    * Represents mandatory unique package identifier
    */
@@ -3686,7 +3431,7 @@ export interface JSONSchemaForSAPARTIFACTNamespace {
   /**
    * Represents SAP.ARTIFACT attributes format version. It is managed by namespace owner
    */
-  _version?: "1.0.0" | "1.1.0" | "1.2.0";
+  _version?: "1.0.0" | "1.1.0";
   /**
    * Represents mandatory unique artifact identifier
    */
@@ -3738,53 +3483,5 @@ export interface JSONSchemaForSAPARTIFACTNamespace {
     technicalAttributes?: string[];
     [k: string]: unknown;
   };
-  [k: string]: unknown;
-}
-/**
- * Represents generated cards saved to the application repository
- */
-export interface JSONSchemaForSapCardsApNamespace {
-  /**
-   * Represents attributes format version.
-   */
-  _version?: "1.0.0" | "1.1.0";
-  /**
-   * Represents an object with reference to the generated cards
-   */
-  embeds?: {
-    ObjectPage?: EmbedsSettings;
-    [k: string]: unknown;
-  };
-  [k: string]: unknown;
-}
-/**
- * Represents the embeds settings
- */
-export interface EmbedsSettings {
-  /**
-   * Represents the detault card
-   */
-  default?: string;
-  manifests?: {
-    /**
-     * This interface was referenced by `undefined`'s JSON-Schema definition
-     * via the `patternProperty` "^[a-zA-Z0-9_]+$".
-     */
-    [k: string]: ManifestSettings[];
-  };
-  [k: string]: unknown;
-}
-/**
- * Represents the manifest settings
- */
-export interface ManifestSettings {
-  /**
-   * Represents the local uri of the generated card
-   */
-  localUri?: string;
-  /**
-   * Represents a switch to hide actions from the shared card
-   */
-  hideActions?: boolean;
   [k: string]: unknown;
 }
