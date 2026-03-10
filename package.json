@@ -1,6 +1,6 @@
 {
     "name": "@ui5/manifest",
-    "version": "1.83.1",
+    "version": "1.37.0",
     "description": "This project contains a JSON schema for the UI5 manifest",
     "repository": {
         "type": "git",
