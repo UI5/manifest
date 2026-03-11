@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 <a name="Unreleased"></a>
 
+### Added
+- sap.card: New RadioButtonGroup field in Object cards
+
 <a name="v1.83.1"></a>
 ## [v1.83.1] - 2026-03-03  (UI5 1.145)
 
