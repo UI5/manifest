@@ -2927,6 +2927,10 @@ export interface CardSetting {
    */
   enableAddToInsights?: boolean;
   /**
+   * Represents the flag to enable/disable text wrapping for list and table cards
+   */
+  enableTextWrapping?: boolean;
+  /**
    * Represents the flag to show/hide individual card's functionality to refresh the card
    */
   showRefresh?: boolean;
