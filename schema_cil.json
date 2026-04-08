@@ -1553,6 +1553,11 @@
                     "type": "boolean",
                     "default": true
                 },
+                "enableTextWrapping": {
+                    "description": "Represents the flag to enable/disable text wrapping for list and table cards",
+                    "type": "boolean",
+                    "default": false
+                },
                 "showRefresh": {
                     "description": "Represents the flag to show/hide individual card's functionality to refresh the card",
                     "type": "boolean",
