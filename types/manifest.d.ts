@@ -3506,6 +3506,10 @@ export interface JSONSchemaForSAPCLOUDNamespace {
    * Specify if the UI can be accessed from a different space than origin development space
    */
   public?: boolean;
+  /**
+   * Provides the background image for the custom visualization. The URL of the image must be relative to the location of the component.js file
+   */
+  backgroundImageRelativeToComponent?: string;
 }
 /**
  * Represents general package attributes. Experimental, will be detailed in the future
