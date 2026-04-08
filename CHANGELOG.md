@@ -4,6 +4,11 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 <a name="Unreleased"></a>
 
+### Added
+- sap.card: New Table Popin behaviour. It is controlled by properties autoPopinMode, hiddenInPopin, popinLayout and importance
+- sap.card: Option to show the navigation indicator for list and table. Controlled by property navigationArrow
+- sap.card: Restricted customSettings which can be used by the host environment.
+
 <a name="v1.84.0"></a>
 ## [v1.84.0] - 2026-03-11  (UI5 1.146)
 
