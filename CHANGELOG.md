@@ -6,9 +6,11 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 ## [Unreleased]
 
 ### Added
-- sap.card: New Table Popin behaviour. It is controlled by properties autoPopinMode, hiddenInPopin, popinLayout and importance
-- sap.card: Option to show the navigation indicator for list and table. Controlled by property navigationArrow
-- sap.card: Restricted customSettings which can be used by the host environment.
+- sap.card: New Table Popin behaviour. It is controlled by properties `autoPopinMode, hiddenInPopin, popinLayout` and `importance`
+- sap.card: Option to show the navigation indicator for list and table. Controlled by property `navigationArrow`
+- sap.card: Restricted `customSettings` which can be used by the host environment.
+- sap.ovp: Introduced a new configuration flag, `enableTextWrapping`, in the card manifest for Table and List Cards in the Overview Page (OVP)
+- sap.cloud: Added `backgroundImageRelativeToComponent` property provides the background image for a custom tile visualization. The URL of the image must be relative to the location of the component.js file.
 
 <a name="v2.6.0"></a>
 ## [v2.6.0] - 2026-03-12  (UI5 1.146)
