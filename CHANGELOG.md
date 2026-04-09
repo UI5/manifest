@@ -5,6 +5,9 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="Unreleased"></a>
 
 <a name="v2.7.0"></a>
+## [v2.7.0] - 2026-04-09  (UI5 1.147)
+
+<a name="v2.7.0"></a>
 ## [v2.7.0] - 2026-04-08  (UI5 1.147)
 ## [Unreleased]: https://github.com/UI5/manifest/compare/v2.7.0...HEAD
 [v2.7.0]: https://github.com/UI5/manifest/compare/v2.6.0...v2.7.0
