@@ -5,18 +5,6 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="Unreleased"></a>
 
 <a name="v1.85.0"></a>
-## [v1.85.0] - 2026-04-09  (UI5 1.147)
-
-<a name="v1.85.0"></a>
-## [v1.85.0] - 2026-04-08  (UI5 1.147)
-
-<a name="v1.85.0"></a>
-## [v1.85.0] - 2026-04-08  (UI5 1.147)
-
-<a name="v1.85.0"></a>
-## [v1.85.0] - 2026-04-08  (UI5 1.147)
-
-<a name="v1.85.0"></a>
 ## [v1.85.0] - 2026-04-08  (UI5 1.147)
 
 ### Added
