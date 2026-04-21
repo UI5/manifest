@@ -3460,7 +3460,7 @@
         "resourceRoot": {
             "description": "Represents the resource root path relative to the application root. Used to define custom resource paths for loading modules and resources",
             "type": "string",
-            "pattern": "^((\\.(?!\\.)\\/)?\\w+\\/?)+$"
+            "pattern": "^((\\.\\/)?\\w+\\/?)+$"
         },
         "model": {
             "description": "Represents sapui5 model name",

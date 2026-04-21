@@ -2967,12 +2967,12 @@
         "semanticversion": {
             "description": "The version number of the schema in major.minor.patch format.",
             "type": "string",
-            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$"
+            "pattern": "^[0-9]{1,}\\.[0-9]{1,}\\.[0-9]{1,}$"
         },
         "iddef": {
             "type": "string",
             "maxLength": 70,
-            "pattern": "^[A-Za-z]{2,}.[A-Za-z]{2,}"
+            "pattern": "^[A-Za-z]{2,}\\.[A-Za-z]{2,}$"
         },
         "contentitem": {
             "description": "Represents an item of the content list defining the sub manifest and baseurl",
@@ -7290,7 +7290,7 @@
         },
         "simpleBinding": {
             "type": "string",
-            "pattern": "\\{.*\\}"
+            "pattern": "^\\{.*\\}$"
         },
         "definingRequest": {
             "type": "object",
@@ -9270,7 +9270,7 @@
         "resourceRoot": {
             "description": "Represents the resource root path relative to the application root. Used to define custom resource paths for loading modules and resources",
             "type": "string",
-            "pattern": "^((\\.(?!\\.)\\/)?\\w+\\/?)+$"
+            "pattern": "^((\\.\\/)?\\w+\\/?)+$"
         },
         "model": {
             "description": "Represents sapui5 model name",
