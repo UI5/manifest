@@ -2077,17 +2077,14 @@
                         "1.58.0",
                         "1.59.0",
                         "1.60.0",
-                        "1.61.0"
+                        "1.61.0",
+                        "1.62.0"
                     ]
                 },
                 "designtime": {
                     "description": "[Deprecated] The path to the design time folder with assets files",
                     "type": "string",
                     "deprecated": true
-                },
-                "customSettings": {
-                    "description": "[RESTRICTED] Custom settings which can be used by the host environment for special handling of different scenarios.",
-                    "type": "object"
                 },
                 "configuration": {
                     "description": "General configuration of the card. Allows to define parameters, destinations, filters and more",
@@ -2205,6 +2202,10 @@
                         }
                     }
                 },
+                "customSettings": {
+                    "description": "[RESTRICTED] Defines custom settings passed from the Mobile SDK or a hosting application. These are global defaults that can be overridden by individual cards via their manifest. The value is an object containing custom settings as key-value pairs. This property is restricted to Mobile SDK usage",
+                    "type": "object"
+                },
                 "type": {
                     "description": "Represents the type of the card's content",
                     "type": "string",
@@ -2302,6 +2303,18 @@
                         "visible": {
                             "description": "[Experimental] Visibility of the footer",
                             "$ref": "#/$defs/visibility"
+                        },
+                        "showSeparator": {
+                            "description": "Determines whether to display a separator line at the top of the footer to visually separate the footer from the card content area.",
+                            "oneOf": [
+                                {
+                                    "type": "boolean",
+                                    "default": false
+                                },
+                                {
+                                    "$ref": "#/$defs/simpleBinding"
+                                }
+                            ]
                         },
                         "closeButton": {
                             "description": "[Experimental] Defines the Close button when the card is opened by the ShowCard action",
@@ -3521,28 +3534,6 @@
                     "type": "array"
                 }
             }
-        },
-        "service_0": {
-            "description": "Represents service that will be used for actions",
-            "oneOf": [
-                {
-                    "description": "Represents name of the Service to be used for the action",
-                    "type": "string"
-                },
-                {
-                    "type": "object",
-                    "additionalProperties": false,
-                    "properties": {
-                        "name": {
-                            "description": "Represents name of the Service to be used for the action",
-                            "type": "string"
-                        },
-                        "parameters": {
-                            "type": "object"
-                        }
-                    }
-                }
-            ]
         },
         "request": {
             "description": "Represents request attributes",
@@ -5727,11 +5718,8 @@
                         }
                     ]
                 },
-                "service": {
-                    "$ref": "#/$defs/service"
-                },
                 "url": {
-                    "description": "[Deprecated] Represents the URL that will be used as navigation target if no service is provided",
+                    "description": "[Deprecated] Represents the URL that will be used as navigation target",
                     "deprecated": true,
                     "type": "string"
                 },
@@ -6891,9 +6879,6 @@
                         "array"
                     ],
                     "additionalProperties": true
-                },
-                "service": {
-                    "$ref": "#/$defs/service"
                 },
                 "updateInterval": {
                     "description": "Represents interval in seconds, after which a new data request will be triggered",
