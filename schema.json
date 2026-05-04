@@ -1615,10 +1615,6 @@
                 "header"
             ],
             "properties": {
-                "customSettings": {
-                    "description": "[RESTRICTED] Custom settings which can be used by the host environment for special handling of different scenarios.",
-                    "type": "object"
-                },
                 "configuration": {
                     "description": "General configuration of the card. Allows to define parameters, destinations, filters and more",
                     "type": "object",
@@ -1735,6 +1731,10 @@
                         }
                     }
                 },
+                "customSettings": {
+                    "description": "[RESTRICTED] Defines custom settings passed from the Mobile SDK or a hosting application. These are global defaults that can be overridden by individual cards via their manifest. The value is an object containing custom settings as key-value pairs. This property is restricted to Mobile SDK usage",
+                    "type": "object"
+                },
                 "type": {
                     "description": "Represents the type of the card's content",
                     "type": "string",
@@ -1832,6 +1832,18 @@
                         "visible": {
                             "description": "[Experimental] Visibility of the footer",
                             "$ref": "#/$defs/visibility"
+                        },
+                        "showSeparator": {
+                            "description": "Determines whether to display a separator line at the top of the footer to visually separate the footer from the card content area.",
+                            "oneOf": [
+                                {
+                                    "type": "boolean",
+                                    "default": false
+                                },
+                                {
+                                    "$ref": "#/$defs/simpleBinding"
+                                }
+                            ]
                         },
                         "closeButton": {
                             "description": "[Experimental] Defines the Close button when the card is opened by the ShowCard action",

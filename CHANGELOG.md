@@ -5,6 +5,12 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="Unreleased"></a>
 ## [Unreleased]
 
+### Added
+- sap.card: New property `showSeparator` in footer to visually separate the footer from the card content area
+
+### Changed
+- sap.card: Moved `customSettings` property and updated description to reflect Mobile SDK usage
+
 <a name="v2.7.0"></a>
 ## [v2.7.0] - 2026-04-09  (UI5 1.147)
 
