@@ -1292,6 +1292,75 @@
                         }
                     }
                 },
+                "controlConfiguration": {
+                    "description": "Specifies the configuration of filter fields, mapped by annotation path. Supported in OData V4 only.",
+                    "type": "object",
+                    "patternProperties": {
+                        "^@[a-zA-Z0-9_\\.\\-\\/]*$": {
+                            "description": "Defines the configuration for a specific annotation path",
+                            "type": "object",
+                            "properties": {
+                                "filterFields": {
+                                    "description": "Defines the configuration for filter fields",
+                                    "type": "object",
+                                    "patternProperties": {
+                                        "^[a-zA-Z0-9_\\.\\-]*$": {
+                                            "description": "Defines the configuration for a specific filter field",
+                                            "type": "object",
+                                            "properties": {
+                                                "settings": {
+                                                    "description": "Defines the settings for a specific filter field",
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "defaultValues": {
+                                                            "description": "Defines the default values for the filter field",
+                                                            "type": "array",
+                                                            "items": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "operator": {
+                                                                        "description": "Specifies the default semantic date operator",
+                                                                        "type": "string"
+                                                                    },
+                                                                    "values": {
+                                                                        "description": "Specifies additional values for the operator",
+                                                                        "type": "array"
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "operatorConfiguration": {
+                                                            "description": "Defines how operators are configured for the filter field",
+                                                            "type": "array",
+                                                            "items": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "path": {
+                                                                        "description": "Specifies the key information",
+                                                                        "type": "string"
+                                                                    },
+                                                                    "equals": {
+                                                                        "description": "Specifies one or more operator values, separated by commas",
+                                                                        "type": "string"
+                                                                    },
+                                                                    "exclude": {
+                                                                        "description": "Flag to exclude or include matched operators",
+                                                                        "type": "boolean",
+                                                                        "default": true
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
                 "dataLoadSettings": {
                     "description": "Represents the object to define data loading behaviour for an overview page application",
                     "type": "object",
