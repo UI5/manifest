@@ -2638,7 +2638,8 @@ export interface JSONSchemaForSAPOVPNamespace {
     | "1.10.0"
     | "1.11.0"
     | "1.12.0"
-    | "1.13.0";
+    | "1.13.0"
+    | "1.14.0";
   /**
    * Represents the name of global filter OData model, which  contains entities definition that are relevant for global filters
    */
@@ -2743,6 +2744,72 @@ export interface JSONSchemaForSAPOVPNamespace {
       [k: string]: unknown;
     };
     [k: string]: unknown;
+  };
+  /**
+   * Specifies the configuration of filter fields, mapped by annotation path. Supported in OData V4 only.
+   */
+  controlConfiguration?: {
+    /**
+     * Defines the configuration for a specific annotation path
+     *
+     * This interface was referenced by `undefined`'s JSON-Schema definition
+     * via the `patternProperty` "^@[a-zA-Z0-9_\.\-\/]*$".
+     */
+    [k: string]: {
+      /**
+       * Defines the configuration for filter fields
+       */
+      filterFields?: {
+        /**
+         * Defines the configuration for a specific filter field
+         *
+         * This interface was referenced by `undefined`'s JSON-Schema definition
+         * via the `patternProperty` "^[a-zA-Z0-9_\.\-]*$".
+         */
+        [k: string]: {
+          /**
+           * Defines the settings for a specific filter field
+           */
+          settings?: {
+            /**
+             * Defines the default values for the filter field
+             */
+            defaultValues?: {
+              /**
+               * Specifies the default semantic date operator
+               */
+              operator?: string;
+              /**
+               * Specifies additional values for the operator
+               */
+              values?: unknown[];
+              [k: string]: unknown;
+            }[];
+            /**
+             * Defines how operators are configured for the filter field
+             */
+            operatorConfiguration?: {
+              /**
+               * Specifies the key information
+               */
+              path?: string;
+              /**
+               * Specifies one or more operator values, separated by commas
+               */
+              equals?: string;
+              /**
+               * Flag to exclude or include matched operators
+               */
+              exclude?: boolean;
+              [k: string]: unknown;
+            }[];
+            [k: string]: unknown;
+          };
+          [k: string]: unknown;
+        };
+      };
+      [k: string]: unknown;
+    };
   };
   /**
    * Represents the object to define data loading behaviour for an overview page application
