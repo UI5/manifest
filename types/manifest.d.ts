@@ -2020,6 +2020,10 @@ export interface JSONSchemaForSAPPLATFORMCFNamespace {
    */
   _version?: "1.1.0" | "1.2.0";
   /**
+   * Specifies the SAPUI5 version used to load and run the application in SAP Build Work Zone. The UI5 version consists of [major, minor, patch]. You can replace the patch numeric value with an X, x, or *. For example, use 'ui5VersionNumber': '1.136.x' to get automatic updates of all patches of version 1.136.
+   */
+  ui5VersionNumber?: string;
+  /**
    * Represents the authorization scope of the application
    */
   oAuthScopes?: string[];
