@@ -628,6 +628,18 @@
             "type": "object",
             "additionalProperties": true,
             "properties": {
+                "_version": {
+                    "description": "Represents attributes format version. It is managed by namespace owner",
+                    "type": "string",
+                    "enum": [
+                        "1.1.0",
+                        "1.2.0"
+                    ]
+                },
+                "ui5VersionNumber": {
+                    "description": "Specifies the SAPUI5 version used to load and run the application in SAP Build Work Zone. The UI5 version consists of [major, minor, patch]. You can replace the patch numeric value with an X, x, or *. For example, use 'ui5VersionNumber': '1.136.x' to get automatic updates of all patches of version 1.136.",
+                    "type": "string"
+                },
                 "oAuthScopes": {
                     "description": "Represents the authorization scope of the application",
                     "type": "array",
