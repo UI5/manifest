@@ -4,12 +4,16 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 <a name="Unreleased"></a>
 
+<a name="v2.9.0"></a>
+## [v2.9.0] - 2026-06-11  (UI5 1.149)
+
 ### Added
 - sap.ovp: Added `controlConfiguration` property to support V4 filter field configurations via annotation path, including `defaultValues` and `operatorConfiguration`
 
 <a name="v2.8.0"></a>
 ## [v2.8.0] - 2026-05-04  (UI5 1.148)
-## [Unreleased]: https://github.com/UI5/manifest/compare/v2.8.0...HEAD
+## [Unreleased]: https://github.com/UI5/manifest/compare/v2.9.0...HEAD
+[v2.9.0]: https://github.com/UI5/manifest/compare/v2.8.0...v2.9.0
 [v2.8.0]: https://github.com/UI5/manifest/compare/v2.7.0...v2.8.0
 [v2.7.0]: https://github.com/UI5/manifest/compare/v2.6.0...v2.7.0
 [v2.6.0]: https://github.com/UI5/manifest/compare/v2.5.0...v2.6.0
