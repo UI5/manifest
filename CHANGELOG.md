@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 <a name="Unreleased"></a>
 
+<a name="v1.87.0"></a>
+## [v1.87.0] - 2026-06-11  (UI5 1.149)
+
 <a name="v1.86.0"></a>
 ## [v1.86.0] - 2026-05-04  (UI5 1.148)
 
@@ -261,7 +264,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="v1.48.1"></a>
 ## v1.48.1 - 2022-11-10
 
-[Unreleased]: https://github.com/UI5/manifest/compare/v1.86.0...HEAD
+[Unreleased]: https://github.com/UI5/manifest/compare/v1.87.0...HEAD
+[v1.87.0]: https://github.com/UI5/manifest/compare/v1.86.0...v1.87.0
 [v1.86.0]: https://github.com/UI5/manifest/compare/v1.85.0...v1.86.0
 [v1.85.0]: https://github.com/UI5/manifest/compare/v1.84.0...v1.85.0
 [v1.84.0]: https://github.com/UI5/manifest/compare/v1.83.1...v1.84.0
