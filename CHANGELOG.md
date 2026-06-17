@@ -7,11 +7,9 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="v1.87.0"></a>
 ## [v1.87.0] - 2026-06-11  (UI5 1.149)
 
-<a name="v1.87.0"></a>
-## [v1.87.0] - 2026-06-11  (UI5 1.149)
-
-<a name="v1.87.0"></a>
-## [v1.87.0] - 2026-06-11  (UI5 1.149)
+### Added
+- sap.platform.cf: New property `ui5VersionNumber` to specify the SAPUI5 version used to load and run the application in SAP Build Work Zone.
+- sap.ovp: New property `controlConfiguration`to specify the configuration of filter fields, mapped by annotation path. Supported in OData V4 only.
 
 <a name="v1.86.0"></a>
 ## [v1.86.0] - 2026-05-04  (UI5 1.148)
