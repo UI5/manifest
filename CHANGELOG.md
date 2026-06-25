@@ -5,9 +5,12 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="Unreleased"></a>
 ## [Unreleased]
 
+<a name="v2.10.0"></a>
+## [v2.10.0] - 2026-06-25  (UI5 1.150)
+
 ### Added
 - sap.card: New property `ignoreBinding` on configuration parameters. When set to `true`, the parameter value is taken verbatim and is not processed as a binding expression. Useful for values that contain literal curly braces, e.g. stringified JSON.
-- sap.card: New property `itemsLayout` for object card group. Defines how the items inside the group are laid out. \"Vertical\" stacks each label/value pair on its own row (default). \"Horizontal\" arranges the pairs side by side and wraps them onto multiple rows when there is not enough width. 
+- sap.card: New property `itemsLayout` for object card group. Defines how the items inside the group are laid out. \"Vertical\" stacks each label/value pair on its own row (default). \"Horizontal\" arranges the pairs side by side and wraps them onto multiple rows when there is not enough width.
 
 <a name="v2.9.0"></a>
 ## [v2.9.0] - 2026-06-11  (UI5 1.149)
@@ -255,49 +258,52 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="v1.48.1"></a>
 ## v1.48.1 - 2022-11-10
 
-[Unreleased]: https://github.com/SAP/ui5-manifest/compare/v2.9.0...HEAD
-[v2.9.0]: https://github.com/SAP/ui5-manifest/compare/v2.8.0...v2.9.0
-[v2.8.0]: https://github.com/SAP/ui5-manifest/compare/v2.7.0...v2.8.0
-[v2.7.0]: https://github.com/SAP/ui5-manifest/compare/v2.6.0...v2.7.0
-[v2.6.0]: https://github.com/SAP/ui5-manifest/compare/v2.5.0...v2.6.0
-[v2.5.0]: https://github.com/SAP/ui5-manifest/compare/v2.4.0...v2.5.0
-[v2.4.0]: https://github.com/SAP/ui5-manifest/compare/v2.3.1...v2.4.0
-[v2.3.1]: https://github.com/SAP/ui5-manifest/compare/v2.3.0...v2.3.1
-[v2.3.0]: https://github.com/SAP/ui5-manifest/compare/v2.2.0...v2.3.0
-[v2.2.0]: https://github.com/SAP/ui5-manifest/compare/v2.1.1...v2.2.0
-[v2.1.1]: https://github.com/SAP/ui5-manifest/compare/v2.1.0...v2.1.1
-[v2.1.0]: https://github.com/SAP/ui5-manifest/compare/v2.0.0...v2.1.0
-[v1.77.0]: https://github.com/SAP/ui5-manifest/compare/v1.72.3...v1.77.0
-[v2.0.0]: https://github.com/SAP/ui5-manifest/compare/v1.72.0...v2.0.0
-[v1.72.3]: https://github.com/SAP/ui5-manifest/compare/v1.71.0...v1.72.3
-[v1.71.0]: https://github.com/SAP/ui5-manifest/compare/v1.70.1...v1.71.0
-[v1.70.1]: https://github.com/SAP/ui5-manifest/compare/v1.70.0...v1.70.1
-[v1.70.0]: https://github.com/SAP/ui5-manifest/compare/v1.69.0...v1.70.0
-[v1.69.0]: https://github.com/SAP/ui5-manifest/compare/v1.68.0...v1.69.0
-[v1.68.0]: https://github.com/SAP/ui5-manifest/compare/v1.67.2...v1.68.0
-[v1.67.2]: https://github.com/SAP/ui5-manifest/compare/v1.67.1...v1.67.2
-[v1.67.1]: https://github.com/SAP/ui5-manifest/compare/v1.67.0...v1.67.1
-[v1.67.0]: https://github.com/SAP/ui5-manifest/compare/v1.66.0...v1.67.0
-[v1.66.0]: https://github.com/SAP/ui5-manifest/compare/v1.65.1...v1.66.0
-[v1.65.1]: https://github.com/SAP/ui5-manifest/compare/v1.64.1...v1.65.1
-[v1.64.1]: https://github.com/SAP/ui5-manifest/compare/v1.65.0...v1.64.1
-[v1.65.0]: https://github.com/SAP/ui5-manifest/compare/v1.64.0...v1.65.0
-[v1.64.0]: https://github.com/SAP/ui5-manifest/compare/v1.63.0...v1.64.0
-[v1.63.0]: https://github.com/SAP/ui5-manifest/compare/v1.62.1...v1.63.0
-[v1.62.1]: https://github.com/SAP/ui5-manifest/compare/v1.62.0...v1.62.1
-[v1.62.0]: https://github.com/SAP/ui5-manifest/compare/v1.61.1...v1.62.0
-[v1.61.1]: https://github.com/SAP/ui5-manifest/compare/v1.60.0...v1.61.1
-[v1.60.0]: https://github.com/SAP/ui5-manifest/compare/v1.59.0...v1.60.0
-[v1.59.0]: https://github.com/SAP/ui5-manifest/compare/v1.57.0...v1.59.0
-[v1.57.0]: https://github.com/SAP/ui5-manifest/compare/v1.56.0...v1.57.0
-[v1.56.0]: https://github.com/SAP/ui5-manifest/compare/v1.55.0...v1.56.0
-[v1.55.0]: https://github.com/SAP/ui5-manifest/compare/v1.54.0...v1.55.0
-[v1.54.0]: https://github.com/SAP/ui5-manifest/compare/v1.53.1...v1.54.0
-[v1.53.1]: https://github.com/SAP/ui5-manifest/compare/v1.53.0...v1.53.1
-[v1.53.0]: https://github.com/SAP/ui5-manifest/compare/v1.52.1...v1.53.0
-[v1.52.1]: https://github.com/SAP/ui5-manifest/compare/v1.52.0...v1.52.1
-[v1.52.0]: https://github.com/SAP/ui5-manifest/compare/v1.51.0...v1.52.0
-[v1.51.0]: https://github.com/SAP/ui5-manifest/compare/v1.49.2...v1.51.0
-[v1.49.2]: https://github.com/SAP/ui5-manifest/compare/v1.49.1...v1.49.2
-[v1.49.1]: https://github.com/SAP/ui5-manifest/compare/v1.49.0...v1.49.1
-[v1.49.0]: https://github.com/SAP/ui5-manifest/compare/v1.48.1...v1.49.0
+[Unreleased]: https://github.com/UI5/manifest/compare/v2.10.0...HEAD
+[v2.10.0]: https://github.com/UI5/manifest/compare/v2.9.0...v2.10.0
+[v2.9.0]: https://github.com/UI5/manifest/compare/v2.8.0...v2.9.0
+[v2.8.0]: https://github.com/UI5/manifest/compare/v2.7.0...v2.8.0
+[v2.7.0]: https://github.com/UI5/manifest/compare/v2.6.0...v2.7.0
+[v2.6.0]: https://github.com/UI5/manifest/compare/v2.5.0...v2.6.0
+[v2.5.0]: https://github.com/UI5/manifest/compare/v2.4.0...v2.5.0
+[v2.4.0]: https://github.com/UI5/manifest/compare/v2.3.1...v2.4.0
+[v2.3.1]: https://github.com/UI5/manifest/compare/v2.3.0...v2.3.1
+[v2.3.0]: https://github.com/UI5/manifest/compare/v2.2.0...v2.3.0
+[v2.2.0]: https://github.com/UI5/manifest/compare/v2.1.1...v2.2.0
+[v2.1.1]: https://github.com/UI5/manifest/compare/v2.1.0...v2.1.1
+[v2.1.0]: https://github.com/UI5/manifest/compare/v1.77.0...v2.1.0
+[v1.77.0]: https://github.com/UI5/manifest/compare/v1.76.0...v1.77.0
+[v1.76.0]: https://github.com/UI5/manifest/compare/v1.75.1...v1.76.0
+[v1.75.1]: https://github.com/UI5/manifest/compare/v1.73.1...v1.75.1
+[v1.73.1]: https://github.com/UI5/manifest/compare/v1.72.3...v1.73.1
+[v1.72.3]: https://github.com/UI5/manifest/compare/v1.71.0...v1.72.3
+[v1.71.0]: https://github.com/UI5/manifest/compare/v1.70.1...v1.71.0
+[v1.70.1]: https://github.com/UI5/manifest/compare/v1.70.0...v1.70.1
+[v1.70.0]: https://github.com/UI5/manifest/compare/v1.69.0...v1.70.0
+[v1.69.0]: https://github.com/UI5/manifest/compare/v1.68.0...v1.69.0
+[v1.68.0]: https://github.com/UI5/manifest/compare/v1.67.2...v1.68.0
+[v1.67.2]: https://github.com/UI5/manifest/compare/v1.67.1...v1.67.2
+[v1.67.1]: https://github.com/UI5/manifest/compare/v1.67.0...v1.67.1
+[v1.67.0]: https://github.com/UI5/manifest/compare/v1.66.0...v1.67.0
+[v1.66.0]: https://github.com/UI5/manifest/compare/v1.65.1...v1.66.0
+[v1.65.1]: https://github.com/UI5/manifest/compare/v1.64.1...v1.65.1
+[v1.64.1]: https://github.com/UI5/manifest/compare/v1.65.0...v1.64.1
+[v1.65.0]: https://github.com/UI5/manifest/compare/v1.64.0...v1.65.0
+[v1.64.0]: https://github.com/UI5/manifest/compare/v1.63.0...v1.64.0
+[v1.63.0]: https://github.com/UI5/manifest/compare/v1.62.1...v1.63.0
+[v1.62.1]: https://github.com/UI5/manifest/compare/v1.62.0...v1.62.1
+[v1.62.0]: https://github.com/UI5/manifest/compare/v1.61.1...v1.62.0
+[v1.61.1]: https://github.com/UI5/manifest/compare/v1.60.0...v1.61.1
+[v1.60.0]: https://github.com/UI5/manifest/compare/v1.59.0...v1.60.0
+[v1.59.0]: https://github.com/UI5/manifest/compare/v1.57.0...v1.59.0
+[v1.57.0]: https://github.com/UI5/manifest/compare/v1.56.0...v1.57.0
+[v1.56.0]: https://github.com/UI5/manifest/compare/v1.55.0...v1.56.0
+[v1.55.0]: https://github.com/UI5/manifest/compare/v1.54.0...v1.55.0
+[v1.54.0]: https://github.com/UI5/manifest/compare/v1.53.1...v1.54.0
+[v1.53.1]: https://github.com/UI5/manifest/compare/v1.53.0...v1.53.1
+[v1.53.0]: https://github.com/UI5/manifest/compare/v1.52.1...v1.53.0
+[v1.52.1]: https://github.com/UI5/manifest/compare/v1.52.0...v1.52.1
+[v1.52.0]: https://github.com/UI5/manifest/compare/v1.51.0...v1.52.0
+[v1.51.0]: https://github.com/UI5/manifest/compare/v1.49.2...v1.51.0
+[v1.49.2]: https://github.com/UI5/manifest/compare/v1.49.1...v1.49.2
+[v1.49.1]: https://github.com/UI5/manifest/compare/v1.49.0...v1.49.1
+[v1.49.0]: https://github.com/UI5/manifest/compare/v1.48.1...v1.49.0
