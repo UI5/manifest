@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 <a name="Unreleased"></a>
 
+### Added
+- sap.card: New property `ignoreBinding` on configuration parameters. When set to `true`, the parameter value is taken verbatim and is not processed as a binding expression. Useful for values that contain literal curly braces, e.g. stringified JSON.
+- sap.card: New property `itemsLayout` for object card group. Defines how the items inside the group are laid out. \"Vertical\" stacks each label/value pair on its own row (default). \"Horizontal\" arranges the pairs side by side and wraps them onto multiple rows when there is not enough width. 
+
 <a name="v2.9.0"></a>
 ## [v2.9.0] - 2026-06-11  (UI5 1.149)
 
