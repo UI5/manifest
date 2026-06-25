@@ -281,8 +281,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 [v1.83.0]: https://github.com/UI5/manifest/compare/v1.82.0...v1.83.0
 [v1.82.0]: https://github.com/UI5/manifest/compare/v1.81.1...v1.82.0
 [v1.81.1]: https://github.com/UI5/manifest/compare/v1.81.0...v1.81.1
-[v1.81.0]: https://github.com/UI5/manifest/compare/v1.80.1...v1.81.0
-[v1.80.1]: https://github.com/UI5/manifest/compare/v1.80.0...v1.80.1
+[v1.81.0]: https://github.com/UI5/manifest/compare/v1.80.0...v1.81.0
 [v1.80.0]: https://github.com/UI5/manifest/compare/v1.79.0...v1.80.0
 [v1.79.0]: https://github.com/UI5/manifest/compare/v1.78.0...v1.79.0
 [v1.78.0]: https://github.com/UI5/manifest/compare/v1.77.0...v1.78.0
