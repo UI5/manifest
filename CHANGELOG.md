@@ -5,9 +5,12 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="Unreleased"></a>
 ## [Unreleased]
 
+<a name="v1.88.0"></a>
+## [v1.88.0] - 2026-06-25  (UI5 1.150)
+
 ### Added
 - sap.card: New property `ignoreBinding` on configuration parameters. When set to `true`, the parameter value is taken verbatim and is not processed as a binding expression. Useful for values that contain literal curly braces, e.g. stringified JSON.
-- sap.card: New property `itemsLayout` for object card group. Defines how the items inside the group are laid out. \"Vertical\" stacks each label/value pair on its own row (default). \"Horizontal\" arranges the pairs side by side and wraps them onto multiple rows when there is not enough width. 
+- sap.card: New property `itemsLayout` for object card group. Defines how the items inside the group are laid out. \"Vertical\" stacks each label/value pair on its own row (default). \"Horizontal\" arranges the pairs side by side and wraps them onto multiple rows when there is not enough width.
 
 <a name="v1.87.0"></a>
 ## [v1.87.0] - 2026-06-11  (UI5 1.149)
@@ -273,7 +276,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="v1.48.1"></a>
 ## v1.48.1 - 2022-11-10
 
-[Unreleased]: https://github.com/UI5/manifest/compare/v1.87.0...HEAD
+[Unreleased]: https://github.com/UI5/manifest/compare/v1.88.0...HEAD
+[v1.88.0]: https://github.com/UI5/manifest/compare/v1.87.0...v1.88.0
 [v1.87.0]: https://github.com/UI5/manifest/compare/v1.86.0...v1.87.0
 [v1.86.0]: https://github.com/UI5/manifest/compare/v1.85.0...v1.86.0
 [v1.85.0]: https://github.com/UI5/manifest/compare/v1.84.0...v1.85.0
@@ -282,7 +286,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 [v1.83.0]: https://github.com/UI5/manifest/compare/v1.82.0...v1.83.0
 [v1.82.0]: https://github.com/UI5/manifest/compare/v1.81.1...v1.82.0
 [v1.81.1]: https://github.com/UI5/manifest/compare/v1.81.0...v1.81.1
-[v1.81.0]: https://github.com/UI5/manifest/compare/v1.80.0...v1.81.0
+[v1.81.0]: https://github.com/UI5/manifest/compare/v1.80.1...v1.81.0
+[v1.80.1]: https://github.com/UI5/manifest/compare/v1.80.0...v1.80.1
 [v1.80.0]: https://github.com/UI5/manifest/compare/v1.79.0...v1.80.0
 [v1.79.0]: https://github.com/UI5/manifest/compare/v1.78.0...v1.79.0
 [v1.78.0]: https://github.com/UI5/manifest/compare/v1.77.0...v1.78.0
