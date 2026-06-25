@@ -3,6 +3,7 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <a name="Unreleased"></a>
+## [Unreleased]
 
 ### Added
 - sap.card: New property `ignoreBinding` on configuration parameters. When set to `true`, the parameter value is taken verbatim and is not processed as a binding expression. Useful for values that contain literal curly braces, e.g. stringified JSON.
