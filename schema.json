@@ -3011,7 +3011,7 @@
                 },
                 "enableMobileExperience": {
                     "description": "Enables Fiori Elements mobile phone optimizations for the application.",
-                    "type: ": "boolean",
+                    "type": "boolean",
                     "default": true
                 }
             }
