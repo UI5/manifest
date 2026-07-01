@@ -2996,6 +2996,25 @@
                     }
                 }
             }
+        },
+        "sap.fe.mobile": {
+            "title": "JSON schema for SAP.FE.MOBILE Namespace",
+            "description": "Represents specific attributes for Fiori Elements Mobile",
+            "type": "object",
+            "properties": {
+                "_version": {
+                    "description": "Represents attributes format version. It is managed by namespace owner",
+                    "type": "string",
+                    "enum": [
+                        "1.0.0"
+                    ]
+                },
+                "enableMobileExperience": {
+                    "description": "Enables Fiori Elements mobile phone optimizations for the application.",
+                    "type: ": "boolean",
+                    "default": true
+                }
+            }
         }
     },
     "$defs": {
