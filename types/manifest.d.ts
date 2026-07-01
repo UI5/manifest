@@ -762,6 +762,7 @@ export interface SAPJSONSchemaForWebApplicationManifestFile {
   "sap.artifact"?: JSONSchemaForSAPARTIFACTNamespace;
   "sap.bpa.task"?: JSONSchemaForSapBpaTaskNamespace;
   "sap.cards.ap"?: JSONSchemaForSapCardsApNamespace;
+  "sap.fe.mobile"?: JSONSchemaForSAPFEMOBILENamespace;
 }
 /**
  * Represents general application attributes
@@ -3501,5 +3502,15 @@ export interface ManifestSettings {
    * Represents a switch to hide actions from the shared card
    */
   hideActions?: boolean;
+  [k: string]: unknown;
+}
+/**
+ * Represents specific attributes for Fiori Elements Mobile
+ */
+export interface JSONSchemaForSAPFEMOBILENamespace {
+  /**
+   * Enables Fiori Elements mobile phone optimizations for the application.
+   */
+  enableMobileExperience?: boolean;
   [k: string]: unknown;
 }

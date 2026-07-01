@@ -5,6 +5,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="Unreleased"></a>
 ## [Unreleased]
 
+- sap.fe.mobile: New namespace for Fiori Elements Mobile configurations. Includes property `enableMobileExperience` to enable Fiori Elements mobile phone optimizations for the application.
+
 <a name="v2.10.0"></a>
 ## [v2.10.0] - 2026-06-25  (UI5 1.150)
 
