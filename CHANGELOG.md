@@ -5,9 +5,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="Unreleased"></a>
 ## [Unreleased]
 
-- sap.fe.mobile: New namespace for Fiori Elements Mobile configurations. Includes property `enableMobileExperience` to enable Fiori Elements mobile phone optimizations for the application.
-
 ### Added
+- sap.fe.mobile: New namespace for Fiori Elements Mobile configurations. Includes property `enableMobileExperience` to enable Fiori Elements mobile phone optimizations for the application.
 - sap.card: New property `badges` to display one or more badges on the card that attract user attention, such as 'New' or 'Updated' indicators. Each badge supports `text`, `icon`, `state`, `visible`, `visibilityMode` and `announcementText`.
 - sap.card: New property `valueEntries` on object card group items. Defines an array of value objects, each with its own `value`, `tooltip`, `actions`, `visible` and `maxLines`. Takes precedence over `value` when both are provided. Works only with items of the type 'Default'.
 
