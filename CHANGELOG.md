@@ -5,6 +5,9 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="Unreleased"></a>
 ## [Unreleased]
 
+<a name="v1.89.0"></a>
+## [v1.89.0] - 2026-07-23  (UI5 1.151)
+
 ### Added
 - sap.fe.mobile: New namespace for Fiori Elements Mobile configurations. Includes property `enableMobileExperience` to enable Fiori Elements mobile phone optimizations for the application.
 - sap.card: New property `badges` to display one or more badges on the card that attract user attention, such as 'New' or 'Updated' indicators. Each badge supports `text`, `icon`, `state`, `visible`, `visibilityMode` and `announcementText`.
@@ -281,7 +284,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="v1.48.1"></a>
 ## v1.48.1 - 2022-11-10
 
-[Unreleased]: https://github.com/UI5/manifest/compare/v1.88.0...HEAD
+[Unreleased]: https://github.com/UI5/manifest/compare/v1.89.0...HEAD
+[v1.89.0]: https://github.com/UI5/manifest/compare/v1.88.0...v1.89.0
 [v1.88.0]: https://github.com/UI5/manifest/compare/v1.87.0...v1.88.0
 [v1.87.0]: https://github.com/UI5/manifest/compare/v1.86.0...v1.87.0
 [v1.86.0]: https://github.com/UI5/manifest/compare/v1.85.0...v1.86.0
