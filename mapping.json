@@ -1,4 +1,632 @@
 {
+    "$byUI5Version": {
+        "1.151": {
+            "maxSchemaVersion": {
+                "1": "1.89.0",
+                "2": "2.11.0"
+            }
+        },
+        "1.150": {
+            "maxSchemaVersion": {
+                "1": "1.88.0",
+                "2": "2.10.0"
+            }
+        },
+        "1.149": {
+            "maxSchemaVersion": {
+                "1": "1.87.0",
+                "2": "2.9.0"
+            }
+        },
+        "1.148": {
+            "maxSchemaVersion": {
+                "1": "1.86.0",
+                "2": "2.8.0"
+            }
+        },
+        "1.147": {
+            "maxSchemaVersion": {
+                "1": "1.85.0",
+                "2": "2.7.0"
+            }
+        },
+        "1.146": {
+            "maxSchemaVersion": {
+                "1": "1.84.0",
+                "2": "2.6.0"
+            }
+        },
+        "1.145": {
+            "maxSchemaVersion": {
+                "1": "1.83.1",
+                "2": "2.5.0"
+            }
+        },
+        "1.144": {
+            "maxSchemaVersion": {
+                "1": "1.82.0",
+                "2": "2.4.0"
+            }
+        },
+        "1.143": {
+            "maxSchemaVersion": {
+                "1": "1.81.1",
+                "2": "2.3.1"
+            }
+        },
+        "1.142": {
+            "maxSchemaVersion": {
+                "1": "1.80.0",
+                "2": "2.3.1"
+            }
+        },
+        "1.141": {
+            "maxSchemaVersion": {
+                "1": "1.79.0",
+                "2": "2.2.0"
+            }
+        },
+        "1.140": {
+            "maxSchemaVersion": {
+                "1": "1.78.0",
+                "2": "2.1.1"
+            }
+        },
+        "1.139": {
+            "maxSchemaVersion": {
+                "1": "1.77.0",
+                "2": "2.1.0"
+            }
+        },
+        "1.138": {
+            "maxSchemaVersion": {
+                "1": "1.76.0",
+                "2": "2.1.0"
+            }
+        },
+        "1.137": {
+            "maxSchemaVersion": {
+                "1": "1.75.1",
+                "2": "2.1.0"
+            }
+        },
+        "1.136": {
+            "maxSchemaVersion": {
+                "1": "1.73.1",
+                "2": "2.0.0"
+            }
+        },
+        "1.135": {
+            "maxSchemaVersion": {
+                "1": "1.72.3"
+            }
+        },
+        "1.134": {
+            "maxSchemaVersion": {
+                "1": "1.72.0"
+            }
+        },
+        "1.133": {
+            "maxSchemaVersion": {
+                "1": "1.70.1"
+            }
+        },
+        "1.132": {
+            "maxSchemaVersion": {
+                "1": "1.69.0"
+            }
+        },
+        "1.131": {
+            "maxSchemaVersion": {
+                "1": "1.68.0"
+            }
+        },
+        "1.130": {
+            "maxSchemaVersion": {
+                "1": "1.67.2"
+            }
+        },
+        "1.129": {
+            "maxSchemaVersion": {
+                "1": "1.66.0"
+            }
+        },
+        "1.128": {
+            "maxSchemaVersion": {
+                "1": "1.65.0"
+            }
+        },
+        "1.127": {
+            "maxSchemaVersion": {
+                "1": "1.65.0"
+            }
+        },
+        "1.126": {
+            "maxSchemaVersion": {
+                "1": "1.65.0"
+            }
+        },
+        "1.125": {
+            "maxSchemaVersion": {
+                "1": "1.64.0"
+            }
+        },
+        "1.124": {
+            "maxSchemaVersion": {
+                "1": "1.64.0"
+            }
+        },
+        "1.123": {
+            "maxSchemaVersion": {
+                "1": "1.63.0"
+            }
+        },
+        "1.122": {
+            "maxSchemaVersion": {
+                "1": "1.62.0"
+            }
+        },
+        "1.121": {
+            "maxSchemaVersion": {
+                "1": "1.61.1"
+            }
+        },
+        "1.120": {
+            "maxSchemaVersion": {
+                "1": "1.60.0"
+            }
+        },
+        "1.119": {
+            "maxSchemaVersion": {
+                "1": "1.59.0"
+            }
+        },
+        "1.118": {
+            "maxSchemaVersion": {
+                "1": "1.58.1"
+            }
+        },
+        "1.117": {
+            "maxSchemaVersion": {
+                "1": "1.57.0"
+            }
+        },
+        "1.116": {
+            "maxSchemaVersion": {
+                "1": "1.56.0"
+            }
+        },
+        "1.115": {
+            "maxSchemaVersion": {
+                "1": "1.55.0"
+            }
+        },
+        "1.114": {
+            "maxSchemaVersion": {
+                "1": "1.53.0"
+            }
+        },
+        "1.113": {
+            "maxSchemaVersion": {
+                "1": "1.53.0"
+            }
+        },
+        "1.112": {
+            "maxSchemaVersion": {
+                "1": "1.52.0"
+            }
+        },
+        "1.111": {
+            "maxSchemaVersion": {
+                "1": "1.51.0"
+            }
+        },
+        "1.110": {
+            "maxSchemaVersion": {
+                "1": "1.50.1"
+            }
+        },
+        "1.109": {
+            "maxSchemaVersion": {
+                "1": "1.49.0"
+            }
+        },
+        "1.108": {
+            "maxSchemaVersion": {
+                "1": "1.48.0"
+            }
+        },
+        "1.107": {
+            "maxSchemaVersion": {
+                "1": "1.47.0"
+            }
+        },
+        "1.106": {
+            "maxSchemaVersion": {
+                "1": "1.46.0"
+            }
+        },
+        "1.105": {
+            "maxSchemaVersion": {
+                "1": "1.45.0"
+            }
+        },
+        "1.104": {
+            "maxSchemaVersion": {
+                "1": "1.44.0"
+            }
+        },
+        "1.103": {
+            "maxSchemaVersion": {
+                "1": "1.43.0"
+            }
+        },
+        "1.102": {
+            "maxSchemaVersion": {
+                "1": "1.42.0"
+            }
+        },
+        "1.101": {
+            "maxSchemaVersion": {
+                "1": "1.41.0"
+            }
+        },
+        "1.100": {
+            "maxSchemaVersion": {
+                "1": "1.40.0"
+            }
+        },
+        "1.99": {
+            "maxSchemaVersion": {
+                "1": "1.39.0"
+            }
+        },
+        "1.98": {
+            "maxSchemaVersion": {
+                "1": "1.38.0"
+            }
+        },
+        "1.97": {
+            "maxSchemaVersion": {
+                "1": "1.37.0"
+            }
+        },
+        "1.96": {
+            "maxSchemaVersion": {
+                "1": "1.37.0"
+            }
+        },
+        "1.95": {
+            "maxSchemaVersion": {
+                "1": "1.36.0"
+            }
+        },
+        "1.94": {
+            "maxSchemaVersion": {
+                "1": "1.35.0"
+            }
+        },
+        "1.93": {
+            "maxSchemaVersion": {
+                "1": "1.35.0"
+            }
+        },
+        "1.92": {
+            "maxSchemaVersion": {
+                "1": "1.34.0"
+            }
+        },
+        "1.91": {
+            "maxSchemaVersion": {
+                "1": "1.33.0"
+            }
+        },
+        "1.90": {
+            "maxSchemaVersion": {
+                "1": "1.33.0"
+            }
+        },
+        "1.89": {
+            "maxSchemaVersion": {
+                "1": "1.32.0"
+            }
+        },
+        "1.88": {
+            "maxSchemaVersion": {
+                "1": "1.32.0"
+            }
+        },
+        "1.87": {
+            "maxSchemaVersion": {
+                "1": "1.31.0"
+            }
+        },
+        "1.86": {
+            "maxSchemaVersion": {
+                "1": "1.30.0"
+            }
+        },
+        "1.85": {
+            "maxSchemaVersion": {
+                "1": "1.29.0"
+            }
+        },
+        "1.84": {
+            "maxSchemaVersion": {
+                "1": "1.28.0"
+            }
+        },
+        "1.83": {
+            "maxSchemaVersion": {
+                "1": "1.27.0"
+            }
+        },
+        "1.82": {
+            "maxSchemaVersion": {
+                "1": "1.26.0"
+            }
+        },
+        "1.81": {
+            "maxSchemaVersion": {
+                "1": "1.25.0"
+            }
+        },
+        "1.80": {
+            "maxSchemaVersion": {
+                "1": "1.24.0"
+            }
+        },
+        "1.79": {
+            "maxSchemaVersion": {
+                "1": "1.23.0"
+            }
+        },
+        "1.78": {
+            "maxSchemaVersion": {
+                "1": "1.22.0"
+            }
+        },
+        "1.77": {
+            "maxSchemaVersion": {
+                "1": "1.21.0"
+            }
+        },
+        "1.76": {
+            "maxSchemaVersion": {
+                "1": "1.20.0"
+            }
+        },
+        "1.75": {
+            "maxSchemaVersion": {
+                "1": "1.19.0"
+            }
+        },
+        "1.74": {
+            "maxSchemaVersion": {
+                "1": "1.18.0"
+            }
+        },
+        "1.73": {
+            "maxSchemaVersion": {
+                "1": "1.17.0"
+            }
+        },
+        "1.72": {
+            "maxSchemaVersion": {
+                "1": "1.17.0"
+            }
+        },
+        "1.71": {
+            "maxSchemaVersion": {
+                "1": "1.17.0"
+            }
+        },
+        "1.70": {
+            "maxSchemaVersion": {
+                "1": "1.16.0"
+            }
+        },
+        "1.69": {
+            "maxSchemaVersion": {
+                "1": "1.15.0"
+            }
+        },
+        "1.68": {
+            "maxSchemaVersion": {
+                "1": "1.15.0"
+            }
+        },
+        "1.67": {
+            "maxSchemaVersion": {
+                "1": "1.15.0"
+            }
+        },
+        "1.66": {
+            "maxSchemaVersion": {
+                "1": "1.15.0"
+            }
+        },
+        "1.65": {
+            "maxSchemaVersion": {
+                "1": "1.14.0"
+            }
+        },
+        "1.64": {
+            "maxSchemaVersion": {
+                "1": "1.14.0"
+            }
+        },
+        "1.63": {
+            "maxSchemaVersion": {
+                "1": "1.14.0"
+            }
+        },
+        "1.62": {
+            "maxSchemaVersion": {
+                "1": "1.14.0"
+            }
+        },
+        "1.61": {
+            "maxSchemaVersion": {
+                "1": "1.13.0"
+            }
+        },
+        "1.60": {
+            "maxSchemaVersion": {
+                "1": "1.12.0"
+            }
+        },
+        "1.59": {
+            "maxSchemaVersion": {
+                "1": "1.12.0"
+            }
+        },
+        "1.58": {
+            "maxSchemaVersion": {
+                "1": "1.12.0"
+            }
+        },
+        "1.57": {
+            "maxSchemaVersion": {
+                "1": "1.11.0"
+            }
+        },
+        "1.56": {
+            "maxSchemaVersion": {
+                "1": "1.11.0"
+            }
+        },
+        "1.55": {
+            "maxSchemaVersion": {
+                "1": "1.10.0"
+            }
+        },
+        "1.54": {
+            "maxSchemaVersion": {
+                "1": "1.10.0"
+            }
+        },
+        "1.53": {
+            "maxSchemaVersion": {
+                "1": "1.9.0"
+            }
+        },
+        "1.52": {
+            "maxSchemaVersion": {
+                "1": "1.9.0"
+            }
+        },
+        "1.51": {
+            "maxSchemaVersion": {
+                "1": "1.8.0"
+            }
+        },
+        "1.50": {
+            "maxSchemaVersion": {
+                "1": "1.8.0"
+            }
+        },
+        "1.49": {
+            "maxSchemaVersion": {
+                "1": "1.7.0"
+            }
+        },
+        "1.48": {
+            "maxSchemaVersion": {
+                "1": "1.7.0"
+            }
+        },
+        "1.47": {
+            "maxSchemaVersion": {
+                "1": "1.6.0"
+            }
+        },
+        "1.46": {
+            "maxSchemaVersion": {
+                "1": "1.6.0"
+            }
+        },
+        "1.45": {
+            "maxSchemaVersion": {
+                "1": "1.5.0"
+            }
+        },
+        "1.44": {
+            "maxSchemaVersion": {
+                "1": "1.5.0"
+            }
+        },
+        "1.43": {
+            "maxSchemaVersion": {
+                "1": "1.5.0"
+            }
+        },
+        "1.42": {
+            "maxSchemaVersion": {
+                "1": "1.5.0"
+            }
+        },
+        "1.41": {
+            "maxSchemaVersion": {
+                "1": "1.4.0"
+            }
+        },
+        "1.40": {
+            "maxSchemaVersion": {
+                "1": "1.4.0"
+            }
+        },
+        "1.39": {
+            "maxSchemaVersion": {
+                "1": "1.4.0"
+            }
+        },
+        "1.38": {
+            "maxSchemaVersion": {
+                "1": "1.4.0"
+            }
+        },
+        "1.37": {
+            "maxSchemaVersion": {
+                "1": "1.3.0"
+            }
+        },
+        "1.36": {
+            "maxSchemaVersion": {
+                "1": "1.3.0"
+            }
+        },
+        "1.35": {
+            "maxSchemaVersion": {
+                "1": "1.3.0"
+            }
+        },
+        "1.34": {
+            "maxSchemaVersion": {
+                "1": "1.3.0"
+            }
+        },
+        "1.33": {
+            "maxSchemaVersion": {
+                "1": "1.2.0"
+            }
+        },
+        "1.32": {
+            "maxSchemaVersion": {
+                "1": "1.2.0"
+            }
+        },
+        "1.31": {
+            "maxSchemaVersion": {
+                "1": "1.1.0"
+            }
+        },
+        "1.30": {
+            "maxSchemaVersion": {
+                "1": "1.1.0"
+            }
+        }
+    },
     "latest": "1.89.0",
     "1.151": "1.89.0",
     "1.150": "1.88.0",
