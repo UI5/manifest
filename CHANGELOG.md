@@ -5,6 +5,11 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="Unreleased"></a>
 ## [Unreleased]
 
+### Changed
+- sap.card: Several experimental features are now stable. Removed the `[Experimental]` marker from `helpId`, `maxItems`, footer `visibility`, header `titleMaxLines`/`subTitleMaxLines`/`detailsMaxLines`/`wrappingType`/`info`, object group `titleMaxLines`/`labelWrapping`/`alignment`/`itemsLayout`, object item icon `size`, `extension`, ComboBox filter and `actionsStripItem` binding info.
+- sap.card: Default value of object group `labelWrapping` changed from `false` to `true`.
+- sap.card: Marked SAP Analytics Cloud content as `[RESTRICTED]`.
+
 <a name="v1.89.0"></a>
 ## [v1.89.0] - 2026-07-23  (UI5 1.151)
 
