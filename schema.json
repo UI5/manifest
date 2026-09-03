@@ -1714,11 +1714,11 @@
                             "type": "boolean"
                         },
                         "helpId": {
-                            "description": "[Experimental] The help-id which will be rendered as data-help-id on the base element of the card",
+                            "description": "The help-id which will be rendered as data-help-id on the base element of the card",
                             "type": "string"
                         },
                         "modelSizeLimit": {
-                            "description": "[Experimental] Represents the maximum number of entries that are used for list bindings",
+                            "description": "Represents the maximum number of entries that are used for list bindings",
                             "oneOf": [
                                 {
                                     "type": "number"
@@ -1922,7 +1922,7 @@
                             }
                         },
                         "visible": {
-                            "description": "[Experimental] Visibility of the footer",
+                            "description": "Visibility of the footer",
                             "$ref": "#/$defs/visibility"
                         },
                         "showSeparator": {
@@ -2691,7 +2691,7 @@
         },
         "actionsStripItemBindingInfo": {
             "type": "object",
-            "description": "[Experimental] Binding info for items of type actionsStripItem",
+            "description": "Binding info for items of type actionsStripItem",
             "additionalProperties": false,
             "properties": {
                 "template": {
@@ -3147,7 +3147,7 @@
             }
         },
         "extension": {
-            "description": "[Experimental] Represents attributes, needed to get data via extension",
+            "description": "Represents attributes, needed to get data via extension",
             "type": "object",
             "additionalProperties": false,
             "required": [
@@ -4350,7 +4350,7 @@
                     }
                 },
                 "titleMaxLines": {
-                    "description": "[Experimental] Limits the number of lines for wrapping the group title",
+                    "description": "Limits the number of lines for wrapping the group title",
                     "oneOf": [
                         {
                             "type": "number"
@@ -4362,7 +4362,7 @@
                     "default": 1
                 },
                 "labelWrapping": {
-                    "description": "[Experimental] Determines whether the labels of the group items will be wrapped",
+                    "description": "Determines whether the labels of the group items will be wrapped",
                     "oneOf": [
                         {
                             "type": "boolean"
@@ -4371,7 +4371,7 @@
                             "$ref": "#/$defs/simpleBinding"
                         }
                     ],
-                    "default": false
+                    "default": true
                 },
                 "items": {
                     "description": "Represents items of information",
@@ -4385,7 +4385,7 @@
                     "$ref": "#/$defs/visibility"
                 },
                 "alignment": {
-                    "description": "[Experimental] Alignment of the group",
+                    "description": "Alignment of the group",
                     "enum": [
                         "Default",
                         "Stretch"
@@ -4393,7 +4393,7 @@
                     "default": "Default"
                 },
                 "itemsLayout": {
-                    "description": "[Experimental] Defines how the items inside the group are laid out. \"Vertical\" stacks each label/value pair on its own row (default). \"Horizontal\" arranges the pairs side by side and wraps them onto multiple rows when there is not enough width. In order to have horizontal layout, you need to set the `alignment` property to \"Stretch\".",
+                    "description": "Defines how the items inside the group are laid out. \"Vertical\" stacks each label/value pair on its own row (default). \"Horizontal\" arranges the pairs side by side and wraps them onto multiple rows when there is not enough width. In order to have horizontal layout, you need to set the `alignment` property to \"Stretch\".",
                     "enum": [
                         "Vertical",
                         "Horizontal"
@@ -4575,7 +4575,7 @@
                     "type": "string"
                 },
                 "size": {
-                    "description": "[Experimental] The size of the icon",
+                    "description": "The size of the icon",
                     "oneOf": [
                         {
                             "enum": [
@@ -5356,7 +5356,7 @@
                     }
                 },
                 "titleMaxLines": {
-                    "description": "[Experimental] Limit the number of lines for the title",
+                    "description": "Limit the number of lines for the title",
                     "oneOf": [
                         {
                             "type": "number"
@@ -5385,7 +5385,7 @@
                     "deprecated": true
                 },
                 "subtitleMaxLines": {
-                    "description": "[Experimental] Limit the number of lines for the sub title",
+                    "description": "Limit the number of lines for the sub title",
                     "oneOf": [
                         {
                             "type": "number"
@@ -5447,7 +5447,7 @@
                     "type": "string"
                 },
                 "detailsMaxLines": {
-                    "description": "[Experimental] Limit the number of lines for the details text",
+                    "description": "Limit the number of lines for the details text",
                     "oneOf": [
                         {
                             "type": "number"
@@ -5471,7 +5471,7 @@
                     "$ref": "#/$defs/status"
                 },
                 "wrappingType": {
-                    "description": "[Experimental] The wrapping type for texts inside the header",
+                    "description": "The wrapping type for texts inside the header",
                     "$ref": "#/$defs/wrappingType"
                 },
                 "visible": {
@@ -5479,7 +5479,7 @@
                     "$ref": "#/$defs/visibility"
                 },
                 "infoSection": {
-                    "description": "[Experimental] Represents the info section of the header",
+                    "description": "Represents the info section of the header",
                     "$ref": "#/$defs/HeaderType.InfoSection"
                 },
                 "chart": {
@@ -5508,7 +5508,7 @@
                     }
                 },
                 "titleMaxLines": {
-                    "description": "[Experimental] Limit the number of lines for the title",
+                    "description": "Limit the number of lines for the title",
                     "oneOf": [
                         {
                             "type": "number"
@@ -5550,7 +5550,7 @@
                     "default": 2
                 },
                 "subtitleMaxLines": {
-                    "description": "[Experimental] Limit the number of lines for the sub title",
+                    "description": "Limit the number of lines for the sub title",
                     "oneOf": [
                         {
                             "type": "number"
@@ -5580,7 +5580,7 @@
                     "$ref": "#/$defs/status"
                 },
                 "wrappingType": {
-                    "description": "[Experimental] The wrapping type for texts inside the header",
+                    "description": "The wrapping type for texts inside the header",
                     "$ref": "#/$defs/wrappingType"
                 },
                 "visible": {
@@ -5588,7 +5588,7 @@
                     "$ref": "#/$defs/visibility"
                 },
                 "infoSection": {
-                    "description": "[Experimental] Represents the info section of the header",
+                    "description": "Represents the info section of the header",
                     "$ref": "#/$defs/HeaderType.InfoSection"
                 }
             }
@@ -5953,7 +5953,7 @@
             }
         },
         "ContentType.AnalyticsCloud": {
-            "description": "Represents SAP Analytics Cloud content attributes",
+            "description": "[RESTRICTED] Represents SAP Analytics Cloud content attributes",
             "type": "object",
             "additionalProperties": true
         },
@@ -6505,7 +6505,7 @@
             }
         },
         "Configuration.FilterType.ComboBox": {
-            "description": "[Experimental] ComboBox filter",
+            "description": "ComboBox filter",
             "type": "object",
             "additionalProperties": false,
             "properties": {
