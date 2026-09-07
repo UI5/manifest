@@ -5,6 +5,9 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="Unreleased"></a>
 ## [Unreleased]
 
+<a name="v2.12.0"></a>
+## [v2.12.0] - 2026-09-07  (UI5 1.152)
+
 ### Changed
 - sap.card: Several experimental features are now stable. Removed the `[Experimental]` marker from `helpId`, `maxItems`, footer `visibility`, header `titleMaxLines`/`subTitleMaxLines`/`detailsMaxLines`/`wrappingType`/`info`, object group `titleMaxLines`/`labelWrapping`/`alignment`/`itemsLayout`, object item icon `size`, `extension`, ComboBox filter and `actionsStripItem` binding info.
 - sap.card: Default value of object group `labelWrapping` changed from `false` to `true`.
@@ -271,7 +274,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="v1.48.1"></a>
 ## v1.48.1 - 2022-11-10
 
-[Unreleased]: https://github.com/UI5/manifest/compare/v2.11.0...HEAD
+[Unreleased]: https://github.com/UI5/manifest/compare/v2.12.0...HEAD
+[v2.12.0]: https://github.com/UI5/manifest/compare/v2.11.0...v2.12.0
 [v2.11.0]: https://github.com/UI5/manifest/compare/v2.10.0...v2.11.0
 [v2.10.0]: https://github.com/UI5/manifest/compare/v2.9.0...v2.10.0
 [v2.9.0]: https://github.com/UI5/manifest/compare/v2.8.0...v2.9.0
