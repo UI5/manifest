@@ -1,4 +1,7 @@
 .chglog
+.github
+.release-please-manifest.json
 .reuse
 .vscode
 node_modules
+release-please-config.json
