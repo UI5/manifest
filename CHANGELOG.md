@@ -5,6 +5,9 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="Unreleased"></a>
 ## [Unreleased]
 
+<a name="v1.91.0"></a>
+## [v1.91.0] - 2026-10-14  (UI5 1.154)
+
 ### Added
 - release-please configuration as a mechanism for publishing an npm module.
 
@@ -295,7 +298,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="v1.48.1"></a>
 ## v1.48.1 - 2022-11-10
 
-[Unreleased]: https://github.com/UI5/manifest/compare/v1.90.0...HEAD
+[Unreleased]: https://github.com/UI5/manifest/compare/v1.91.0...HEAD
+[v1.91.0]: https://github.com/UI5/manifest/compare/v1.90.0...v1.91.0
 [v1.90.0]: https://github.com/UI5/manifest/compare/v1.89.0...v1.90.0
 [v1.89.0]: https://github.com/UI5/manifest/compare/v1.88.0...v1.89.0
 [v1.88.0]: https://github.com/UI5/manifest/compare/v1.87.0...v1.88.0
