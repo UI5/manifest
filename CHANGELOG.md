@@ -5,6 +5,9 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="Unreleased"></a>
 ## [Unreleased]
 
+### Added
+- release-please configuration as a mechanism for publishing an npm module.
+
 <a name="v1.90.0"></a>
 ## [v1.90.0] - 2026-09-07  (UI5 1.152)
 
