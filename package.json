@@ -6,11 +6,6 @@
         "type": "git",
         "url": "git+https://github.com/UI5/manifest.git"
     },
-    "scripts": {
-        "prepublishOnly": "git push --follow-tags",
-        "release-note": "",
-        "version": ""
-    },
     "keywords": [
         "ui5",
         "manifest"
