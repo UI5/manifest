@@ -39,4 +39,11 @@ jobs:
         with:
           node-version: 24.x
       - name: Publish to npm
-        run: npm publish --access public
+        env:
+          REF: ${{github.ref_name}}
+        run: |
+          if [ "$REF" = "v2" ]; then
+            npm publish --access public --tag latest-2
+          else
+            npm publish --access public --tag latest
+          fi
