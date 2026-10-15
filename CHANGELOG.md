@@ -3,6 +3,14 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <a name="Unreleased"></a>
+## [1.91.2](https://github.com/UI5/manifest/compare/v1.91.1...v1.91.2) (2026-10-15)
+
+
+### Features
+
+* schema version 1.91.2 ([6e285ba](https://github.com/UI5/manifest/commit/6e285baf412d85034fa83c45902e0f75ad40fce4))
+* schema version 1.91.2 ([147bf27](https://github.com/UI5/manifest/commit/147bf27bcc053d149aadc2eb9851fa38213a57b4))
+
 ## [1.91.1](https://github.com/UI5/manifest/compare/v1.90.0...v1.91.1) (2026-10-15)
 
 
