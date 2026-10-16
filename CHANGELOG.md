@@ -3,42 +3,6 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <a name="Unreleased"></a>
-## [1.91.3](https://github.com/UI5/manifest/compare/v1.91.2...v1.91.3) (2026-10-15)
-
-
-### Bug Fixes
-
-* release 1.91.3 ([9b30740](https://github.com/UI5/manifest/commit/9b30740947ef9163563629efef477810691d4cba))
-
-## [1.91.2](https://github.com/UI5/manifest/compare/v1.91.1...v1.91.2) (2026-10-15)
-
-
-### Features
-
-* schema version 1.91.2 ([6e285ba](https://github.com/UI5/manifest/commit/6e285baf412d85034fa83c45902e0f75ad40fce4))
-* schema version 1.91.2 ([147bf27](https://github.com/UI5/manifest/commit/147bf27bcc053d149aadc2eb9851fa38213a57b4))
-
-## [1.91.1](https://github.com/UI5/manifest/compare/v1.90.0...v1.91.1) (2026-10-15)
-
-
-### chore
-
-* force release 1.91.1 ([dc24b59](https://github.com/UI5/manifest/commit/dc24b59f1e99f32d383a34c058fc6e83ab2b83f8))
-
-
-### Features
-
-* Release 1.91.0 ([b6c9e04](https://github.com/UI5/manifest/commit/b6c9e04b151b279aa0794dfdac6d210e6571901e))
-* Release 1.91.0 ([db93924](https://github.com/UI5/manifest/commit/db939249aeb789761c4b068916e90cb6b0b82a99))
-* Release 1.91.0 ([5b934c0](https://github.com/UI5/manifest/commit/5b934c097a0c290471d7c31bfe2ffe1b7f6bffb7))
-* Release 1.91.1 ([969ddc3](https://github.com/UI5/manifest/commit/969ddc3692897dcb92ae9099012fad91fb0bd9fe))
-
-
-### Bug Fixes
-
-* trigger patch release ([a5ed020](https://github.com/UI5/manifest/commit/a5ed020c0b15d43aa47342615fa911e6254049b1))
-* trigger patch release ([a83b497](https://github.com/UI5/manifest/commit/a83b4976dc997901d10fb03dd01e3edc36863dc6))
-
 ## [Unreleased]
 
 <a name="v1.91.0"></a>
