@@ -7629,7 +7629,9 @@
                     "type": "string",
                     "enum": [
                         "auto"
-                    ]
+                    ],
+                    "deprecated": true,
+                    "description": "[Deprecated] Value auto is deprecated"
                 }
             ]
         },
