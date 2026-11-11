@@ -5,6 +5,18 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="Unreleased"></a>
 ## [Unreleased]
 
+### Deprecated
+- sap.ovp: Deprecated `"auto"` value for `defaultSpan` property. The value is kept for backward compatibility but marked as deprecated.
+  
+### Added
+- sap.card: Schema version `1.66.0`.
+- sap.card: Detailed MicroChart type definitions for `Line`, `Column`, `HarveyBall` and `Radial` charts, replacing the previous generic model. Each type now exposes its specific properties (for example `points`/`lines` for Line, `columns` for Column, `fraction`/`total` for HarveyBall, `percentage` for Radial).
+- sap.card: New property `size` on the `Bullet` MicroChart.
+- sap.card: Description for the Analytical content `actionableArea` property.
+
+### Changed
+- sap.card: Removed the `[Experimental]` marker from the Analytical content `chartProperties` and from the header `MicroChart` (`chart`).
+
 <a name="v1.91.4"></a>
 ## [v1.91.4] - 2026-10-14  (UI5 1.154)
 
