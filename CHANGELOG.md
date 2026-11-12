@@ -3,14 +3,6 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <a name="Unreleased"></a>
-## [2.14.0](https://github.com/UI5/manifest/compare/v2.13.0...v2.14.0) (2026-11-12)
-
-
-### Features
-
-* Release 2.14.0 ([467b0c9](https://github.com/UI5/manifest/commit/467b0c9cb62aa684736f555d30359b4630097e94))
-* Release 2.14.0 ([0ba3119](https://github.com/UI5/manifest/commit/0ba3119be02a4ed844bd00508bb155817dd28aac))
-
 ## [Unreleased]
 
 <a name="v2.14.0"></a>
