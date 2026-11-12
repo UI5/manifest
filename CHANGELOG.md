@@ -5,6 +5,9 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="Unreleased"></a>
 ## [Unreleased]
 
+<a name="v1.92.0"></a>
+## [v1.92.0] - 2026-11-12  (UI5 1.155)
+
 ### Deprecated
 - sap.ovp: Deprecated `"auto"` value for `defaultSpan` property. The value is kept for backward compatibility but marked as deprecated.
   
@@ -310,8 +313,9 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 <a name="v1.48.1"></a>
 ## v1.48.1 - 2022-11-10
 
-[Unreleased]: https://github.com/UI5/manifest/compare/v1.91.4...HEAD
-[v1.91.4]: https://github.com/UI5/manifest/compare/v1.90.0...v1.91.4
+[Unreleased]: https://github.com/UI5/manifest/compare/v1.92.0...HEAD
+[v1.92.0]: https://github.com/UI5/manifest/compare/v1.91.0...v1.92.0
+[v1.91.0]: https://github.com/UI5/manifest/compare/v1.90.0...v1.91.0
 [v1.90.0]: https://github.com/UI5/manifest/compare/v1.89.0...v1.90.0
 [v1.89.0]: https://github.com/UI5/manifest/compare/v1.88.0...v1.89.0
 [v1.88.0]: https://github.com/UI5/manifest/compare/v1.87.0...v1.88.0
