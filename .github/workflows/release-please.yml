@@ -5,11 +5,18 @@ on:
     branches:
       - main
       - v2
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Existing package version to publish (must match the selected branch)
+        required: true
+        type: string
 
 permissions: {}
 
 jobs:
   pull-request:
+    if: ${{github.event_name == 'push'}}
     runs-on: ubuntu-24.04
     permissions:
       contents: write
@@ -26,9 +33,22 @@ jobs:
 
   publish-package:
     needs: pull-request
-    if: ${{needs.pull-request.outputs.releases_created && toJson(fromJson(needs.pull-request.outputs.paths_released)) != '[]'}}
+    if: >-
+      ${{
+        !cancelled() &&
+        (github.ref_name == 'main' || github.ref_name == 'v2') &&
+        (
+          github.event_name == 'workflow_dispatch' ||
+          (
+            needs.pull-request.result == 'success' &&
+            needs.pull-request.outputs.releases_created == 'true' &&
+            toJson(fromJson(needs.pull-request.outputs.paths_released || '[]')) != '[]'
+          )
+        )
+      }}
     runs-on: ubuntu-24.04
     permissions:
+      contents: read
       id-token: write
     environment: npmjs:@ui5/manifest
     steps:
@@ -38,6 +58,18 @@ jobs:
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: 24.x
+      - name: Verify requested version
+        if: ${{github.event_name == 'workflow_dispatch'}}
+        env:
+          EXPECTED_VERSION: ${{inputs.version}}
+        run: |
+          node <<'NODE'
+          const {version} = require('./package.json');
+          if (version !== process.env.EXPECTED_VERSION) {
+            throw new Error(`Refusing to publish ${version}; requested ${process.env.EXPECTED_VERSION}`);
+          }
+          console.log(`Verified package version ${version}`);
+          NODE
       - name: Publish to npm
         env:
           REF: ${{github.ref_name}}
